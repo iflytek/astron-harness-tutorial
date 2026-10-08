@@ -33,14 +33,14 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm ci
 
-      - name: Build with VitePress
-        run: npm run docs:build
+      - name: Build and validate with VitePress
+        run: npm test
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

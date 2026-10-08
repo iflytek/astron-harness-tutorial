@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "npm run docs:build && node scripts/check-docs-index.js",
     "start": "node server.js",
     "docs:dev": "node scripts/generate-index.js && vitepress dev docs",
     "docs:build": "node scripts/generate-index.js && vitepress build docs",
