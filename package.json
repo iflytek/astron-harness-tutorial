@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test:doc-watch": "node --test scripts/doc-watch/check-updates.test.mjs",
     "start": "node server.js",
     "docs:dev": "node scripts/generate-index.js && vitepress dev docs",
     "docs:build": "node scripts/generate-index.js && vitepress build docs",

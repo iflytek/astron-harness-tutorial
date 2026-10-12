@@ -30,6 +30,15 @@ export const SOURCES = [
 const FETCH_ATTEMPTS = 3;
 const FETCH_TIMEOUT_MS = 30_000;
 
+function fetchError(url, attempts, error) {
+  const cause = error.cause;
+  const details = [cause?.code, cause?.message].filter(Boolean).join(': ');
+  return new Error(
+    `Failed to fetch ${url} after ${attempts} attempt(s): ${error.message || error}${details ? ` (${details})` : ''}`,
+    { cause: error }
+  );
+}
+
 // 上游站点偶发 `fetch failed` / `terminated`，单次失败不应让整轮巡检报错：
 // 网络错误、超时、429 与 5xx 按指数退避重试，其余 HTTP 错误直接抛出。
 export async function fetchText(url) {
@@ -46,12 +55,12 @@ export async function fetchText(url) {
       if (res.status !== 429 && res.status < 500) throw Object.assign(err, { fatal: true });
       lastError = err;
     } catch (e) {
-      if (e.fatal) throw e;
+      if (e.fatal) throw fetchError(url, attempt, e);
       lastError = e;
     }
     if (attempt < FETCH_ATTEMPTS) await new Promise((r) => setTimeout(r, 2000 * 2 ** (attempt - 1)));
   }
-  throw lastError;
+  throw fetchError(url, FETCH_ATTEMPTS, lastError);
 }
 
 export function decodeEntities(s) {

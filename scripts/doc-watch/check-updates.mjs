@@ -12,6 +12,7 @@
  *   node scripts/doc-watch/check-updates.mjs --report f  # 把 Markdown 报告写到文件 f
  *   node scripts/doc-watch/check-updates.mjs --update     # 把当前抓取结果写回基线（接受现状）
  *   node scripts/doc-watch/check-updates.mjs --init       # 首次创建基线
+ *   抓取失败退出码为 2；--init / --update 仅在所有源均抓取成功时写入基线。
  *
  * 仅依赖 Node 内置能力（fetch + fs），无第三方依赖。
  */
@@ -73,16 +74,18 @@ function renderReport(results) {
   const lines = [];
   lines.push('# 文档更新巡检报告', '');
   let any = false;
+  let incomplete = false;
   for (const r of results) {
     lines.push(`## ${r.name}  \`(${r.source})\``, '');
     const c = r.changes;
     if (c.errors.length) {
+      incomplete = true;
       lines.push('> ⚠️ 抓取异常：');
       for (const e of c.errors) lines.push(`> - ${e.url} — ${e.error}`);
       lines.push('');
     }
     if (!hasChanges(c)) {
-      lines.push('_无新增内容。_', '');
+      lines.push(c.errors.length ? '_抓取未完成，无法确认是否有新增内容。_' : '_无新增内容。_', '');
       continue;
     }
     any = true;
@@ -117,7 +120,8 @@ function renderReport(results) {
       lines.push('');
     }
   }
-  if (!any) lines.push('---', '', '✅ 两个文档源均无新增内容。');
+  if (incomplete) lines.push('---', '', '⚠️ 文档抓取未完成，请排查错误后重试。');
+  else if (!any) lines.push('---', '', '✅ 两个文档源均无新增内容。');
   return lines.join('\n');
 }
 
@@ -150,8 +154,6 @@ async function main() {
     const baseline = readBaseline(src.id);
     const changes = diffSource(baseline, snap);
     results.push({ source: src.id, name: src.name, snap, changes });
-
-    if (isInit || isUpdate) writeBaseline(src.id, snap);
   }
 
   const report = renderReport(results);
@@ -160,6 +162,20 @@ async function main() {
     process.stdout.write(JSON.stringify(results.map((r) => ({ source: r.source, changes: r.changes })), null, 2) + '\n');
   } else {
     process.stdout.write(report + '\n');
+  }
+
+  const errors = results.flatMap((r) => r.changes.errors);
+  if (errors.length) {
+    for (const error of errors) {
+      process.stderr.write(`[doc-watch] capture error: ${error.url} — ${error.error}\n`);
+    }
+    process.stderr.write(`[doc-watch] ${errors.length} capture error(s); baselines were not updated.\n`);
+    process.exit(2);
+  }
+
+  // Do not replace any baseline until every source has been captured successfully.
+  if (isInit || isUpdate) {
+    for (const result of results) writeBaseline(result.source, result.snap);
   }
 
   if (isInit) {
