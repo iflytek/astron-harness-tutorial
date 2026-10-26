@@ -75,6 +75,14 @@ npm run docs:dev
 npm run docs:build
 ```
 
+### Learning Assistant model configuration
+
+The Learning Assistant uses **Spark-X2.6-4B**, with streaming replies and Chinese/English pages. Copy `.env.example` to `.env` and set `ASTRON_MAAS_API_KEY` to a key enabled for Spark-X2.6-4B. Keep credentials server-side; do not use variables prefixed with `VITE_` for API keys.
+
+The defaults are model `spark-x2.6-4b`, endpoint `https://maas-api.cn-huabei-1.xf-yun.com/v2/chat/completions`, and `low` reasoning effort. Configure the server variables in `.env.example` to override them. Model IDs sent by cached clients cannot override the server setting.
+
+For local chat, run `npm run server` in one terminal and `npm run docs:dev` in another. Configure the same environment variables on Vercel and redeploy. Run `npm run test:chat` for regression tests without external calls, or `node test-api.js` to verify the live model connection.
+
 ## Contributing
 
 Issues and Pull Requests are welcome! Let's polish it together and help more people bring AI into their daily workflows.

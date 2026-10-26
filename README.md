@@ -75,6 +75,14 @@ npm run docs:dev
 npm run docs:build
 ```
 
+### 学习助手模型配置
+
+学习助手使用 **Spark-X2.6-4B**，支持流式回答和中英文页面。将 `.env.example` 复制为 `.env`，填写已开通 Spark-X2.6-4B 权限的 `ASTRON_MAAS_API_KEY`；密钥只在服务端使用，不要放入 `VITE_` 开头的变量。
+
+默认模型为 `spark-x2.6-4b`，接口为 `https://maas-api.cn-huabei-1.xf-yun.com/v2/chat/completions`，思考强度为 `low`。如需调整，可配置 `.env.example` 中的服务端变量。旧客户端传入的模型名不会覆盖服务端配置。
+
+本地使用学习助手时，在一个终端运行 `npm run server`，另一个终端运行 `npm run docs:dev`。Vercel 部署需要配置同名环境变量并重新部署。可运行 `npm run test:chat` 进行无外部调用的回归测试，或运行 `node test-api.js` 验证实际模型连接。
+
 ## 贡献与反馈
 
 欢迎提交 Issue 和 PR！让我们一起把它打磨得更好，帮助更多人让 AI 真正进入日常工作流。

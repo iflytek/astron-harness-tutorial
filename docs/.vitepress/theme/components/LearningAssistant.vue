@@ -6,11 +6,11 @@
           <span>{{ i18n.title }}</span>
           <a
             class="chat-header-credit"
-            href="https://maas.xfyun.cn/modelSquare"
+            href="https://huggingface.co/collections/XHToken/spark-x26"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered by 讯飞星辰MaaS
+            Powered by Spark-X2.6-4B
           </a>
         </div>
         <button @click="toggleChat" class="close-btn">×</button>
@@ -50,7 +50,7 @@
 </template>
 
 <script setup>
-import { ref, nextTick, onMounted, computed, watch } from 'vue'
+import { ref, reactive, nextTick, onMounted, computed, watch } from 'vue'
 import { useData } from 'vitepress'
 
 const { lang } = useData()
@@ -194,7 +194,8 @@ function detectPreferredLanguage(text) {
     return 'en'
   }
 
-  if (englishCount >= 3 && englishCount >= chineseCount * 2) {
+  // An English product name must not override a Chinese question.
+  if (chineseCount === 0 && englishCount >= 3) {
     return 'en'
   }
 
@@ -206,7 +207,7 @@ function buildSystemPrompt(text, context) {
     ? i18n.value.replyInEnglish
     : i18n.value.replyInChinese
 
-  return `${i18n.value.systemPrompt}${languageInstruction}\n${context}`
+  return `${i18n.value.systemPrompt}\n${context}\n\n${languageInstruction}`
 }
 
 function getChatEndpoints() {
@@ -358,11 +359,11 @@ const sendMessage = async () => {
     .filter(m => !m.isPending)
     .filter(m => m.role !== 'assistant' || (m.content !== i18n.value.errorFallback && !m.content.startsWith(i18n.value.errorPrefix)))
     .map(m => ({ role: m.role, content: m.content }))
-  const assistantMessage = {
+  const assistantMessage = reactive({
     role: 'assistant',
     content: i18n.value.thinking,
     isPending: true
-  }
+  })
   const controller = new AbortController()
   let isTimedOut = false
   const timeoutId = window.setTimeout(() => {
@@ -376,7 +377,6 @@ const sendMessage = async () => {
 
   try {
     const response = await requestChat({
-      model: 'astron-code-latest',
       stream: true,
       messages: [
         {

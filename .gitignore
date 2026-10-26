@@ -17,6 +17,7 @@ dist-ssr
 docs/.vitepress/dist
 docs/.vitepress/cache
 .temp
+.vercel/
 .vitepress/dist
 .vitepress/cache
 

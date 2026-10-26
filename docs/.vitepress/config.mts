@@ -7,8 +7,7 @@ export default defineConfig({
   vite: {
     server: {
       proxy: {
-        // If needed, we can also proxy through Vite's dev server, 
-        // but now we're calling our own backend server directly.
+        '/api/chat': 'http://127.0.0.1:3001'
       }
     }
   },

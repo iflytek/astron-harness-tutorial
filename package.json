@@ -10,6 +10,7 @@
     "docs:build": "node scripts/generate-index.js && vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "server": "node server.js",
+    "test:chat": "node --test scripts/tests/chat.test.cjs",
     "dev": "npm run server & npm run docs:dev"
   },
   "keywords": [],
