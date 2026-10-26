@@ -736,6 +736,51 @@
   },
   {
     "lang": "zh",
+    "heading": "无界面周报自动化：云端规划 + 本地执行",
+    "content": "这篇教程完成一个可复现的流程：让 AstronClaw 负责拆解“根据 `data.csv` 生成本周项目报告”的目标，再让本地 Loomy 通过一个权限收敛的 MCP 工具生成并校验 `.docx`。整个执行过程不打开 Word，也不向云端暴露本地目录。\n\n> **能力边界**：当前公开文档没有承诺 AstronClaw 可通过专用 API 直接驱动 Loomy。本文使用两种已有入口传递任务：手动复制结构化计划，或通过[远程控制](/guide/loomy/remote-control)中已配置的消息渠道把计划发给保持后台运行的 Loomy。不要把示例理解为未公开的云桌面直连 API。"
+  },
+  {
+    "lang": "zh",
+    "heading": "工作流",
+    "content": "| 阶段 | 执行者 | 产物 |\n|---|---|---|\n| 规划 | AstronClaw | 只包含文件名、截止日期和标题的 JSON 计划 |\n| 交接 | 你或远程控制渠道 | 将计划发送给本地 Loomy |\n| 执行 | Loomy + 本地 MCP | 读取授权目录中的 CSV，生成 DOCX |\n| 验证 | 本地 MCP | 返回行数、文件大小和 SHA-256；失败时不替换旧文件 |\n\n示例没有提供任意终端执行或任意文件读写。MCP 服务只有“检查 CSV”和“生成周报”两个工具，所有路径必须位于 `REPORT_WORKSPACE` 内。"
+  },
+  {
+    "lang": "zh",
+    "heading": "1. 准备示例",
+    "content": "下载或克隆本仓库，进入 [`examples/headless-weekly-report`](https://github.com/iflytek/astronclaw-tutorial/tree/main/examples/headless-weekly-report)：\n\n```powershell\ncd examples\\headless-weekly-report\npython -m venv .venv\n.\\.venv\\Scripts\\python -m pip install -r requirements.txt\n```\n\nmacOS/Linux 将最后一条命令换成：\n\n```bash\n.venv/bin/python -m pip install -r requirements.txt\n```\n\n示例依赖[官方 MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) 2.x 和 `python-docx`。输入文件是 `workspace/data.csv`，必需列为：\n\n```text\nproject,status,progress,next_step,owner\n```\n\n先绕过 Loomy 直接验证本地构建链路：\n\n```powershell\n.\\.venv\\Scripts\\python report_builder.py `\n  --workspace workspace `\n  --source data.csv `\n  --output weekly-report-2026-09-04.docx `\n  --week-ending 2026-09-04 `\n  --title \"项目周报\"\n```\n\nmacOS/Linux 使用反斜杠续行和 `.venv/bin/python`。成功时会输出类似：\n\n```json\n{\n  \"output\": \"weekly-report-2026-09-04.docx\",\n  \"week_ending\": \"2026-09-04\",\n  \"row_count\": 3,\n  \"size_bytes\": 37142,\n  \"sha256\": \"...\"\n}\n```"
+  },
+  {
+    "lang": "zh",
+    "heading": "2. 接入 Loomy 工具箱",
+    "content": "进入 Loomy 的「设置」→「工具箱」，导入外部自定义 MCP 配置。把下面所有路径改成你的**绝对路径**。\n\nWindows：\n\n```json\n{\n  \"mcpServers\": {\n    \"headless-weekly-report\": {\n      \"command\": \"D:\\\\path\\\\to\\\\headless-weekly-report\\\\.venv\\\\Scripts\\\\mcp.exe\",\n      \"args\": [\n        \"run\",\n        \"D:\\\\path\\\\to\\\\headless-weekly-report\\\\mcp_server.py\"\n      ],\n      \"env\": {\n        \"REPORT_WORKSPACE\": \"D:\\\\path\\\\to\\\\headless-weekly-report\\\\workspace\"\n      }\n    }\n  }\n}\n```\n\nmacOS/Linux：\n\n```json\n{\n  \"mcpServers\": {\n    \"headless-weekly-report\": {\n      \"command\": \"/absolute/path/headless-weekly-report/.venv/bin/mcp\",\n      \"args\": [\"run\", \"/absolute/path/headless-weekly-report/mcp_server.py\"],\n      \"env\": {\n        \"REPORT_WORKSPACE\": \"/absolute/path/headless-weekly-report/workspace\"\n      }\n    }\n  }\n}\n```\n\n保存后重启或刷新该工具，并把两个新工具的权限设为「询问」。详见[工具箱与技能系统](/guide/loomy/toolbox)。"
+  },
+  {
+    "lang": "zh",
+    "heading": "3. 让 AstronClaw 生成执行计划",
+    "content": "在 AstronClaw 中发送：\n\n> 把“根据 data.csv 生成本周项目周报”拆成一份交给桌面执行器的 JSON 计划。只允许使用相对文件名；输出字段必须是 source_csv、output_docx、week_ending、title。不要生成 shell 命令，不要包含文件内容或凭据。\n\n检查返回结果后再传给 Loomy，例如：\n\n```json\n{\n  \"source_csv\": \"data.csv\",\n  \"output_docx\": \"weekly-report-2026-09-04.docx\",\n  \"week_ending\": \"2026-09-04\",\n  \"title\": \"项目周报\"\n}\n```\n\n如果使用消息渠道远程触发，Loomy 必须在本地保持后台运行；本地设备离线时不要把任务标记为完成。"
+  },
+  {
+    "lang": "zh",
+    "heading": "4. 在 Loomy 中执行与确认",
+    "content": "将 JSON 计划发送给 Loomy，并补充这段指令：\n\n> 先调用 `inspect_weekly_report_source` 检查输入结构并告诉我行数和状态分布。确认无误后，调用 `build_weekly_report`。如果目标文件已存在，先询问我，不得自动设置 overwrite。完成后返回 output、size_bytes 和 sha256；不要声称已经打开或人工检查 Word 文件。\n\n正常链路是：\n\n1. Loomy 检查 `data.csv`，但不读取授权目录外的文件。\n2. 你确认摘要和目标文件名。\n3. 工具先在同目录写临时 DOCX，校验 ZIP/Open XML 结构后再原子替换目标。\n4. Loomy 返回可核对的文件元数据。你可在文件管理器中打开最终文档抽查排版。"
+  },
+  {
+    "lang": "zh",
+    "heading": "5. 错误处理闭环",
+    "content": "- **找不到 CSV**：把文件放入 `REPORT_WORKSPACE`，仍只传相对文件名，然后重新检查。\n- **缺少列**：按错误列名修改表头；不要让模型猜列的含义。\n- **目标已存在**：换一个带日期的文件名，或在你明确确认后设置 `overwrite=true`。\n- **DOCX 生成失败**：旧文件不会被替换，临时文件会被清理；修复输入或依赖后重试。\n- **MCP 不可用**：检查配置是否使用绝对路径，并在终端运行 `.venv\\Scripts\\mcp.exe --help`（macOS/Linux 为 `.venv/bin/mcp --help`）。"
+  },
+  {
+    "lang": "zh",
+    "heading": "安全清单",
+    "content": "- 为周报单独创建工作目录，不要授权整个用户目录或磁盘。\n- 工具权限设为「询问」，覆盖文件必须二次确认。\n- CSV 中不要存密码、Token、身份证号或不需要进入周报的个人信息。\n- 本示例不调用 shell、不接受命令字符串、不访问网络，并拒绝绝对路径和 `..` 越界路径。\n- SHA-256 证明本次生成后文件未变化，但不代表内容真实；发布前仍需负责人审核数据与措辞。"
+  },
+  {
+    "lang": "zh",
+    "heading": "复现测试",
+    "content": "```powershell\n.\\.venv\\Scripts\\python -m unittest -v test_report_builder.py\n```\n\n测试覆盖 CSV 契约、目录越界、DOCX 结构校验和显式覆盖保护。这样，“规划—执行—验证”每一步都有可观察结果，而不是只根据对话文本判断任务成功。"
+  },
+  {
+    "lang": "zh",
     "heading": "介绍",
     "content": "**Loomy** 是一款面向真实办公场景的 AI 工作搭子，基于 AstronClaw 的强大底层引擎，聚焦**“低门槛、高安全、强适配、主动协作”**四个核心方向，帮助用户把复杂、重复、跨工具的工作流程真正落到执行层。\n\n相比偏极客化、部署复杂的 Agent 工具，Loomy 更强调**开箱即用**和**国内办公环境适配**。"
   },
@@ -2043,6 +2088,51 @@
     "lang": "en",
     "heading": "What kind of users is it suitable for?",
     "content": "Loomy is suitable for people who need to frequently handle information organization, content creation, document collaboration, task follow-up, and cross-tool execution. For example:\n*   Self-media operations\n*   Office white-collar workers\n*   Content teams\n*   Small business teams\n*   E-commerce practitioners\n*   Individual users who hope to hand over repetitive processes to AI for assistance\n\nIf your work frequently requires switching back and forth between chats, emails, documents, web pages, and to-dos, Loomy can help you work more efficiently."
+  },
+  {
+    "lang": "en",
+    "heading": "Headless weekly reports: cloud planning + local execution",
+    "content": "This tutorial builds a reproducible workflow: AstronClaw decomposes the goal “create this week's project report from `data.csv`,” then local Loomy calls a narrowly scoped MCP tool to create and verify a `.docx`. Word never opens, and the local directory is not exposed to the cloud.\n\n> **Capability boundary:** The public documentation does not promise a dedicated API through which AstronClaw directly drives Loomy. This tutorial uses two documented handoff paths: copy the structured plan manually, or send it through a message channel configured under [Remote Control](/en/guide/loomy/remote-control) to Loomy running locally in the background. Do not interpret the example as an undocumented cloud-to-desktop API."
+  },
+  {
+    "lang": "en",
+    "heading": "Workflow",
+    "content": "| Stage | Actor | Output |\n|---|---|---|\n| Plan | AstronClaw | A JSON plan containing only filenames, date, and title |\n| Handoff | You or a remote-control channel | The plan reaches local Loomy |\n| Execute | Loomy + local MCP | Read an allowed CSV and create a DOCX |\n| Verify | Local MCP | Return row count, size, and SHA-256; preserve the old file on failure |\n\nThe example does not expose arbitrary terminal or filesystem access. Its MCP server has only two tools—inspect the CSV and build the report—and every path must remain under `REPORT_WORKSPACE`."
+  },
+  {
+    "lang": "en",
+    "heading": "1. Prepare the example",
+    "content": "Download or clone this repository and enter [`examples/headless-weekly-report`](https://github.com/iflytek/astronclaw-tutorial/tree/main/examples/headless-weekly-report):\n\n```powershell\ncd examples\\headless-weekly-report\npython -m venv .venv\n.\\.venv\\Scripts\\python -m pip install -r requirements.txt\n```\n\nOn macOS or Linux, replace the last command with:\n\n```bash\n.venv/bin/python -m pip install -r requirements.txt\n```\n\nThe example uses the [official MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) 2.x and `python-docx`. Its input is `workspace/data.csv`, with these required columns:\n\n```text\nproject,status,progress,next_step,owner\n```\n\nTest the local build path before involving Loomy:\n\n```powershell\n.\\.venv\\Scripts\\python report_builder.py `\n  --workspace workspace `\n  --source data.csv `\n  --output weekly-report-2026-09-04.docx `\n  --week-ending 2026-09-04 `\n  --title \"Project weekly report\"\n```\n\nOn macOS or Linux, use backslash line continuations and `.venv/bin/python`. A successful run returns metadata like:\n\n```json\n{\n  \"output\": \"weekly-report-2026-09-04.docx\",\n  \"week_ending\": \"2026-09-04\",\n  \"row_count\": 3,\n  \"size_bytes\": 37142,\n  \"sha256\": \"...\"\n}\n```"
+  },
+  {
+    "lang": "en",
+    "heading": "2. Connect the tool to Loomy",
+    "content": "In Loomy, open **Settings → Toolbox** and import an external custom MCP configuration. Replace every path below with an **absolute path**.\n\nWindows:\n\n```json\n{\n  \"mcpServers\": {\n    \"headless-weekly-report\": {\n      \"command\": \"D:\\\\path\\\\to\\\\headless-weekly-report\\\\.venv\\\\Scripts\\\\mcp.exe\",\n      \"args\": [\n        \"run\",\n        \"D:\\\\path\\\\to\\\\headless-weekly-report\\\\mcp_server.py\"\n      ],\n      \"env\": {\n        \"REPORT_WORKSPACE\": \"D:\\\\path\\\\to\\\\headless-weekly-report\\\\workspace\"\n      }\n    }\n  }\n}\n```\n\nmacOS/Linux:\n\n```json\n{\n  \"mcpServers\": {\n    \"headless-weekly-report\": {\n      \"command\": \"/absolute/path/headless-weekly-report/.venv/bin/mcp\",\n      \"args\": [\"run\", \"/absolute/path/headless-weekly-report/mcp_server.py\"],\n      \"env\": {\n        \"REPORT_WORKSPACE\": \"/absolute/path/headless-weekly-report/workspace\"\n      }\n    }\n  }\n}\n```\n\nSave and restart or refresh the tool, then set both new tool permissions to **Ask**. See [Toolbox and Skill System](/en/guide/loomy/toolbox)."
+  },
+  {
+    "lang": "en",
+    "heading": "3. Ask AstronClaw for an execution plan",
+    "content": "Send this to AstronClaw:\n\n> Turn “create this week's project report from data.csv” into a JSON plan for a desktop executor. Use relative filenames only. The exact fields must be source_csv, output_docx, week_ending, and title. Do not generate shell commands, file contents, or credentials.\n\nInspect the answer before handing it to Loomy. For example:\n\n```json\n{\n  \"source_csv\": \"data.csv\",\n  \"output_docx\": \"weekly-report-2026-09-04.docx\",\n  \"week_ending\": \"2026-09-04\",\n  \"title\": \"Project weekly report\"\n}\n```\n\nIf a message channel triggers the task remotely, Loomy must remain running on the local computer. Do not mark the task complete when that computer is offline."
+  },
+  {
+    "lang": "en",
+    "heading": "4. Execute and confirm in Loomy",
+    "content": "Send the JSON plan to Loomy with this instruction:\n\n> Call `inspect_weekly_report_source` first, then tell me the row count and status distribution. After I confirm, call `build_weekly_report`. If the target exists, ask me before setting overwrite. Return output, size_bytes, and sha256 when done. Do not claim that the document was opened or visually inspected.\n\nThe expected sequence is:\n\n1. Loomy inspects `data.csv` without reading outside the allowed directory.\n2. You confirm the summary and output filename.\n3. The tool writes a temporary DOCX, validates its ZIP/Open XML structure, and atomically replaces the target only after validation.\n4. Loomy returns verifiable file metadata. Open the final document in a file manager if you want to inspect layout."
+  },
+  {
+    "lang": "en",
+    "heading": "5. Error-recovery loop",
+    "content": "- **CSV not found:** place it under `REPORT_WORKSPACE`, keep using a relative filename, and inspect again.\n- **Required column missing:** fix the named header; do not ask the model to guess column semantics.\n- **Target exists:** choose a date-stamped filename, or set `overwrite=true` only after explicit confirmation.\n- **DOCX build fails:** the old file remains intact and the temporary file is removed; fix the input or dependency and retry.\n- **MCP unavailable:** confirm that every configured path is absolute, then run `.venv\\Scripts\\mcp.exe --help` (macOS/Linux: `.venv/bin/mcp --help`) in a terminal."
+  },
+  {
+    "lang": "en",
+    "heading": "Security checklist",
+    "content": "- Create a dedicated report workspace; never authorize an entire home directory or disk.\n- Set tool permissions to **Ask**, and require a second confirmation before overwriting output.\n- Keep passwords, tokens, identity numbers, and unnecessary personal data out of the CSV.\n- The example does not invoke a shell, accept command strings, or access the network. It rejects absolute and `..` escape paths.\n- SHA-256 proves that the generated file has not changed since the tool returned; it does not prove the report is factually correct. A responsible owner should still review it before publication."
+  },
+  {
+    "lang": "en",
+    "heading": "Reproduce the tests",
+    "content": "```powershell\n.\\.venv\\Scripts\\python -m unittest -v test_report_builder.py\n```\n\nThe tests cover the CSV contract, directory traversal, DOCX package validation, and explicit overwrite protection. Each part of the plan–execute–verify loop therefore has an observable result instead of relying on a success claim in chat."
   },
   {
     "lang": "en",

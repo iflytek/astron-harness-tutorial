@@ -121,6 +121,7 @@ export default defineConfig({
               { text: '定时任务与积分', link: '/guide/loomy/scheduled-tasks' },
               { text: '远程控制', link: '/guide/loomy/remote-control' },
               { text: '办公 CLI 集成', link: '/guide/loomy/office-cli' },
+              { text: '无界面周报自动化', link: '/guide/loomy/headless-office-automation' },
               { text: '典型工作场景', link: '/guide/loomy/scenarios' },
               { text: '实战：打造个人 AI 搭子', link: '/guide/loomy/personal-companion' },
               { text: '常见问题', link: '/guide/loomy/faq' }
@@ -242,6 +243,7 @@ export default defineConfig({
               { text: 'Scheduled Tasks', link: '/en/guide/loomy/scheduled-tasks' },
               { text: 'Remote Control', link: '/en/guide/loomy/remote-control' },
               { text: 'Office CLI', link: '/en/guide/loomy/office-cli' },
+              { text: 'Headless Weekly Reports', link: '/en/guide/loomy/headless-office-automation' },
               { text: 'Scenarios', link: '/en/guide/loomy/scenarios' },
               { text: 'Build a Personal AI Companion', link: '/en/guide/loomy/personal-companion' },
               { text: 'FAQ', link: '/en/guide/loomy/faq' }
