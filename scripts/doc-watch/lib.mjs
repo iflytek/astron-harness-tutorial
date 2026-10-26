@@ -10,6 +10,21 @@ export const UA =
 
 export const SOURCES = [
   {
+    id: 'astudio',
+    name: 'AStudio 官方指南与协议',
+    type: 'single',
+    origin: 'https://agent.xfyun.cn',
+    minTextLength: 100,
+    pages: [
+      'intro', 'quickstart', 'features', 'cases', 'tips', 'pricing', 'faq',
+      'agreements/user-service-web', 'agreements/privacy-web',
+      'agreements/user-service-client', 'agreements/privacy-client',
+      'agreements/personal-information-collection-list-zh-CN',
+      'agreements/third-party-sharing-list-zh-CN',
+      'agreements/product-subscription-service', 'agreements/auto-renewal-service',
+    ].map((slug) => `https://agent.xfyun.cn/studio-guide/${slug}`),
+  },
+  {
     id: 'loomy',
     name: 'Loomy Docs',
     type: 'vitepress',
@@ -154,11 +169,14 @@ export function extractSidebarLinks(html, origin, indexUrl) {
   return [...links].sort();
 }
 
-export async function capturePage(url, origin) {
+export async function capturePage(url, origin, minTextLength = 0) {
   const html = await fetchText(url);
   const titleM = html.match(/<title>([^<]*)<\/title>/i);
   const main = extractMain(html);
   const text = stripTags(main);
+  if (text.length < minTextLength || (minTextLength && !/<h1\b/i.test(main))) {
+    throw new Error(`Missing article content for ${url}; refusing an empty or incomplete snapshot`);
+  }
   return {
     url,
     title: titleM ? decodeEntities(titleM[1]).trim() : url,
@@ -181,7 +199,7 @@ export async function captureSource(src) {
   const pages = {};
   for (const url of pageUrls) {
     try {
-      pages[url] = await capturePage(url, src.origin);
+      pages[url] = await capturePage(url, src.origin, src.minTextLength);
     } catch (e) {
       pages[url] = { url, error: String(e.message || e) };
     }

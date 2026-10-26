@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: "Hello AstronClaw"
-  tagline: "Build deeply customizable cloud and desktop AI assistants based on OpenClaw's core capabilities."
+  name: "Astron Harness Tutorial"
+  tagline: "Learn AstronClaw, Loomy and AStudio — from your first task to a complete workflow."
   image:
     src: https://bjcdn.openstorage.cn/aicontest/2026-03-18/29c37a17-5b33-4804-90b5-85599c29e2d5.png
     alt: AstronClaw Logo
@@ -15,7 +15,14 @@ hero:
       text: Meet Desktop Loomy
       link: /en/guide/loomy/introduction
 
+    - theme: alt
+      text: Explore AStudio
+      link: /en/guide/astudio/intro
+
 features:
+  - title: AStudio Productivity Workspace
+    details: Plan and execute tasks, work with local projects, preview and refine deliverables, and automate recurring work.
+    link: /en/guide/astudio/intro
   - title: 01 One-Click Cloud Deployment
     details: Minimalist process, zero code configuration, farewell to environment dependencies. Runs 24/7 in the cloud, available anytime, anywhere.
     link: /en/guide/astronclaw/getting-started

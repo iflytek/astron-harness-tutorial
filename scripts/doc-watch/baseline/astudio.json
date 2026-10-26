@@ -1,0 +1,416 @@
+{
+  "source": "astudio",
+  "name": "AStudio 官方指南与协议",
+  "pageCount": 15,
+  "pages": {
+    "https://agent.xfyun.cn/studio-guide/intro": {
+      "url": "https://agent.xfyun.cn/studio-guide/intro",
+      "title": "AStudio",
+      "headings": [
+        "h1:简介",
+        "h2:工作再多变，工具不用变",
+        "h3:AStudio 能做什么",
+        "h2:官方用户交流群"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-58-dMj2Xf.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/feishu-group-qr-20260902.png",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "e5f9519ee0f31467",
+      "textLen": 387
+    },
+    "https://agent.xfyun.cn/studio-guide/quickstart": {
+      "url": "https://agent.xfyun.cn/studio-guide/quickstart",
+      "title": "AStudio",
+      "headings": [
+        "h1:快速上手",
+        "h2:安装与登录",
+        "h3:下载与安装",
+        "h3:新用户福利",
+        "h2:开启第一个任务",
+        "h3:快速上手步骤"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-01-RhqrKG.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-02-mXA0XE.png",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "dc3f0cbab17f23d6",
+      "textLen": 447
+    },
+    "https://agent.xfyun.cn/studio-guide/features": {
+      "url": "https://agent.xfyun.cn/studio-guide/features",
+      "title": "AStudio",
+      "headings": [
+        "h1:核心功能",
+        "h2:1. 日常与项目",
+        "h3:1.1 日常",
+        "h3:1.2 项目",
+        "h2:2. 任务管理",
+        "h3:2.1 新建任务",
+        "h3:2.2 搜索与全局定位",
+        "h3:2.3 整理任务与项目列表",
+        "h3:2.4 管理已归档任务",
+        "h2:3. 任务模式",
+        "h3:3.1 规划模式",
+        "h3:3.2 目标模式",
+        "h2:4. 成果预览与编辑",
+        "h3:4.1 文本文件（TXT / Markdown）",
+        "h3:4.2 表格、图片与 PDF",
+        "h3:4.3 H5 网页",
+        "h2:5. 项目工具",
+        "h2:6. 安全与权限",
+        "h2:7. 自动化任务",
+        "h2:8. 插件中心",
+        "h3:8.1 发现与安装插件",
+        "h3:8.2 使用与管理插件"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-03-yhme0Y.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-04-Js8Aub.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-05-TyLOgg.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-06-ZIGwcb.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-07-AQvvZe.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-08-LqfQzh.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-09-p7gLWg.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-10-jo87Qb.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-11-nDvulf.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-12-unqMyc.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-13-HGZ7Gd.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-14-KSgTJh.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-15-tOJjof.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-16-A7GZBf.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-17-X1sLcc.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-18-Z72Cod.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-19-2T4umh.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-20-eo0Bvd.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-21-284rPu.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-22-wuXZse.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-23-LZxfkd.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-24-ps9Xzd.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-25-lEzgff.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-26-MwVPze.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-27-JKuBsc.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-28-usx7sf.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-29-XIocye.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-30-yTTtHb.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-31-Wskfpf.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-32-EMdCtf.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-33-nA1NLe.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-34-SiYv4c.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-35-xYf5if.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-36-KFnXbe.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-37-C1BuFe.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-38-ys3aDg.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-39-XyNfec.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-40-voTarf.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-41-5Pp1Mf.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-42-n0wXPe.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-43-fZ75ph.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-44-5spzxe.png",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "919c64e727a75b3a",
+      "textLen": 2778
+    },
+    "https://agent.xfyun.cn/studio-guide/cases": {
+      "url": "https://agent.xfyun.cn/studio-guide/cases",
+      "title": "AStudio",
+      "headings": [
+        "h1:实践案例",
+        "h2:案例一：文献检索与筛选",
+        "h2:案例二：网站搭建"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-49-QaA9zf.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-48-DmfECf.png",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "350562029efff30c",
+      "textLen": 243
+    },
+    "https://agent.xfyun.cn/studio-guide/tips": {
+      "url": "https://agent.xfyun.cn/studio-guide/tips",
+      "title": "AStudio",
+      "headings": [
+        "h1:使用技巧",
+        "h2:技巧一：想法还不清楚时，先聊明白再开始",
+        "h2:技巧二：有参考，就直接给 AStudio 看",
+        "h2:技巧三：改动范围大时，先看计划再执行",
+        "h2:技巧四：从初版开始，边看边改",
+        "h2:技巧五：对话变长时，先整理一份交接文档",
+        "h2:技巧六：自动化创建后，先手动运行一次",
+        "h2:技巧七：把踩过的坑，沉淀成个人技能"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-50-CFRtag.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-51-DFdRFb.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-52-lMxxh7.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-53-MXabZc.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-54-G2mqNf.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-55-B7o4nc.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-56-52tiYb.png",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "571eb48b83b07f20",
+      "textLen": 1254
+    },
+    "https://agent.xfyun.cn/studio-guide/pricing": {
+      "url": "https://agent.xfyun.cn/studio-guide/pricing",
+      "title": "AStudio",
+      "headings": [
+        "h1:套餐与积分规则",
+        "h2:套餐版本对比",
+        "h2:积分获取与使用规则",
+        "h3:1. 积分有效期",
+        "h3:2. 积分消耗与抵扣顺序",
+        "h3:3. 积分增购价格",
+        "h3:4. 订阅与套餐切换"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "96d9057ce17411bc",
+      "textLen": 1187
+    },
+    "https://agent.xfyun.cn/studio-guide/faq": {
+      "url": "https://agent.xfyun.cn/studio-guide/faq",
+      "title": "AStudio",
+      "headings": [
+        "h1:常见问题",
+        "h2:1. 开始使用与工作方式",
+        "h3:Q1. AStudio 适合完成哪些工作？",
+        "h3:Q2. 我想创建独立任务，为什么任务进入了某个项目？",
+        "h3:Q3. 开始任务前必须选择规划模式或目标模式吗？",
+        "h2:2. 任务与历史记录",
+        "h3:Q4. 如何快速找到以前的项目或任务？",
+        "h3:Q5. 任务归档后还能查看或继续对话吗？",
+        "h2:3. 成果查看与修改",
+        "h3:Q6. 为什么表格、图片或 PDF 不能在侧边面板中直接编辑？",
+        "h3:Q7. 如何精确修改 H5 网页，并把网页分享出去？",
+        "h3:Q8. 为什么有些网页元素无法通过点选修改？",
+        "h2:4. 自动化任务",
+        "h3:Q9. 自动化任务一定要手动创建吗？",
+        "h3:Q10. 自动化效果不理想时，可以让 AStudio 直接修改吗？",
+        "h2:5. 安装与环境支持",
+        "h3:Q11. macOS 安装时提示“已损坏，无法打开”怎么办？",
+        "h3:Q12. Windows 安全软件提示拦截怎么办？",
+        "h2:6. 积分与计费",
+        "h3:Q13. 新用户赠送积分和每日登录积分会过期吗？",
+        "h2:7. 问题反馈",
+        "h3:Q14. 常见问题中没有找到答案，如何提交反馈？"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-57-UMikYg.png",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "90e539ba509af81e",
+      "textLen": 1776
+    },
+    "https://agent.xfyun.cn/studio-guide/agreements/user-service-web": {
+      "url": "https://agent.xfyun.cn/studio-guide/agreements/user-service-web",
+      "title": "AStudio",
+      "headings": [
+        "h1:AStudio 用户服务协议",
+        "h2:第一条 账号注册与管理",
+        "h2:用户的权利和义务",
+        "h2:第三条 我们的权利和义务",
+        "h2:第四条 知识产权",
+        "h2:第五条 免责声明",
+        "h2:第三方服务",
+        "h2:第七条 服务费用",
+        "h2:第八条 个人信息保护",
+        "h2:第九条 意见反馈（投诉与举报）",
+        "h2:第十条 本协议的修改",
+        "h2:第十一条 法律与管辖",
+        "h2:第十二条 定义与解释"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "7003c4c989f954ef",
+      "textLen": 8682
+    },
+    "https://agent.xfyun.cn/studio-guide/agreements/privacy-web": {
+      "url": "https://agent.xfyun.cn/studio-guide/agreements/privacy-web",
+      "title": "AStudio",
+      "headings": [
+        "h1:AStudio 隐私政策（网页端）",
+        "h2:特别提示：",
+        "h2:一、我们如何收集、使用、存储您的个人信息",
+        "h3:1.1 账号注册、登录",
+        "h3:1.2 对话与文件处理",
+        "h3:1.3 任务执行与云端运行",
+        "h3:1.4 定时任务与技能（Skills）",
+        "h3:1.5 订阅、积分与支付",
+        "h3:1.6 建议反馈与消息通知",
+        "h3:1.7 安全维护、运营统计与内容审核",
+        "h2:二、我们如何使用 Cookie 和同类技术",
+        "h2:三、我们如何委托处理、共享您的个人信息",
+        "h3:3.1 委托处理",
+        "h3:3.2 共享",
+        "h3:3.3 转让",
+        "h3:3.4 公开披露",
+        "h3:3.5 共享、转让、公开披露个人信息时事先征得授权同意的例外",
+        "h2:四、我们如何保护您的个人信息",
+        "h2:五、我们如何存储您的个人信息",
+        "h3:5.1 存储信息的地点",
+        "h3:5.2 存储信息的期限、期限的确定方式",
+        "h2:六、您如何实现管理您个人信息的权利",
+        "h2:七、我们如何保护未成年人的个人信息",
+        "h2:八、您的个人信息如何在全球范围内转移",
+        "h2:九、我们如何更新本政策",
+        "h2:十、如何联系我们",
+        "h2:十一、其他"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "b9283d7a9cfda66d",
+      "textLen": 9498
+    },
+    "https://agent.xfyun.cn/studio-guide/agreements/user-service-client": {
+      "url": "https://agent.xfyun.cn/studio-guide/agreements/user-service-client",
+      "title": "AStudio",
+      "headings": [
+        "h1:AStudio 用户服务协议",
+        "h2:第一条 账号注册与管理",
+        "h2:用户的权利和义务",
+        "h2:第三条 我们的权利和义务",
+        "h2:第四条 知识产权",
+        "h2:第五条 免责声明",
+        "h2:第三方服务",
+        "h2:第七条 服务费用",
+        "h2:第八条 个人信息保护",
+        "h2:第九条 意见反馈（投诉与举报）",
+        "h2:第十条 本协议的修改",
+        "h2:第十一条 法律与管辖",
+        "h2:第十二条 定义与解释"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "dc0097172a759537",
+      "textLen": 8750
+    },
+    "https://agent.xfyun.cn/studio-guide/agreements/privacy-client": {
+      "url": "https://agent.xfyun.cn/studio-guide/agreements/privacy-client",
+      "title": "AStudio",
+      "headings": [
+        "h1:AStudio 隐私政策（桌面客户端）",
+        "h2:特别提示：",
+        "h2:一、我们如何收集、使用、存储您的个人信息",
+        "h3:1.1 账号注册、登录",
+        "h3:1.2 对话与文件处理",
+        "h3:1.3 任务执行",
+        "h3:1.4 工作区、执行模式与审批",
+        "h3:1.5 定时任务与技能（Skills）",
+        "h3:1.6 积分、订阅与支付",
+        "h3:1.7 建议反馈与消息通知",
+        "h3:1.8 安全维护、运营统计与内容审核",
+        "h3:1.9 客户端权限调用说明",
+        "h2:二、我们如何使用 Cookie 和同类技术",
+        "h2:三、我们如何委托处理、共享您的个人信息",
+        "h3:3.1 委托处理",
+        "h3:3.2 共享",
+        "h3:3.3 转让",
+        "h3:3.4 公开披露",
+        "h3:3.5 共享、转让、公开披露个人信息时事先征得授权同意的例外",
+        "h2:四、我们如何保护您的个人信息",
+        "h2:五、我们如何存储您的个人信息",
+        "h3:5.1 存储信息的地点",
+        "h3:5.2 存储信息的期限、期限的确定方式",
+        "h2:六、您如何实现管理您个人信息的权利",
+        "h2:七、我们如何保护未成年人的个人信息",
+        "h2:八、您的个人信息如何在全球范围内转移",
+        "h2:九、我们如何更新本政策",
+        "h2:十、如何联系我们",
+        "h2:十一、其他"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "4ece2bdf5a72c4d8",
+      "textLen": 11903
+    },
+    "https://agent.xfyun.cn/studio-guide/agreements/personal-information-collection-list-zh-CN": {
+      "url": "https://agent.xfyun.cn/studio-guide/agreements/personal-information-collection-list-zh-CN",
+      "title": "AStudio",
+      "headings": [
+        "h1:AStudio 个人信息收集清单（桌面客户端）"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "617f8845564ee839",
+      "textLen": 1813
+    },
+    "https://agent.xfyun.cn/studio-guide/agreements/third-party-sharing-list-zh-CN": {
+      "url": "https://agent.xfyun.cn/studio-guide/agreements/third-party-sharing-list-zh-CN",
+      "title": "AStudio",
+      "headings": [
+        "h1:AStudio 第三方信息共享清单（桌面客户端）",
+        "h2:一、第三方共享清单",
+        "h2:二、其他说明"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "a7983da5c0d1efba",
+      "textLen": 1490
+    },
+    "https://agent.xfyun.cn/studio-guide/agreements/product-subscription-service": {
+      "url": "https://agent.xfyun.cn/studio-guide/agreements/product-subscription-service",
+      "title": "AStudio",
+      "headings": [
+        "h1:AStudio 产品订阅服务协议",
+        "h2:第一条 定义",
+        "h2:第二条 服务费用与支付",
+        "h2:第三条 账号与身份",
+        "h2:第四条 积分规则",
+        "h2:第五条 使用规则与风险提示",
+        "h2:第六条 服务可用性",
+        "h2:第七条 服务的中止与终止",
+        "h2:第八条 其他"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
+      ],
+      "textHash": "275c89afc9ba6733",
+      "textLen": 6471
+    },
+    "https://agent.xfyun.cn/studio-guide/agreements/auto-renewal-service": {
+      "url": "https://agent.xfyun.cn/studio-guide/agreements/auto-renewal-service",
+      "title": "AStudio",
+      "headings": [
+        "h1:AStudio 自动续费服务协议",
+        "h2:一、服务内容",
+        "h2:二、开通自动续费",
+        "h2:三、扣费规则",
+        "h2:四、续费提醒与价格调整",
+        "h2:五、关闭自动续费",
+        "h2:六、退款与争议处理",
+        "h2:七、其他"
+      ],
+      "images": [
+        "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg"
+      ],
+      "textHash": "1d47f114a9a1b419",
+      "textLen": 3472
+    }
+  }
+}

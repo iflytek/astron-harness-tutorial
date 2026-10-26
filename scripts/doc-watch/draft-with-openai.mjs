@@ -222,6 +222,11 @@ async function main() {
 
   const loomy = diff.find((d) => d.source === 'loomy');
   const astron = diff.find((d) => d.source === 'astronclaw');
+  const studio = diff.find((d) => d.source === 'astudio');
+  for (const p of [...(studio?.changes.newPages || []), ...(studio?.changes.changedPages || [])]) {
+    report.manual.push(`AStudio 页面有改动（含套餐与协议，请人工核对）：${p.title} — ${p.url}`);
+  }
+  for (const url of studio?.changes.removedPages || []) report.manual.push(`AStudio 页面已下线：${url}`);
 
   const newDraftable = (loomy?.changes.newPages || []).filter((p) => isDraftablePage(p.url));
 
@@ -251,7 +256,7 @@ async function main() {
   if (hasAnyChange) {
     try {
       report.webSearch = await openai(
-        '用中文联网搜索讯飞 Loomy（loomy.xunfei.cn）与讯飞 AstronClaw（星辰智能体）近 1-2 周的官方更新：' +
+        '用中文联网搜索讯飞 AStudio（agent.xfyun.cn/studio-guide）、Loomy（loomy.xunfei.cn）与 AstronClaw（星辰智能体）近 1-2 周的官方更新：' +
           '新功能、新消息渠道、新技能、版本发布说明等。只列“可能尚未写进教程、值得补充”的要点，' +
           '每条一句话并附来源链接；没有可靠新信息就回复“暂无”。',
         { webSearch: true }

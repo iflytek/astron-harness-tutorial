@@ -40,6 +40,8 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build with VitePress
+        env:
+          DOCS_BASE: /${{ github.event.repository.name }}/
         run: npm run docs:build
 
       - name: Upload artifact

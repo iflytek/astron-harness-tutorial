@@ -1,8 +1,8 @@
-# AstronClaw & Loomy 教程 🦞
+# Astron Harness Tutorial
 
 <p align="center">
-  <a href="https://iflytek.github.io/astronclaw-tutorial/">
-    <img src="https://img.shields.io/badge/AstronClaw_&_Loomy-Tutorial-blue?style=for-the-badge&logo=readthedocs" alt="AstronClaw Tutorial">
+  <a href="https://astronclaw-tutorial.space/">
+    <img src="https://img.shields.io/badge/Astron_Harness-Tutorial-blue?style=for-the-badge&logo=readthedocs" alt="Astron Harness Tutorial">
   </a>
 </p>
 
@@ -17,28 +17,29 @@
 </p>
 
 <p align="center">
-  <a href="https://iflytek.github.io/astronclaw-tutorial/">🚀 <b>在线阅读</b></a> | 
+  <a href="https://astronclaw-tutorial.space/">🚀 <b>在线阅读</b></a> |
   <a href="https://agent.xfyun.cn/astron-claw">☁️ <b>体验云端龙虾</b></a> |
   <a href="https://loomy.xunfei.cn/">💻 <b>下载 Loomy 桌面端</b></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/iflytek/astronclaw-tutorial/blob/main/LICENSE"><img src="https://img.shields.io/github/license/iflytek/astronclaw-tutorial" alt="License"></a>
-  <a href="https://github.com/iflytek/astronclaw-tutorial/actions/workflows/deploy.yml"><img src="https://img.shields.io/github/actions/workflow/status/iflytek/astronclaw-tutorial/deploy.yml?branch=main" alt="Deploy Status"></a>
+  <a href="https://github.com/iflytek/astron-harness-tutorial/blob/main/LICENSE"><img src="https://img.shields.io/github/license/iflytek/astron-harness-tutorial" alt="License"></a>
+  <a href="https://github.com/iflytek/astron-harness-tutorial/actions/workflows/deploy.yml"><img src="https://img.shields.io/github/actions/workflow/status/iflytek/astron-harness-tutorial/deploy.yml?branch=main" alt="Deploy Status"></a>
 </p>
 
 ## 项目简介
 
-本项目是一个面向 **AstronClaw** 和 **Loomy** 的完整学习教程，帮助你从零开始掌握这款强大的 AI 助理系统。
+本项目是一个面向 **AstronClaw**、**Loomy** 和 **AStudio** 的完整学习教程，帮助你从零开始掌握这款强大的 AI 助理系统。
 
 * **AstronClaw**：基于 OpenClaw 核心能力打造的**云端 AI 助手**，提供全天候在线服务，随时随地通过企业微信、钉钉、飞书等渠道为你效劳。
 * **Loomy**：聚焦真实办公场景的**桌面端 AI 工作搭子**，深入打通本地文件和系统工具，构建个人及小团队的高效自动化工作流。
+* **AStudio**：面向任务规划、工具执行与成果交付的 **AI 生产力工作台**，支持本地项目、成果预览、插件及自动化。
 
 无论你是想快速上手使用 AstronClaw 提升效率，还是想通过 Loomy 打造专属工作流，本教程都能为你提供清晰的学习路径。
 
 ## 核心内容模块
 
-本项目包含两大核心模块：
+本项目包含三大核心模块：
 
 ### ☁️ 第一部分：云端助手 AstronClaw
 * **快速上手**：一键极速部署，告别本地繁琐的环境配置，体验 7×24 小时在线的云端助手。
@@ -49,6 +50,10 @@
 * **定位与特性**：低门槛、高安全、强适配、主动协作，专注于国内办公环境和跨工具流程。
 * **典型工作场景**：自媒体运营、日常办公协同、投资与信息盯盘、日历与待办管理、远程移动办公、电商与业务运营。
 * **安全与隐私**：目录级授权，保护本地文件安全；支持自定义大模型 API 服务商。
+
+### 第三部分：生产力工作台 AStudio
+
+从 [AStudio 指南](docs/guide/astudio/intro.md)开始，学习快速上手、任务模式、项目、成果预览、案例、技巧、套餐与常见问题。另设八份协议阅读指南，覆盖网页端与客户端服务、隐私、信息清单、订阅和续费规则。每日文档巡检覆盖全部 15 个官方页面。
 
 ## 谁适合学习
 
@@ -62,8 +67,8 @@
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/iflytek/astronclaw-tutorial.git
-cd astronclaw-tutorial
+git clone https://github.com/iflytek/astron-harness-tutorial.git
+cd astron-harness-tutorial
 
 # 2. 安装依赖
 npm install

@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "AstronClaw Tutorial",
-  description: "基于 AstronClaw 打造的个人云端 AI 助手与 Loomy 桌面级搭子",
+  base: process.env.DOCS_BASE || '/',
+  title: "Astron Harness Tutorial",
+  description: "Astron Harness Tutorial：AstronClaw、Loomy 与 AStudio 实战教程",
   
   vite: {
     server: {
@@ -21,11 +22,81 @@ export default defineConfig({
           { text: '首页', link: '/' },
           { text: 'AstronClaw 指南', link: '/guide/astronclaw/introduction' },
           { text: 'Loomy 桌面助理', link: '/guide/loomy/introduction' },
-          { text: '体验 AstronClaw', link: 'https://agent.xfyun.cn/astron-claw' },
-          { text: '下载 Loomy', link: 'https://loomy.xunfei.cn/' },
-          { text: 'GitHub', link: 'https://github.com/iflytek/astronclaw-tutorial' }
+          { text: 'AStudio 指南', link: '/guide/astudio/intro' },
+          { text: 'GitHub', link: 'https://github.com/iflytek/astron-harness-tutorial' }
         ],
         sidebar: [
+          {
+            "text": "生产力工作台 AStudio",
+            "items": [
+              {
+                "text": "介绍与定位",
+                "link": "/guide/astudio/intro"
+              },
+              {
+                "text": "快速上手",
+                "link": "/guide/astudio/quickstart"
+              },
+              {
+                "text": "核心功能",
+                "link": "/guide/astudio/features"
+              },
+              {
+                "text": "实践案例",
+                "link": "/guide/astudio/cases"
+              },
+              {
+                "text": "使用技巧",
+                "link": "/guide/astudio/tips"
+              },
+              {
+                "text": "套餐与积分",
+                "link": "/guide/astudio/pricing"
+              },
+              {
+                "text": "常见问题",
+                "link": "/guide/astudio/faq"
+              },
+              {
+                "text": "协议与隐私",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "网页端用户服务协议",
+                    "link": "/guide/astudio/agreements/user-service-web"
+                  },
+                  {
+                    "text": "网页端隐私政策",
+                    "link": "/guide/astudio/agreements/privacy-web"
+                  },
+                  {
+                    "text": "客户端用户服务协议",
+                    "link": "/guide/astudio/agreements/user-service-client"
+                  },
+                  {
+                    "text": "客户端隐私政策",
+                    "link": "/guide/astudio/agreements/privacy-client"
+                  },
+                  {
+                    "text": "个人信息收集清单",
+                    "link": "/guide/astudio/agreements/personal-information-collection-list-zh-CN"
+                  },
+                  {
+                    "text": "第三方信息共享清单",
+                    "link": "/guide/astudio/agreements/third-party-sharing-list-zh-CN"
+                  },
+                  {
+                    "text": "产品订阅服务协议",
+                    "link": "/guide/astudio/agreements/product-subscription-service"
+                  },
+                  {
+                    "text": "自动续费服务协议",
+                    "link": "/guide/astudio/agreements/auto-renewal-service"
+                  }
+                ]
+              }
+            ]
+          },
           {
             text: '云端助手 AstronClaw',
             items: [
@@ -66,17 +137,87 @@ export default defineConfig({
       label: 'En',
       lang: 'en',
       link: '/en/',
-      description: 'Personal Cloud AI Assistant based on AstronClaw & Desktop Companion Loomy',
+      description: 'Practical guides to AstronClaw, Loomy and AStudio',
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
           { text: 'AstronClaw Guide', link: '/en/guide/astronclaw/introduction' },
           { text: 'Loomy Desktop', link: '/en/guide/loomy/introduction' },
-          { text: 'Try AstronClaw', link: 'https://agent.xfyun.cn/astron-claw' },
-          { text: 'Download Loomy', link: 'https://loomy.xunfei.cn/' },
-          { text: 'GitHub', link: 'https://github.com/iflytek/astronclaw-tutorial' }
+          { text: 'AStudio Guide', link: '/en/guide/astudio/intro' },
+          { text: 'GitHub', link: 'https://github.com/iflytek/astron-harness-tutorial' }
         ],
         sidebar: [
+          {
+            "text": "AStudio Workspace",
+            "items": [
+              {
+                "text": "Introduction",
+                "link": "/en/guide/astudio/intro"
+              },
+              {
+                "text": "Quick Start",
+                "link": "/en/guide/astudio/quickstart"
+              },
+              {
+                "text": "Core Features",
+                "link": "/en/guide/astudio/features"
+              },
+              {
+                "text": "Examples",
+                "link": "/en/guide/astudio/cases"
+              },
+              {
+                "text": "Tips",
+                "link": "/en/guide/astudio/tips"
+              },
+              {
+                "text": "Plans & Points",
+                "link": "/en/guide/astudio/pricing"
+              },
+              {
+                "text": "FAQ",
+                "link": "/en/guide/astudio/faq"
+              },
+              {
+                "text": "Agreements & Privacy",
+                "collapsed": true,
+                "items": [
+                  {
+                    "text": "Web User Agreement",
+                    "link": "/en/guide/astudio/agreements/user-service-web"
+                  },
+                  {
+                    "text": "Web Privacy Policy",
+                    "link": "/en/guide/astudio/agreements/privacy-web"
+                  },
+                  {
+                    "text": "Desktop User Agreement",
+                    "link": "/en/guide/astudio/agreements/user-service-client"
+                  },
+                  {
+                    "text": "Desktop Privacy Policy",
+                    "link": "/en/guide/astudio/agreements/privacy-client"
+                  },
+                  {
+                    "text": "Personal Information Collection",
+                    "link": "/en/guide/astudio/agreements/personal-information-collection-list-zh-CN"
+                  },
+                  {
+                    "text": "Third-party Sharing",
+                    "link": "/en/guide/astudio/agreements/third-party-sharing-list-zh-CN"
+                  },
+                  {
+                    "text": "Subscription Agreement",
+                    "link": "/en/guide/astudio/agreements/product-subscription-service"
+                  },
+                  {
+                    "text": "Auto-renewal Agreement",
+                    "link": "/en/guide/astudio/agreements/auto-renewal-service"
+                  }
+                ]
+              }
+            ]
+          },
           {
             text: 'Cloud Assistant AstronClaw',
             items: [

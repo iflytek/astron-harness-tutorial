@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: "Hello AstronClaw"
-  tagline: "基于 OpenClaw 核心能力，为你打造可深度定制的云端及桌面 AI 助手。"
+  name: "Astron Harness Tutorial"
+  tagline: "学习 AstronClaw、Loomy 与 AStudio，从第一个任务走向完整工作流。"
   image:
     src: https://bjcdn.openstorage.cn/aicontest/2026-03-18/29c37a17-5b33-4804-90b5-85599c29e2d5.png
     alt: AstronClaw Logo
@@ -15,7 +15,14 @@ hero:
       text: 认识桌面搭子 Loomy
       link: /guide/loomy/introduction
 
+    - theme: alt
+      text: 开始使用 AStudio
+      link: /guide/astudio/intro
+
 features:
+  - title: AStudio 全场景生产力工作台
+    details: 从目标规划到成果交付，学习项目协作、预览编辑、插件与自动化。
+    link: /guide/astudio/intro
   - title: 01 云端一键极速部署
     details: 极简流程，零代码配置，告别环境依赖。云端 7×24 小时运行，随时随地可用。
     link: /guide/astronclaw/getting-started

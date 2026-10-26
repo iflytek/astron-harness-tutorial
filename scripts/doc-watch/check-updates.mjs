@@ -121,7 +121,7 @@ function renderReport(results) {
     }
   }
   if (incomplete) lines.push('---', '', '⚠️ 文档抓取未完成，请排查错误后重试。');
-  else if (!any) lines.push('---', '', '✅ 两个文档源均无新增内容。');
+  else if (!any) lines.push('---', '', '✅ 所有文档源均无新增内容。');
   return lines.join('\n');
 }
 
@@ -146,9 +146,14 @@ async function main() {
   const wantJson = args.includes('--json');
   const reportIdx = args.indexOf('--report');
   const reportFile = reportIdx >= 0 ? args[reportIdx + 1] : null;
+  const sourceIdx = args.indexOf('--source');
+  const sourceId = sourceIdx >= 0 ? args[sourceIdx + 1] : null;
+  if (sourceIdx >= 0 && !SOURCES.some((s) => s.id === sourceId)) {
+    throw new Error(`Unknown --source: ${sourceId || '(missing)'}`);
+  }
 
   const results = [];
-  for (const src of SOURCES) {
+  for (const src of SOURCES.filter((s) => !sourceId || s.id === sourceId)) {
     process.stderr.write(`[doc-watch] capturing ${src.name} …\n`);
     const snap = await captureSource(src);
     const baseline = readBaseline(src.id);

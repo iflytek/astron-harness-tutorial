@@ -291,6 +291,281 @@
   },
   {
     "lang": "zh",
+    "heading": "AStudio 自动续费服务协议",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/auto-renewal-service) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "开通前重点阅读扣费周期、续费提醒、价格调整、关闭方式以及退款与争议处理。取消自动续费与申请退款是不同操作，请以官方协议和订阅界面的实际状态为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [网页端隐私政策](./privacy-web)\n- [客户端用户服务协议](./user-service-client)\n- [客户端隐私政策](./privacy-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 个人信息收集清单",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/personal-information-collection-list-zh-CN) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "清单按业务场景列出收集目的、方式、类型与字段。覆盖账号、文件与对话、任务执行、工作区审批、订阅支付、反馈、运行诊断和客户端权限。使用前可按自己启用的功能逐项对照。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [网页端隐私政策](./privacy-web)\n- [客户端用户服务协议](./user-service-client)\n- [客户端隐私政策](./privacy-client)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 客户端隐私政策",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/privacy-client) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "重点阅读文件与任务上下文、工作区与审批、技能与定时任务、客户端权限调用、存储以及信息管理权利。配合个人信息收集清单与第三方共享清单阅读，避免仅凭“本地执行”推断所有数据处理均不联网。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [网页端隐私政策](./privacy-web)\n- [客户端用户服务协议](./user-service-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 网页端隐私政策",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/privacy-web) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "适用于网页端信息处理。重点查看账号登录、对话和上传文件、云端任务、订阅支付、存储期限与个人信息管理权利。可结合客户端隐私政策对照运行环境差异。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [客户端用户服务协议](./user-service-client)\n- [客户端隐私政策](./privacy-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 产品订阅服务协议",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/product-subscription-service) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "购买前核对服务费用、账号要求、积分规则、使用限制、服务可用性和终止条款，并与实际订单确认页相互核对。积分有效期与促销权益应以当前官方规则为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [网页端隐私政策](./privacy-web)\n- [客户端用户服务协议](./user-service-client)\n- [客户端隐私政策](./privacy-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 第三方信息共享清单",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/third-party-sharing-list-zh-CN) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "桌面端清单列明第三方接收方、用途、信息范围及适用环境，同时区分浏览器操作、远程仓库、技能外部接口等情形。调用插件或技能时，还需核对相关服务自己的信息处理规则。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [网页端隐私政策](./privacy-web)\n- [客户端用户服务协议](./user-service-client)\n- [客户端隐私政策](./privacy-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 客户端用户服务协议",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/user-service-client) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "适用于桌面客户端。除账号和服务规则外，使用前应结合实际工作区、文件操作和第三方服务核对授权范围。客户端隐私政策另行说明信息处理方式。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [网页端隐私政策](./privacy-web)\n- [客户端隐私政策](./privacy-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 网页端用户服务协议",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/user-service-web) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "适用于网页端服务。阅读时重点核对账号管理、使用行为、生成成果相关权利、第三方服务、费用以及投诉反馈条款。不要把网页端条款与客户端条款混用。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端隐私政策](./privacy-web)\n- [客户端用户服务协议](./user-service-client)\n- [客户端隐私政策](./privacy-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 实践案例",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/cases) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "文献调研练习",
+    "content": "官方案例以 Transformer 相关研究为例。练习时可补充你的研究问题、时间范围和筛选标准，要求每条结果提供可核验来源，并检查论文是否真正相关。\n\n示例任务：“围绕我的研究问题整理相关论文，将标题、年份、来源链接和入选理由列成表格；无法核实的信息单独标记。”"
+  },
+  {
+    "lang": "zh",
+    "heading": "网站原型练习",
+    "content": "官方还展示了使用规划模式构建 Skill 发现网站的场景。先确认受众、页面结构、数据来源及更新要求，再执行并在预览区逐项验证。\n\n示例任务：“先为我的个人知识导航站提出页面方案，明确导航和搜索的行为，确认后再实现。”\n\n以上为教程练习提示，不代表已替你检索论文或发布网站。继续阅读[使用技巧](./tips)提高迭代效率。"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 常见问题",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/faq) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "独立任务为什么进入了项目？",
+    "content": "项目入口会关联当前工作空间。创建独立任务请切换“日常”，或使用项目中的“独立任务”区域。"
+  },
+  {
+    "lang": "zh",
+    "heading": "需要总是开启规划或目标模式吗？",
+    "content": "不需要。普通任务可直接发送；先审阅方案时用规划模式，持续多轮推进时用目标模式。"
+  },
+  {
+    "lang": "zh",
+    "heading": "归档后还能继续吗？",
+    "content": "在“设置 > 已归档”中恢复。归档用于整理列表，不等于删除。"
+  },
+  {
+    "lang": "zh",
+    "heading": "预览里不能直接修改怎么办？",
+    "content": "表格、图片和 PDF 的调整通过对话完成，然后刷新。网页点选无法定位 Canvas 等元素时，用文字描述位置与预期效果。"
+  },
+  {
+    "lang": "zh",
+    "heading": "自动化设置错了怎么办？",
+    "content": "官方当前支持创建、禁用与删除，暂不支持直接修改已有自动化。先手动运行验证；需要调整时可删除旧任务后重新创建。"
+  },
+  {
+    "lang": "zh",
+    "heading": "安装异常或其他问题如何处理？",
+    "content": "核对安装来源和支持的系统，再查看[官方故障排查](https://agent.xfyun.cn/studio-guide/faq)。其他问题可在“设置 > 建议反馈”中提供复现步骤、版本及必要截图。"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 核心功能",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/features) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "日常与项目",
+    "content": "“日常”适合独立任务，系统为其建立工作目录；“项目”关联你选择的本地文件夹，适合持续维护资料或代码。新建任务前先检查当前项目，避免把独立任务放进错误目录。"
+  },
+  {
+    "lang": "zh",
+    "heading": "任务模式",
+    "content": "| 模式 | 用法 |\n| --- | --- |\n| 默认 | 直接发送需求 |\n| 规划模式 | 输入框“+”中开启，审阅方案并确认“开始实现” |\n| 目标模式 | 输入框“+”中开启，围绕目标持续推进；可补充要求、暂停或清除目标 |"
+  },
+  {
+    "lang": "zh",
+    "heading": "查看与调整成果",
+    "content": "文本支持编辑保存、行内评论、引用片段和版本对比。表格、图片和 PDF 通过对话提出修改，完成后刷新预览。网页可切换交互体验与元素点选，完成后请求发布分享地址。"
+  },
+  {
+    "lang": "zh",
+    "heading": "项目、权限与扩展",
+    "content": "文件树和 Diff 用于检查变更；终端用于运行测试；版本管理用于查看 Git 状态。权限选项包含默认“帮我批准”、“请求批准”和“完全访问”，按任务范围选择。\n\n自动化可通过页面或对话创建；插件中心用于发现、安装和配置外部能力。任务可搜索、置顶、归档，并从“设置 > 已归档”恢复。"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 介绍与定位",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/intro) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 是什么",
+    "content": "AStudio 是面向多类工作任务的 AI 生产力工作台。你提出目标并补充资料，它可以规划步骤、使用工具并交付文档、表格、网页、图片或代码。成果出现在预览区后，还可以继续对话或针对具体位置修改。"
+  },
+  {
+    "lang": "zh",
+    "heading": "从哪里开始",
+    "content": "| 你的需求 | 建议入口 |\n| --- | --- |\n| 第一次体验 | [安装并完成第一个任务](./quickstart) |\n| 处理一次独立工作 | 使用“日常”，附上参考文件 |\n| 持续维护本地资料或代码 | 使用“项目”，关联对应文件夹 |\n| 执行前确认方案 | [规划模式](./features#任务模式) |\n| 了解消费与信息处理 | [套餐与积分](./pricing)、[客户端隐私政策](./agreements/privacy-client) |\n\n本栏目覆盖 AStudio；云端助手 AstronClaw 和桌面搭子 Loomy 各有独立教程。三款产品的功能和计费规则请分别查看，避免混用。"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 套餐与积分",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/pricing) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "套餐如何选择",
+    "content": "官方提供体验版、标准版与高级版。它们的月度积分、每日登录奖励、加购折扣和资源权益不同；单月购买、连续包月与连续包年的价格也不同。\n\n请在[官方价格页](https://agent.xfyun.cn/studio-guide/pricing)对照当前套餐表，并在付款页确认金额、周期及优惠条件。本教程不把限时促销价作为长期承诺。"
+  },
+  {
+    "lang": "zh",
+    "heading": "积分有效期",
+    "content": "| 类型 | 官方当前说明 |\n| --- | --- |\n| 新用户奖励 | 1,000 积分，3 个月有效 |\n| 每日登录奖励 | 领取后 31 天有效 |\n| 套餐积分 | 当前会员计费周期内使用；年付也按月刷新 |\n| 加购积分 | 当前会员计费月内使用 |\n\n具体到期时间以积分中心为准。积分用于模型或收费 API 调用，可在任务记录中查看消耗。官方按到期先后扣减；到期相同时，依次使用赠送、套餐和加购积分。"
+  },
+  {
+    "lang": "zh",
+    "heading": "订阅前核对",
+    "content": "确认本期结束时间、自动续费状态和下一次扣费金额。官方当前不支持周期中途切换档位；取消续费后，已付费周期权益保留到期。阅读[订阅协议](./agreements/product-subscription-service)与[续费协议](./agreements/auto-renewal-service)。"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 快速上手",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/quickstart) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "安装与登录",
+    "content": "从[官方快速上手页](https://agent.xfyun.cn/studio-guide/quickstart)进入客户端下载入口。官方列出的环境为 Apple 芯片 Mac，以及 Windows 10 / 11 64 位系统。安装后登录账号。"
+  },
+  {
+    "lang": "zh",
+    "heading": "完成第一个任务",
+    "content": "1. 在左侧选择“日常”，点击“新建任务”。\n2. 在中间输入目标；有资料时，通过附件入口或拖拽加入文件。\n3. 发送后观察执行过程，在右侧查看生成结果。\n4. 指出需要修改的内容，继续调整并检查最终成果。\n\n可以先尝试：“请将这份会议记录整理成行动清单，列出负责人、截止时间和未明确的问题。”这是练习示例，请提供实际记录再执行。"
+  },
+  {
+    "lang": "zh",
+    "heading": "认识界面",
+    "content": "左侧负责项目、任务与设置；中间用于沟通和查看执行过程；右侧用于文件、网页、代码变更和终端预览。需要持续处理同一文件夹时，下一步学习[项目与任务模式](./features)。新用户和登录积分的有效期见[套餐说明](./pricing)。"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 使用技巧",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/tips) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "把要求变得具体",
+    "content": "方向不明确时，先讨论目标再执行；有参考材料时，说明要借鉴的是结构、语气还是视觉布局。涉及多个文件的修改，先用规划模式核对范围。"
+  },
+  {
+    "lang": "zh",
+    "heading": "依据实际成果反馈",
+    "content": "整体方向通过对话调整，局部界面用点选反馈，少量文本直接编辑。描述“哪里、现在怎样、希望怎样”，比泛泛要求更容易验证。"
+  },
+  {
+    "lang": "zh",
+    "heading": "保存可复用的上下文",
+    "content": "长对话结束前，整理背景、已确认结论、约束、进度和下一步，作为新任务的交接材料。重复任务中形成的步骤和检查标准，可提炼成个人技能。"
+  },
+  {
+    "lang": "zh",
+    "heading": "验证自动化",
+    "content": "自动化创建后先手动运行一次，核对输入资料、产出内容和保存位置。实际结果符合预期后再依赖定时执行。"
+  },
+  {
+    "lang": "zh",
     "heading": "AI 搭子",
     "content": "Loomy 的 AI 搭子不是冷冰冰的工具，而是一个有性格、懂任务、能陪你一起推进事情的数字伙伴。TA 可以帮你拆任务、理思路、补灵感，也会在一次次协作里慢慢熟悉你的节奏，成为更懂你的好队友。\n\n从使用体验上看，切换搭子就是切换不同的协作风格。不同搭子会有不同的名字、头像、人设、语气和做事偏好，但可调用的工具、记忆能力和基础任务能力保持一致。你可以把搭子理解成同一套 Loomy 能力上的不同协作人格。\n\n![你的 AI 搭子团已集结](/loomy/companions/companion-team-hero.png)"
   },
@@ -448,6 +723,11 @@
     "lang": "zh",
     "heading": "Loomy 可以使用我自己的模型服务提供商 API Key 吗？",
     "content": "可以。Loomy 提供默认的模型服务，方便用户开箱即用；如果你有自己的模型服务提供商，也可以在 Loomy 中自行配置 API Key 进行使用。\n当你使用自己的 API Key 时，Loomy 不会额外上传任何涉密信息。相关 Key 只会保存在本地，并在你发起对应模型调用时被本地使用，不会被 Loomy 平台托管或同步到云端。"
+  },
+  {
+    "lang": "zh",
+    "heading": "Loomy 手机端会读取我的剪贴板吗？",
+    "content": "只有在你主动操作时才会。点击复制消息时，Loomy 把所选内容写入系统剪贴板；在输入框中选择粘贴时，只读取本次粘贴的文本并填入输入框。Loomy 不会在后台持续或定期读取剪贴板，粘贴操作本身也不会把剪贴板内容上传到服务器——只有你确认发送后，这段文字才会作为你提交的指令被处理。详见 [Loomy 隐私政策（移动端）](https://loomy.xunfei.cn/docs/Safe/Loomy-mobile-privacy) 第 2.4 节。"
   },
   {
     "lang": "zh",
@@ -1321,6 +1601,281 @@
   },
   {
     "lang": "en",
+    "heading": "AStudio Auto-renewal Agreement",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/auto-renewal-service) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "Before enabling renewal, check billing timing, reminders, price changes, cancellation and refund or dispute procedures. Cancelling renewal and requesting a refund are different actions; verify the agreement and your subscription state."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Web Privacy Policy](./privacy-web)\n- [Desktop User Agreement](./user-service-client)\n- [Desktop Privacy Policy](./privacy-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Personal Information Collection",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/personal-information-collection-list-zh-CN) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "The desktop collection list organizes purposes, methods, categories and fields by scenario: accounts, conversations and files, execution, approvals, payments, feedback, diagnostics and device permissions. Match the list to the features you enable."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Web Privacy Policy](./privacy-web)\n- [Desktop User Agreement](./user-service-client)\n- [Desktop Privacy Policy](./privacy-client)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Desktop Privacy Policy",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/privacy-client) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "Review task context, workspaces and approvals, skills and scheduled tasks, device permissions, retention and information rights. Read the collection and sharing lists alongside it; local execution alone does not describe every data flow."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Web Privacy Policy](./privacy-web)\n- [Desktop User Agreement](./user-service-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Web Privacy Policy",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/privacy-web) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "Covers web data handling, including sign-in, conversations and uploads, cloud tasks, payments, retention and personal information rights. Compare the desktop policy when choosing an environment."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Desktop User Agreement](./user-service-client)\n- [Desktop Privacy Policy](./privacy-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Subscription Agreement",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/product-subscription-service) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "Before purchase, review fees, account requirements, point rules, usage restrictions, availability and termination terms alongside checkout details. Verify point validity and promotional benefits against current official rules."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Web Privacy Policy](./privacy-web)\n- [Desktop User Agreement](./user-service-client)\n- [Desktop Privacy Policy](./privacy-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Third-party Sharing",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/third-party-sharing-list-zh-CN) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "The desktop list identifies recipients, purposes, data categories and environments. It separately explains browser actions, remote repositories and external skill interfaces. Check the relevant service rules when using plugins or skills."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Web Privacy Policy](./privacy-web)\n- [Desktop User Agreement](./user-service-client)\n- [Desktop Privacy Policy](./privacy-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Desktop User Agreement",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/user-service-client) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "Covers the desktop client. Alongside account and service rules, check the scope of workspace access, file operations and third-party services. Data handling is described separately in the desktop privacy policy."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Web Privacy Policy](./privacy-web)\n- [Desktop Privacy Policy](./privacy-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Web User Agreement",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/user-service-web) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "Covers the web service. Review account rules, permitted use, rights relating to outputs, third-party services, fees and feedback procedures. Keep web and desktop terms distinct."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web Privacy Policy](./privacy-web)\n- [Desktop User Agreement](./user-service-client)\n- [Desktop Privacy Policy](./privacy-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Examples",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/cases) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+  },
+  {
+    "lang": "en",
+    "heading": "Literature research",
+    "content": "The official example explores Transformer research. For your own exercise, specify the research question, date range and selection criteria. Ask for verifiable sources and check relevance.\n\nPractice prompt: “Create a table of relevant papers with titles, years, source links and reasons for inclusion. Flag information you cannot verify.”"
+  },
+  {
+    "lang": "en",
+    "heading": "Website prototype",
+    "content": "The official website example uses Plan mode for Skill discovery. Establish the audience, page structure, sources and update requirements before implementation, then validate the preview.\n\nPractice prompt: “Propose a personal knowledge directory. Explain navigation and search behavior before implementing it.”\n\nThese are exercises, not completed searches or published sites. Continue with [tips](./tips)."
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio FAQ",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/faq) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+  },
+  {
+    "lang": "en",
+    "heading": "Why did a task enter a project?",
+    "content": "The project entry uses the active workspace. For standalone work, use Daily or the independent-task section."
+  },
+  {
+    "lang": "en",
+    "heading": "Must I select Plan or Goal mode?",
+    "content": "No. Send ordinary requests directly; use Plan for prior review or Goal for continued execution."
+  },
+  {
+    "lang": "en",
+    "heading": "Can I restore archived tasks?",
+    "content": "Yes, under Settings > Archived. Archiving is not deletion."
+  },
+  {
+    "lang": "en",
+    "heading": "What if a preview cannot be edited?",
+    "content": "Request spreadsheet, image and PDF edits in conversation, then refresh. Describe the location and desired result when website element selection cannot target content such as Canvas."
+  },
+  {
+    "lang": "en",
+    "heading": "Can I change automation?",
+    "content": "The current FAQ supports creation, disabling and deletion, but not direct modification. Test manually; recreate when adjustments are needed."
+  },
+  {
+    "lang": "en",
+    "heading": "How do I report problems?",
+    "content": "Check the installer source and supported system, then consult [official troubleshooting](https://agent.xfyun.cn/studio-guide/faq). Send reproduction steps, versions and relevant screenshots through Settings > Feedback."
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Core Features",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/features) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+  },
+  {
+    "lang": "en",
+    "heading": "Daily and Projects",
+    "content": "Daily creates a workspace for standalone work. Projects uses a local folder you select for ongoing files or code. Check the active project before starting a task."
+  },
+  {
+    "lang": "en",
+    "heading": "Task modes",
+    "content": "| Mode | Use |\n| --- | --- |\n| Default | Send a request directly |\n| Plan | Enable under “+”, review the plan, then start implementation |\n| Goal | Enable under “+” for continued progress; add requirements, pause or clear the goal |"
+  },
+  {
+    "lang": "en",
+    "heading": "Review deliverables",
+    "content": "Text supports editing, comments, excerpts and version comparison. Request spreadsheet, image and PDF changes through conversation, then refresh. Websites support interaction and element selection; request a public link when ready."
+  },
+  {
+    "lang": "en",
+    "heading": "Tools and organization",
+    "content": "Inspect files and diffs, run tests in the terminal, and review Git state. Choose an approval policy appropriate to the work. Create automation through its page or conversation, and configure extensions in the plugin center. Search, pin or archive tasks; restore them under Settings > Archived."
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Introduction",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/intro) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+  },
+  {
+    "lang": "en",
+    "heading": "What is AStudio?",
+    "content": "AStudio is an AI productivity workspace. Give it a goal and supporting material to plan work, use tools and deliver documents, spreadsheets, websites, images or code. Review the result in the preview panel, then refine it through conversation or targeted edits."
+  },
+  {
+    "lang": "en",
+    "heading": "Choose a starting point",
+    "content": "| Your task | Start here |\n| --- | --- |\n| First visit | [Install and complete a task](./quickstart) |\n| Standalone work | Use Daily and attach reference files |\n| Ongoing local work | Use Projects and select the relevant folder |\n| Review before execution | [Plan mode](./features#task-modes) |\n| Understand charges and data handling | [Plans](./pricing) and [desktop privacy](./agreements/privacy-client) |\n\nAstronClaw and Loomy have separate tutorials. Check each product's own features and billing rules."
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Plans & Points",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/pricing) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+  },
+  {
+    "lang": "en",
+    "heading": "Compare plans",
+    "content": "AStudio offers Trial, Standard and Advanced plans with different point allowances, daily rewards, top-up discounts and resource benefits. One-month, recurring monthly and recurring annual billing have different prices.\n\nCompare the [current official table](https://agent.xfyun.cn/studio-guide/pricing) and confirm the checkout amount, period and promotion conditions."
+  },
+  {
+    "lang": "en",
+    "heading": "Point validity",
+    "content": "| Category | Current rule |\n| --- | --- |\n| New-user reward | 1,000 points, valid for 3 months |\n| Daily reward | 31 days after collection |\n| Plan allowance | Current billing cycle; annual plans refresh monthly |\n| Purchased top-ups | Current membership billing month |\n\nCheck the point center for exact expiry. Model and paid API usage consume points. Earliest-expiring points are used first; equal expiry prioritizes rewards, plan allowance, then top-ups."
+  },
+  {
+    "lang": "en",
+    "heading": "Before subscribing",
+    "content": "Check renewal status and the next charge. The current guide does not support mid-cycle tier changes; cancellation retains paid benefits until expiry. Read the [subscription](./agreements/product-subscription-service) and [renewal](./agreements/auto-renewal-service) terms."
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Quick Start",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/quickstart) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+  },
+  {
+    "lang": "en",
+    "heading": "Install and sign in",
+    "content": "Use the download entry on the [official quick-start page](https://agent.xfyun.cn/studio-guide/quickstart). Supported environments listed there are Apple silicon Macs and 64-bit Windows 10 / 11. Install the client and sign in."
+  },
+  {
+    "lang": "en",
+    "heading": "Complete your first task",
+    "content": "1. Select Daily in the left navigation and create a task.\n2. Describe the desired result in the center. Attach or drag in reference files.\n3. Send the request and inspect the result in the right panel.\n4. Request specific changes and check the final output.\n\nPractice with your own meeting notes: “Create an action list with owners, deadlines and unresolved questions.”"
+  },
+  {
+    "lang": "en",
+    "heading": "Find your way around",
+    "content": "The left panel manages tasks, projects and settings; the center contains conversation and execution; the right panel previews files, websites, changes and the terminal. Continue to [projects and task modes](./features) for ongoing folder-based work. See [plans](./pricing) for point validity."
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Tips",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/tips) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+  },
+  {
+    "lang": "en",
+    "heading": "Make requests concrete",
+    "content": "Clarify uncertain goals before execution. With reference material, identify the structure, tone or layout to follow. Review a plan before changes spanning several files."
+  },
+  {
+    "lang": "en",
+    "heading": "Respond to the actual result",
+    "content": "Use conversation for broad changes, element selection for local interface feedback, and direct editing for small text adjustments. Describe the location, current behavior and desired result."
+  },
+  {
+    "lang": "en",
+    "heading": "Preserve useful context",
+    "content": "Before moving to a new task, prepare a handover with background, decisions, constraints, progress and next steps. Turn repeatable procedures and checks into a personal skill."
+  },
+  {
+    "lang": "en",
+    "heading": "Validate automation",
+    "content": "Run new automation manually once. Check its input, output and save location before relying on the schedule."
+  },
+  {
+    "lang": "en",
     "heading": "AI Companions",
     "content": "Loomy's AI companions are not cold, mechanical tools, but digital partners with personality, an understanding of your tasks, and the ability to push work forward alongside you. A companion can help you break down tasks, organize your thoughts, and spark ideas, and gradually gets familiar with your rhythm through repeated collaboration to become a teammate who understands you better.\n\nIn terms of experience, switching companions means switching collaboration styles. Different companions have different names, avatars, personas, tones, and working preferences, but the tools they can call, their memory, and their basic task abilities remain the same. You can think of a companion as a different collaborative personality on the same set of Loomy capabilities.\n\n![Your AI companion team has assembled](/loomy/companions/companion-team-hero.png)"
   },
@@ -1478,6 +2033,11 @@
     "lang": "en",
     "heading": "Can Loomy use my own model service provider API Key?",
     "content": "Yes. Loomy provides default model services for users out of the box; if you have your own model service provider, you can also configure your own API Key in Loomy to use.\nWhen you use your own API Key, Loomy will not upload any additional confidential information. The relevant key will only be saved locally and used locally when you initiate the corresponding model call. It will not be hosted or synchronized to the cloud by the Loomy platform."
+  },
+  {
+    "lang": "en",
+    "heading": "Does the Loomy mobile app read my clipboard?",
+    "content": "Only when you act. When you tap copy on a message, Loomy writes the selected content to the system clipboard; when you choose paste in the input box, it reads only the text you are pasting and fills it in. Loomy does not read the clipboard continuously or periodically in the background, and pasting alone does not upload clipboard content to its servers — the text is processed as your instruction only after you confirm sending it. See section 2.4 of the [Loomy Privacy Policy (Mobile)](https://loomy.xunfei.cn/docs/Safe/Loomy-mobile-privacy) for details."
   },
   {
     "lang": "en",

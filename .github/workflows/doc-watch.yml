@@ -1,6 +1,6 @@
 name: doc-watch
 
-# 每日抓取上游文档站（Loomy Docs / AstronClaw 使用指南），与仓库基线对比：
+# 每日抓取上游文档站（Loomy Docs / AstronClaw 使用指南 / AStudio 全部 15 个指南与协议页面），与仓库基线对比：
 #   1) 始终：发现新增内容时维护一条 [doc-watch] Issue 汇总待补全清单。
 #   2) 可选：若配置了 OPENAI_API_KEY secret，则用 OpenAI（自带 web_search，按你自己的
 #      API 计费、不消耗 Claude 额度）起草新页面+下载配图+联网检索官方更新，并开一个待审 PR。
@@ -15,7 +15,12 @@ name: doc-watch
 on:
   schedule:
     - cron: '0 1 * * *'
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Capture and upload reports without issues, comments or PRs'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -46,7 +51,7 @@ jobs:
           set -e
 
       - name: Upsert summary issue on changes
-        if: steps.watch.outputs.code == '1'
+        if: inputs.dry_run != true && steps.watch.outputs.code == '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -75,15 +80,15 @@ jobs:
       # ---- 可选：OpenAI 起草 + 自动开 PR（仅在配置了 OPENAI_API_KEY 时启用）----
       - name: Draft new pages with OpenAI
         id: draft
-        if: steps.watch.outputs.code == '1' && env.OPENAI_API_KEY != ''
+        if: inputs.dry_run != true && steps.watch.outputs.code == '1' && env.OPENAI_API_KEY != ''
         run: |
           set +e
           node scripts/doc-watch/draft-with-openai.mjs
           echo "code=$?" >> "$GITHUB_OUTPUT"
           set -e
 
-      - name: Build, refresh baseline and open PR
-        if: steps.watch.outputs.code == '1' && env.OPENAI_API_KEY != ''
+      - name: Build and open PR for review
+        if: inputs.dry_run != true && steps.watch.outputs.code == '1' && env.OPENAI_API_KEY != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -93,7 +98,7 @@ jobs:
           fi
           npm ci
           npm run docs:build
-          node scripts/doc-watch/check-updates.mjs --update || true
+          # Baselines are accepted only after manual review; do not hide unresolved changes.
 
           DATE=$(date +%Y-%m-%d)
           BRANCH="docs/sync-upstream-$(date +%Y%m%d-%H%M)"
@@ -105,14 +110,14 @@ jobs:
           git add docs/guide docs/en docs/public/loomy docs/public/astronclaw \
                   docs/public/docs-index.json docs/.vitepress/config.mts \
                   scripts/doc-watch/baseline/
-          git commit -m "docs: 同步上游文档新增内容 ($DATE)"
+          git commit -s -m "docs: 同步上游文档新增内容 ($DATE)"
           git push -u origin "$BRANCH"
           gh pr create --base main --head "$BRANCH" \
             --title "docs: 同步上游文档新增内容 ($DATE)" \
             --body-file doc-watch-draft-pr.md
 
       - name: Report capture failure
-        if: steps.watch.outputs.code == '2'
+        if: inputs.dry_run != true && steps.watch.outputs.code == '2'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -138,7 +143,7 @@ jobs:
           fi
 
       - name: Close capture-failure issue after recovery
-        if: steps.watch.outputs.code == '0' || steps.watch.outputs.code == '1'
+        if: ${{ !inputs.dry_run && (steps.watch.outputs.code == '0' || steps.watch.outputs.code == '1') }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -150,8 +155,14 @@ jobs:
               done
 
       - name: Upload report artifact
-        if: steps.watch.outputs.code == '1'
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: doc-watch-report
-          path: doc-watch-report.md
+          path: |
+            doc-watch-report.md
+            doc-watch-stderr.log
+
+      - name: Fail on incomplete capture
+        if: steps.watch.outputs.code == '2'
+        run: exit 1
