@@ -1,10 +1,22 @@
 # AStudio 快速上手
 
-> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/quickstart) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。
+> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/quickstart) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。
 
 ## 安装与登录
 
 从[官方快速上手页](https://agent.xfyun.cn/studio-guide/quickstart)进入客户端下载入口。官方列出的环境为 Apple 芯片 Mac，以及 Windows 10 / 11 64 位系统。安装后登录账号。
+
+
+> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。
+
+<div class="guide-shots">
+
+<figure>
+<img src="/astudio/images/guide-img-01-RhqrKG.png" alt="新用户福利" loading="lazy" />
+<figcaption>新用户福利</figcaption>
+</figure>
+
+</div>
 
 ## 完成第一个任务
 
@@ -18,3 +30,12 @@
 ## 认识界面
 
 左侧负责项目、任务与设置；中间用于沟通和查看执行过程；右侧用于文件、网页、代码变更和终端预览。需要持续处理同一文件夹时，下一步学习[项目与任务模式](./features)。新用户和登录积分的有效期见[套餐说明](./pricing)。
+
+<div class="guide-shots">
+
+<figure>
+<img src="/astudio/images/guide-img-02-mXA0XE.png" alt="工作界面布局" loading="lazy" />
+<figcaption>工作界面布局</figcaption>
+</figure>
+
+</div>

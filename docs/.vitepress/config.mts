@@ -2,30 +2,44 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: process.env.DOCS_BASE || '/',
-  title: "Astron Harness Tutorial",
-  description: "Astron Harness Tutorial：AstronClaw、Loomy 与 AStudio 实战教程",
-  
-  vite: {
-    server: {
-      proxy: {
-        '/api/chat': 'http://127.0.0.1:3001'
+  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: `${process.env.DOCS_BASE || '/'}astudio/brand/mark.svg` }]],
+  "title": "Astron Harness Tutorial",
+  "description": "Astron Harness Tutorial：AStudio、Loomy 与 AstronClaw 图文实战教程",
+  "vite": {
+    "server": {
+      "proxy": {
+        "/api/chat": "http://127.0.0.1:3001"
       }
     }
   },
-
-  locales: {
-    root: {
-      label: '中文',
-      lang: 'zh-CN',
-      themeConfig: {
-        nav: [
-          { text: '首页', link: '/' },
-          { text: 'AstronClaw 指南', link: '/guide/astronclaw/introduction' },
-          { text: 'Loomy 桌面助理', link: '/guide/loomy/introduction' },
-          { text: 'AStudio 指南', link: '/guide/astudio/intro' },
-          { text: 'GitHub', link: 'https://github.com/iflytek/astron-harness-tutorial' }
+  "locales": {
+    "root": {
+      "label": "中文",
+      "lang": "zh-CN",
+      "themeConfig": {
+        "nav": [
+          {
+            "text": "首页",
+            "link": "/"
+          },
+          {
+            "text": "AStudio 指南",
+            "link": "/guide/astudio/intro"
+          },
+          {
+            "text": "Loomy 桌面助理",
+            "link": "/guide/loomy/introduction"
+          },
+          {
+            "text": "AstronClaw 指南",
+            "link": "/guide/astronclaw/introduction"
+          },
+          {
+            "text": "GitHub",
+            "link": "https://github.com/iflytek/astron-harness-tutorial"
+          }
         ],
-        sidebar: [
+        "sidebar": [
           {
             "text": "生产力工作台 AStudio",
             "items": [
@@ -95,58 +109,138 @@ export default defineConfig({
                   }
                 ]
               }
-            ]
+            ],
+            "collapsed": false
           },
           {
-            text: '云端助手 AstronClaw',
-            items: [
-              { text: '核心优势与对比', link: '/guide/astronclaw/introduction' },
-              { text: '快速上手指南', link: '/guide/astronclaw/getting-started' },
-              { text: '技能系统详解', link: '/guide/astronclaw/skills' },
-              { text: '积分体系与订阅', link: '/guide/astronclaw/billing' },
-              { text: '实际应用场景', link: '/guide/astronclaw/scenarios' },
-              { text: '渠道配置指南', link: '/guide/astronclaw/channels' },
-              { text: '常见问题', link: '/guide/astronclaw/faq' }
-            ]
+            "text": "桌面搭子 Loomy",
+            "items": [
+              {
+                "text": "介绍与定位",
+                "link": "/guide/loomy/introduction"
+              },
+              {
+                "text": "快速开始",
+                "link": "/guide/loomy/quick-start"
+              },
+              {
+                "text": "模型与聊天",
+                "link": "/guide/loomy/models"
+              },
+              {
+                "text": "资料库",
+                "link": "/guide/loomy/knowledge-base"
+              },
+              {
+                "text": "AI 搭子",
+                "link": "/guide/loomy/companions"
+              },
+              {
+                "text": "工具箱与技能系统",
+                "link": "/guide/loomy/toolbox"
+              },
+              {
+                "text": "定时任务与积分",
+                "link": "/guide/loomy/scheduled-tasks"
+              },
+              {
+                "text": "远程控制",
+                "link": "/guide/loomy/remote-control"
+              },
+              {
+                "text": "办公 CLI 集成",
+                "link": "/guide/loomy/office-cli"
+              },
+              {
+                "text": "典型工作场景",
+                "link": "/guide/loomy/scenarios"
+              },
+              {
+                "text": "实战：打造个人 AI 搭子",
+                "link": "/guide/loomy/personal-companion"
+              },
+              {
+                "text": "常见问题",
+                "link": "/guide/loomy/faq"
+              }
+            ],
+            "collapsed": true
           },
           {
-            text: '桌面搭子 Loomy',
-            items: [
-              { text: '介绍与定位', link: '/guide/loomy/introduction' },
-              { text: '快速开始', link: '/guide/loomy/quick-start' },
-              { text: '模型与聊天', link: '/guide/loomy/models' },
-              { text: '资料库', link: '/guide/loomy/knowledge-base' },
-              { text: 'AI 搭子', link: '/guide/loomy/companions' },
-              { text: '工具箱与技能系统', link: '/guide/loomy/toolbox' },
-              { text: '定时任务与积分', link: '/guide/loomy/scheduled-tasks' },
-              { text: '远程控制', link: '/guide/loomy/remote-control' },
-              { text: '办公 CLI 集成', link: '/guide/loomy/office-cli' },
-              { text: '典型工作场景', link: '/guide/loomy/scenarios' },
-              { text: '实战：打造个人 AI 搭子', link: '/guide/loomy/personal-companion' },
-              { text: '常见问题', link: '/guide/loomy/faq' }
-            ]
+            "text": "云端助手 AstronClaw",
+            "items": [
+              {
+                "text": "核心优势与对比",
+                "link": "/guide/astronclaw/introduction"
+              },
+              {
+                "text": "快速上手指南",
+                "link": "/guide/astronclaw/getting-started"
+              },
+              {
+                "text": "技能系统详解",
+                "link": "/guide/astronclaw/skills"
+              },
+              {
+                "text": "积分体系与订阅",
+                "link": "/guide/astronclaw/billing"
+              },
+              {
+                "text": "实际应用场景",
+                "link": "/guide/astronclaw/scenarios"
+              },
+              {
+                "text": "渠道配置指南",
+                "link": "/guide/astronclaw/channels"
+              },
+              {
+                "text": "常见问题",
+                "link": "/guide/astronclaw/faq"
+              }
+            ],
+            "collapsed": true
           }
         ],
-        footer: {
-          message: '基于 Apache License 2.0 许可发布。',
+        "footer": {
+          "message": "基于 Apache License 2.0 许可发布。",
           copyright: `Copyright © ${new Date().getFullYear()} iFlytek Co., Ltd.`
-        }
+        },
+        "logo": {
+          "src": "/astudio/brand/logo.svg",
+          "alt": "AStudio"
+        },
+        "siteTitle": "Astron Harness Tutorial"
       }
     },
-    en: {
-      label: 'En',
-      lang: 'en',
-      link: '/en/',
-      description: 'Practical guides to AstronClaw, Loomy and AStudio',
-      themeConfig: {
-        nav: [
-          { text: 'Home', link: '/en/' },
-          { text: 'AstronClaw Guide', link: '/en/guide/astronclaw/introduction' },
-          { text: 'Loomy Desktop', link: '/en/guide/loomy/introduction' },
-          { text: 'AStudio Guide', link: '/en/guide/astudio/intro' },
-          { text: 'GitHub', link: 'https://github.com/iflytek/astron-harness-tutorial' }
+    "en": {
+      "label": "En",
+      "lang": "en",
+      "link": "/en/",
+      "description": "Illustrated guides to AStudio, Loomy and AstronClaw",
+      "themeConfig": {
+        "nav": [
+          {
+            "text": "Home",
+            "link": "/en/"
+          },
+          {
+            "text": "AStudio Guide",
+            "link": "/en/guide/astudio/intro"
+          },
+          {
+            "text": "Loomy Desktop",
+            "link": "/en/guide/loomy/introduction"
+          },
+          {
+            "text": "AstronClaw Guide",
+            "link": "/en/guide/astronclaw/introduction"
+          },
+          {
+            "text": "GitHub",
+            "link": "https://github.com/iflytek/astron-harness-tutorial"
+          }
         ],
-        sidebar: [
+        "sidebar": [
           {
             "text": "AStudio Workspace",
             "items": [
@@ -216,46 +310,113 @@ export default defineConfig({
                   }
                 ]
               }
-            ]
+            ],
+            "collapsed": false
           },
           {
-            text: 'Cloud Assistant AstronClaw',
-            items: [
-              { text: 'Core Advantages', link: '/en/guide/astronclaw/introduction' },
-              { text: 'Getting Started', link: '/en/guide/astronclaw/getting-started' },
-              { text: 'Skills System', link: '/en/guide/astronclaw/skills' },
-              { text: 'Billing & Points', link: '/en/guide/astronclaw/billing' },
-              { text: 'Scenarios', link: '/en/guide/astronclaw/scenarios' },
-              { text: 'Channels Config', link: '/en/guide/astronclaw/channels' },
-              { text: 'FAQ', link: '/en/guide/astronclaw/faq' }
-            ]
+            "text": "Desktop Companion Loomy",
+            "items": [
+              {
+                "text": "Introduction",
+                "link": "/en/guide/loomy/introduction"
+              },
+              {
+                "text": "Quick Start",
+                "link": "/en/guide/loomy/quick-start"
+              },
+              {
+                "text": "Models & Chat",
+                "link": "/en/guide/loomy/models"
+              },
+              {
+                "text": "Knowledge Base",
+                "link": "/en/guide/loomy/knowledge-base"
+              },
+              {
+                "text": "AI Companions",
+                "link": "/en/guide/loomy/companions"
+              },
+              {
+                "text": "Toolbox & Skills",
+                "link": "/en/guide/loomy/toolbox"
+              },
+              {
+                "text": "Scheduled Tasks",
+                "link": "/en/guide/loomy/scheduled-tasks"
+              },
+              {
+                "text": "Remote Control",
+                "link": "/en/guide/loomy/remote-control"
+              },
+              {
+                "text": "Office CLI",
+                "link": "/en/guide/loomy/office-cli"
+              },
+              {
+                "text": "Scenarios",
+                "link": "/en/guide/loomy/scenarios"
+              },
+              {
+                "text": "Build a Personal AI Companion",
+                "link": "/en/guide/loomy/personal-companion"
+              },
+              {
+                "text": "FAQ",
+                "link": "/en/guide/loomy/faq"
+              }
+            ],
+            "collapsed": true
           },
           {
-            text: 'Desktop Companion Loomy',
-            items: [
-              { text: 'Introduction', link: '/en/guide/loomy/introduction' },
-              { text: 'Quick Start', link: '/en/guide/loomy/quick-start' },
-              { text: 'Models & Chat', link: '/en/guide/loomy/models' },
-              { text: 'Knowledge Base', link: '/en/guide/loomy/knowledge-base' },
-              { text: 'AI Companions', link: '/en/guide/loomy/companions' },
-              { text: 'Toolbox & Skills', link: '/en/guide/loomy/toolbox' },
-              { text: 'Scheduled Tasks', link: '/en/guide/loomy/scheduled-tasks' },
-              { text: 'Remote Control', link: '/en/guide/loomy/remote-control' },
-              { text: 'Office CLI', link: '/en/guide/loomy/office-cli' },
-              { text: 'Scenarios', link: '/en/guide/loomy/scenarios' },
-              { text: 'Build a Personal AI Companion', link: '/en/guide/loomy/personal-companion' },
-              { text: 'FAQ', link: '/en/guide/loomy/faq' }
-            ]
+            "text": "Cloud Assistant AstronClaw",
+            "items": [
+              {
+                "text": "Core Advantages",
+                "link": "/en/guide/astronclaw/introduction"
+              },
+              {
+                "text": "Getting Started",
+                "link": "/en/guide/astronclaw/getting-started"
+              },
+              {
+                "text": "Skills System",
+                "link": "/en/guide/astronclaw/skills"
+              },
+              {
+                "text": "Billing & Points",
+                "link": "/en/guide/astronclaw/billing"
+              },
+              {
+                "text": "Scenarios",
+                "link": "/en/guide/astronclaw/scenarios"
+              },
+              {
+                "text": "Channels Config",
+                "link": "/en/guide/astronclaw/channels"
+              },
+              {
+                "text": "FAQ",
+                "link": "/en/guide/astronclaw/faq"
+              }
+            ],
+            "collapsed": true
           }
         ],
-        footer: {
-          message: 'Released under the Apache License 2.0.',
+        "footer": {
+          "message": "Released under the Apache License 2.0.",
           copyright: `Copyright © ${new Date().getFullYear()} iFlytek Co., Ltd.`
-        }
+        },
+        "logo": {
+          "src": "/astudio/brand/logo.svg",
+          "alt": "AStudio"
+        },
+        "siteTitle": "Astron Harness Tutorial"
       }
     }
   },
-
-  themeConfig: {
+  "themeConfig": {
+    "search": {
+      "provider": "local"
+    }
   }
 })

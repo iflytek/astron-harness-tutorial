@@ -1,0 +1,480 @@
+{
+  "checkedAt": "2026-10-27",
+  "images": [
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-49-QaA9zf.png",
+      "alt": "文献检索与筛选",
+      "local": "/astudio/images/guide-img-49-QaA9zf.png",
+      "altEn": "Find and evaluate research papers",
+      "sha256": "f18228d7c54b7eb56ef9b98988b5543c88457eb7275afd0f49743d04954ddc0d"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-48-DmfECf.png",
+      "alt": "网站搭建与预览",
+      "local": "/astudio/images/guide-img-48-DmfECf.png",
+      "altEn": "Build and preview a website",
+      "sha256": "d76dfc63246699ad709be7288cf99c962ebe9b5ad51a9e7b2f3f2dee1abca3e4"
+    },
+    {
+      "page": "faq",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-57-UMikYg.png",
+      "alt": "提交建议反馈",
+      "local": "/astudio/images/guide-img-57-UMikYg.png",
+      "altEn": "Submit feedback",
+      "sha256": "35ce42fe0d213c92afaa07382669772f6b65fc20be9e21c117a94277b1be4248"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-03-yhme0Y.png",
+      "alt": "新建日常任务",
+      "local": "/astudio/images/guide-img-03-yhme0Y.png",
+      "altEn": "Create a daily task",
+      "sha256": "88be39f907d0df478d8f9a44bd34d0a9e79316d4536c56bd9cc10f171fb3022e"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-04-Js8Aub.png",
+      "alt": "添加附件与描述需求",
+      "local": "/astudio/images/guide-img-04-Js8Aub.png",
+      "altEn": "Attach files and describe the task",
+      "sha256": "50c644eee9ac764098274ada27a0b262be0430fa6abe57652d60c90dccc5e95e"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-05-TyLOgg.png",
+      "alt": "文件拖拽输入",
+      "local": "/astudio/images/guide-img-05-TyLOgg.png",
+      "altEn": "Drag files into a conversation",
+      "sha256": "4024c43b24dde3ff8624a10bec5762ee39849607abd3b93470bb52bd219f32eb"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-06-ZIGwcb.png",
+      "alt": "任务列表展示",
+      "local": "/astudio/images/guide-img-06-ZIGwcb.png",
+      "altEn": "Find a task in the list",
+      "sha256": "ba77935fadac70c6d4ec738f45b8be8273b0119adb25d56449fa4ad4d5510cec"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-07-AQvvZe.png",
+      "alt": "添加项目",
+      "local": "/astudio/images/guide-img-07-AQvvZe.png",
+      "altEn": "Add a project",
+      "sha256": "776fb4393e5aeaf13db06bc1dd386a337774528ba13c495165b6cbb2f25fff27"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-08-LqfQzh.png",
+      "alt": "选择项目路径",
+      "local": "/astudio/images/guide-img-08-LqfQzh.png",
+      "altEn": "Select the project folder",
+      "sha256": "300aa306159ba78c7c3d4e3e3414c3d7104afa0d411b8afc233a88ceb1a89222"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-09-p7gLWg.png",
+      "alt": "在项目中新建任务",
+      "local": "/astudio/images/guide-img-09-p7gLWg.png",
+      "altEn": "Start a task in a project",
+      "sha256": "8da636bf916a37aaa573184f2492de6ffedfed4149ddf678a878b07d44c7407c"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-10-jo87Qb.png",
+      "alt": "日常新建",
+      "local": "/astudio/images/guide-img-10-jo87Qb.png",
+      "altEn": "Create a task from Daily",
+      "sha256": "94055c989107803c4b2333788f7b5103107e3277d74057986fde684f21929a98"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-11-nDvulf.png",
+      "alt": "独立任务新建",
+      "local": "/astudio/images/guide-img-11-nDvulf.png",
+      "altEn": "Create an independent task",
+      "sha256": "cd611c68f33c7a181d642d6686e3774f7166b408e4ac6ec06db42d1886074369"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-12-unqMyc.png",
+      "alt": "搜索弹窗新建空白",
+      "local": "/astudio/images/guide-img-12-unqMyc.png",
+      "altEn": "Create a blank task from Search",
+      "sha256": "f3d910fd94b7a0413cf947f8938991bcb63afa790d834500953616f87979f255"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-13-HGZ7Gd.png",
+      "alt": "项目内新建任务",
+      "local": "/astudio/images/guide-img-13-HGZ7Gd.png",
+      "altEn": "Create a project task",
+      "sha256": "b03afc287a53a69bd3eeaacd72aa611e859185ada076f616c883b4df484df70e"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-14-KSgTJh.png",
+      "alt": "项目视图新建",
+      "local": "/astudio/images/guide-img-14-KSgTJh.png",
+      "altEn": "Start from the project view",
+      "sha256": "f87b49c88b6bd120dd14ee13df80c49b2ecd6d61addd31406d828df50c4063b3"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-15-tOJjof.png",
+      "alt": "项目上下文新建",
+      "local": "/astudio/images/guide-img-15-tOJjof.png",
+      "altEn": "Check the current project context",
+      "sha256": "81ff7297d7c714ac030d9ef91885987dd71e141d8f7bcf5e50829d8e40e33cd0"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-16-A7GZBf.png",
+      "alt": "全局搜索界面",
+      "local": "/astudio/images/guide-img-16-A7GZBf.png",
+      "altEn": "Global search",
+      "sha256": "7e00cc609d48a79423f8fa336bc7521250d8683dd1bfae67017c3611dc240b46"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-17-X1sLcc.png",
+      "alt": "搜索功能指引",
+      "local": "/astudio/images/guide-img-17-X1sLcc.png",
+      "altEn": "Search shortcuts and actions",
+      "sha256": "dcd26fbecd7796eea31809dcdd27c5712d6cae2c5b2c35a5df73d442b773361e"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-18-Z72Cod.png",
+      "alt": "任务列表排序",
+      "local": "/astudio/images/guide-img-18-Z72Cod.png",
+      "altEn": "Sort the task list",
+      "sha256": "13d6e87745af389cda3bd01bac5cca33615e0fb49a0d8d1e63f95476bcc6e9f9"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-19-2T4umh.png",
+      "alt": "排序操作详情",
+      "local": "/astudio/images/guide-img-19-2T4umh.png",
+      "altEn": "Choose a task ordering",
+      "sha256": "bfefe85d901c3af92fe42ad9ebeaae953f748b85666a8d04a79b7c5aa0c41cbf"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-20-eo0Bvd.png",
+      "alt": "项目排序管理",
+      "local": "/astudio/images/guide-img-20-eo0Bvd.png",
+      "altEn": "Sort projects",
+      "sha256": "89de462f17833dd28ba1fa387a37ac830a9fb5761ba23070e8d65dc3b0f3da64"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-21-284rPu.png",
+      "alt": "任务置顶",
+      "local": "/astudio/images/guide-img-21-284rPu.png",
+      "altEn": "Pin a task",
+      "sha256": "4eee2df5f8b7efb91a688ea94893ab6c44a3f199f607caa00e3adf6058c2642a"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-22-wuXZse.png",
+      "alt": "任务归档",
+      "local": "/astudio/images/guide-img-22-wuXZse.png",
+      "altEn": "Archive a task",
+      "sha256": "6dc9d25f2382c44ac436bf5e45980c5b06f579225004d9eb10312e23201c335d"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-23-LZxfkd.png",
+      "alt": "归档任务列表",
+      "local": "/astudio/images/guide-img-23-LZxfkd.png",
+      "altEn": "Open archived tasks",
+      "sha256": "b005aa87e40cc3d908c1a848bd6df0f7f2c1d4575e2bf7eecb3020c5cf9ba3ae"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-24-ps9Xzd.png",
+      "alt": "恢复与删除操作",
+      "local": "/astudio/images/guide-img-24-ps9Xzd.png",
+      "altEn": "Restore or delete an archived task",
+      "sha256": "99b58c0d265de04224cf094b7c494dc8de9732939df20ab29ca494f91c08e834"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-25-lEzgff.png",
+      "alt": "开启规划模式",
+      "local": "/astudio/images/guide-img-25-lEzgff.png",
+      "altEn": "Enable Plan mode",
+      "sha256": "253c91d6cfc29af239d4157245c620892ae2878ca58ec01a8e59fd1a218043f6"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-26-MwVPze.png",
+      "alt": "分析与提问确认",
+      "local": "/astudio/images/guide-img-26-MwVPze.png",
+      "altEn": "Clarify requirements before execution",
+      "sha256": "5616e5978d7abc708169ee42a01d065ec8449834a5326e8c1a07a7b7b9267cb8"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-27-JKuBsc.png",
+      "alt": "计划审阅",
+      "local": "/astudio/images/guide-img-27-JKuBsc.png",
+      "altEn": "Review the proposed plan",
+      "sha256": "69e0f699a7ea25b60e48251399bf835624ef2b717b4188ed4cb03b78fc1ca44d"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-28-usx7sf.png",
+      "alt": "开始实现计划",
+      "local": "/astudio/images/guide-img-28-usx7sf.png",
+      "altEn": "Start implementing the plan",
+      "sha256": "9e4b42d9e71f92f1ef7e2e19db0626455494003ed849ba58442aa121946f8826"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-29-XIocye.png",
+      "alt": "开启目标模式",
+      "local": "/astudio/images/guide-img-29-XIocye.png",
+      "altEn": "Enable Goal mode",
+      "sha256": "774785a632c8d3bb1e0533386cfbb1073f866a74a01f87623b3247e6a83747ea"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-30-yTTtHb.png",
+      "alt": "目标执行与进度",
+      "local": "/astudio/images/guide-img-30-yTTtHb.png",
+      "altEn": "Track goal execution",
+      "sha256": "5c9ddfa28b65a1b22b469d5b10b4bf1345e536addab29c65546e9106eea6cb20"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-31-Wskfpf.png",
+      "alt": "直接编辑文本",
+      "local": "/astudio/images/guide-img-31-Wskfpf.png",
+      "altEn": "Edit text directly",
+      "sha256": "07391e5dadc533470d0e98730d559dfc8da66e251974645387ed81a2db0ca087"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-32-EMdCtf.png",
+      "alt": "添加行内评论",
+      "local": "/astudio/images/guide-img-32-EMdCtf.png",
+      "altEn": "Add an inline comment",
+      "sha256": "4dc79448d16bf08d3f8c532fbc548a7693ae7dab50b32ed1850b1129f9253e49"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-33-nA1NLe.png",
+      "alt": "引用划选文本",
+      "local": "/astudio/images/guide-img-33-nA1NLe.png",
+      "altEn": "Quote selected text",
+      "sha256": "83027e3683fecc4f8ea6063a5ada4b21939607a15e71b109167af4bba289d47b"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-34-SiYv4c.png",
+      "alt": "版本历史对比",
+      "local": "/astudio/images/guide-img-34-SiYv4c.png",
+      "altEn": "Compare saved versions",
+      "sha256": "37c191b98ad5284886d76c43524b9217000709827eb7407a505d31153c94e06a"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-35-xYf5if.png",
+      "alt": "Markdown源码与预览",
+      "local": "/astudio/images/guide-img-35-xYf5if.png",
+      "altEn": "Markdown source and preview",
+      "sha256": "18eb40f13edc785f8a26840b57bf91357704917f6436ecd89d9234ef54c5550d"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-36-KFnXbe.png",
+      "alt": "点选元素修改",
+      "local": "/astudio/images/guide-img-36-KFnXbe.png",
+      "altEn": "Select a website element for changes",
+      "sha256": "7c482bb3cecc2e7a7650d34f8af669cac12aa12ab07317c7ee1be1f355f1caea"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-37-C1BuFe.png",
+      "alt": "项目工具概览",
+      "local": "/astudio/images/guide-img-37-C1BuFe.png",
+      "altEn": "Project tools",
+      "sha256": "e4e75e364f4b96e0e91b89aabe12010e29f9b18ffb92e78e1f57b78a23ce85eb"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-38-ys3aDg.png",
+      "alt": "权限选择",
+      "local": "/astudio/images/guide-img-38-ys3aDg.png",
+      "altEn": "Choose an approval policy",
+      "sha256": "98b1244d9b49266be3c14c3084676600ef97621879d9255ef2715f9aab6b83fb"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-39-XyNfec.png",
+      "alt": "权限配置详情",
+      "local": "/astudio/images/guide-img-39-XyNfec.png",
+      "altEn": "Configure permissions",
+      "sha256": "2ba5f976ed190fa4d6071f0946ddbe44afd119e958d149801f747d8f415d2e98"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-40-voTarf.png",
+      "alt": "自动化列表",
+      "local": "/astudio/images/guide-img-40-voTarf.png",
+      "altEn": "View automations",
+      "sha256": "7ead7e1ec85214fea125c825af088318ac1f1043bb720dc211bd8d91f7733d0b"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-41-5Pp1Mf.png",
+      "alt": "新建自动化配置",
+      "local": "/astudio/images/guide-img-41-5Pp1Mf.png",
+      "altEn": "Configure a new automation",
+      "sha256": "91670dd241bac5b666cf00d536d035f6601a33d8c4a5c9816d10a0de48b21292"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-42-n0wXPe.png",
+      "alt": "自动化规则确认",
+      "local": "/astudio/images/guide-img-42-n0wXPe.png",
+      "altEn": "Confirm automation rules",
+      "sha256": "08397fb5dfa9be747b256f0b92f90e27139a8f0862ad773259b1b31a5b317a7a"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-43-fZ75ph.png",
+      "alt": "插件市场",
+      "local": "/astudio/images/guide-img-43-fZ75ph.png",
+      "altEn": "Discover plugins",
+      "sha256": "225ff627ecd6377e62128fc89da6e5d8110e13cda48c0a5cf793c7aa3f9ec40b"
+    },
+    {
+      "page": "features",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-44-5spzxe.png",
+      "alt": "插件管理",
+      "local": "/astudio/images/guide-img-44-5spzxe.png",
+      "altEn": "Manage installed plugins",
+      "sha256": "0b690273493dc95a7c0baf701421a667592c223c5d96ce42b4f14a975627e169"
+    },
+    {
+      "page": "intro",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-58-dMj2Xf.png",
+      "alt": "扫码加入AStudio微信交流群",
+      "local": "/astudio/images/guide-img-58-dMj2Xf.png",
+      "altEn": "Join the AStudio WeChat community",
+      "sha256": "3d7b7cb381bb74d7d277f960ce7ed9b2e81b161e1a0d7b58ef0a6d2496382187"
+    },
+    {
+      "page": "intro",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/feishu-group-qr-20260902.png",
+      "alt": "扫码加入AStudio飞书交流群",
+      "local": "/astudio/images/feishu-group-qr-20260902.png",
+      "altEn": "Join the AStudio Feishu community",
+      "sha256": "ed13a001f009a0f5147ddcf8b2610e4a3596712023879f473931e282cc3049ec"
+    },
+    {
+      "page": "quickstart",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-01-RhqrKG.png",
+      "alt": "新用户福利",
+      "local": "/astudio/images/guide-img-01-RhqrKG.png",
+      "altEn": "New-user benefits",
+      "sha256": "31225649ea1a1f5e3280d37a30e62d5669107f8d45ba3498275a7ba782381c4a"
+    },
+    {
+      "page": "quickstart",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-02-mXA0XE.png",
+      "alt": "工作界面布局",
+      "local": "/astudio/images/guide-img-02-mXA0XE.png",
+      "altEn": "Workspace layout",
+      "sha256": "f03607400fb3f7a75c9747aa2f5b440ac144f48bc604ab91e41fb4c8462cbe0d"
+    },
+    {
+      "page": "tips",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-50-CFRtag.png",
+      "alt": "理清需求对话示意",
+      "local": "/astudio/images/guide-img-50-CFRtag.png",
+      "altEn": "Clarify a task through conversation",
+      "sha256": "4086d92e3f82b9c9c5cbcc74418d3b65647753ea53242550b51a918cbb2b3661"
+    },
+    {
+      "page": "tips",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-51-DFdRFb.png",
+      "alt": "提供参考资料",
+      "local": "/astudio/images/guide-img-51-DFdRFb.png",
+      "altEn": "Provide reference material",
+      "sha256": "17da74ce362e69813e16493e42621c94b133405cb16d24e8d6fce860a41701d9"
+    },
+    {
+      "page": "tips",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-52-lMxxh7.png",
+      "alt": "规划模式计划确认",
+      "local": "/astudio/images/guide-img-52-lMxxh7.png",
+      "altEn": "Review a plan before changes",
+      "sha256": "d2fbaa1b7df48665c4250e56348950e41f0ebc65fe395641104a61b55af7c6d4"
+    },
+    {
+      "page": "tips",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-53-MXabZc.png",
+      "alt": "点选修改与效果反馈",
+      "local": "/astudio/images/guide-img-53-MXabZc.png",
+      "altEn": "Give targeted feedback",
+      "sha256": "ab72c810e0a94e5aeb25b06b87b4b5d2cbaa138278836780b7743a902e0c98bd"
+    },
+    {
+      "page": "tips",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-54-G2mqNf.png",
+      "alt": "整理交接文档",
+      "local": "/astudio/images/guide-img-54-G2mqNf.png",
+      "altEn": "Create a handover document",
+      "sha256": "c9e5bd0e4601354bda63bf473fa7ae5965bb9cf0af28f41d334d36e48add79d2"
+    },
+    {
+      "page": "tips",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-55-B7o4nc.png",
+      "alt": "自动化任务运行检查",
+      "local": "/astudio/images/guide-img-55-B7o4nc.png",
+      "altEn": "Test an automation manually",
+      "sha256": "9011cc84bece40f387ae0db2d1c35d53fee03bbdfd71e0862781c27b571b64b8"
+    },
+    {
+      "page": "tips",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-56-52tiYb.png",
+      "alt": "沉淀个人技能",
+      "local": "/astudio/images/guide-img-56-52tiYb.png",
+      "altEn": "Capture a reusable personal skill",
+      "sha256": "4cd75141e20f9d549ed747746ec377f031041886a7591aac6ede48a621cc427d"
+    }
+  ],
+  "brands": [
+    {
+      "url": "https://agent.xfyun.cn/studio-guide/astron/logo.svg",
+      "local": "/astudio/brand/logo.svg",
+      "sha256": "34c5e625cbfb0379e35da9b877c2132981732e92f0755505d848992a4a025bd6"
+    },
+    {
+      "url": "https://agent.xfyun.cn/studio-guide/astron/A-Studio.png",
+      "local": "/astudio/brand/wordmark.png",
+      "sha256": "ac6f62e645d5a74674824f8df2f8f93018a7d323bd6f2d874a6fde021ec4073f"
+    },
+    {
+      "url": "https://loomy.xunfei.cn/images/logo_light.png",
+      "local": "/brands/loomy.png",
+      "sha256": "b6d73d371c1671be2243780e2242bbf67501e71e8677f9514f11a2fb90ccc260"
+    },
+    {
+      "url": "https://bjcdn.openstorage.cn/aicontest/2026-03-18/29c37a17-5b33-4804-90b5-85599c29e2d5.png",
+      "local": "/brands/astronclaw.png",
+      "sha256": "e1b4471621c21e96c140b544f669a2bc7d408e9a66d408c4c044437f965a96e0"
+    },
+    {
+      "url": "https://agent.xfyun.cn/studio-guide/studio-mark.svg",
+      "local": "/astudio/brand/mark.svg",
+      "sha256": "e4a12f7259111ea802776d9a26dc397ed181c1a3a389c868bc9b3233dba5dd9b"
+    }
+  ]
+}

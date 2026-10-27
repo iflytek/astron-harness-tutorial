@@ -1,65 +1,49 @@
+<p align="center">
+  <img src="docs/public/astudio/brand/logo.svg" alt="AStudio" width="180">
+</p>
+
 # Astron Harness Tutorial
 
-<p align="center">
-  <a href="https://astronclaw-tutorial.space/en/">
-    <img src="https://img.shields.io/badge/Astron_Harness-Tutorial-blue?style=for-the-badge&logo=readthedocs" alt="Astron Harness Tutorial">
-  </a>
-</p>
+**AStudio → Loomy → AstronClaw.** Learn to turn a task into a useful deliverable, then build an AI workflow around your own work.
+
+[Read the tutorial](https://astronclaw-tutorial.space/en/) · [Start with AStudio](docs/en/guide/astudio/quickstart.md) · [简体中文](README.md)
 
 <p align="center">
-  <img src="https://bjcdn.openstorage.cn/aicontest/2026-03-18/29c37a17-5b33-4804-90b5-85599c29e2d5.png" alt="AstronClaw Logo" height="60">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://loomy.xunfei.cn/images/logo_light.png" alt="Loomy Logo" height="60">
+  <a href="https://github.com/iflytek/astron-harness-tutorial/actions/workflows/deploy.yml"><img src="https://img.shields.io/github/actions/workflow/status/iflytek/astron-harness-tutorial/deploy.yml?branch=main" alt="Build status"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/iflytek/astron-harness-tutorial" alt="License"></a>
 </p>
 
-<p align="center">
-  <b>English</b> | <a href="README.md">简体中文</a>
-</p>
+![Official AStudio workspace overview](docs/public/astudio/images/guide-img-02-mXA0XE.png)
 
-<p align="center">
-  <a href="https://astronclaw-tutorial.space/en/">🚀 <b>Read Online</b></a> |
-  <a href="https://agent.xfyun.cn/astron-claw">☁️ <b>Try Cloud AstronClaw</b></a> |
-  <a href="https://loomy.xunfei.cn/">💻 <b>Download Desktop Loomy</b></a>
-</p>
+## Choose your starting point
 
-<p align="center">
-  <a href="https://github.com/iflytek/astron-harness-tutorial/blob/main/LICENSE"><img src="https://img.shields.io/github/license/iflytek/astron-harness-tutorial" alt="License"></a>
-  <a href="https://github.com/iflytek/astron-harness-tutorial/actions/workflows/deploy.yml"><img src="https://img.shields.io/github/actions/workflow/status/iflytek/astron-harness-tutorial/deploy.yml?branch=main" alt="Deploy Status"></a>
-</p>
+| Product | Best starting point | Learn |
+| --- | --- | --- |
+| **01 · AStudio** | Goal-oriented tasks and deliverables | [Workspace guide](docs/en/guide/astudio/intro.md) · [Quick start](docs/en/guide/astudio/quickstart.md) |
+| **02 · Loomy** | Local knowledge and office workflows | [Desktop guide](docs/en/guide/loomy/introduction.md) · [Quick start](docs/en/guide/loomy/quick-start.md) |
+| **03 · AstronClaw** | Cloud tasks and messaging channels | [Cloud guide](docs/en/guide/astronclaw/introduction.md) · [Getting started](docs/en/guide/astronclaw/getting-started.md) |
 
-## Introduction
+## 01 · AStudio: from a goal to a deliverable
 
-This project is a comprehensive learning tutorial for **AstronClaw**, **Loomy**, and **AStudio**, designed to help you master this powerful AI assistant system from scratch.
+Begin with the workspace, create a task, then learn projects, Plan and Goal modes, previews, editing, permissions, automation and plugins. Follow the illustrated steps with **56 locally stored official images**, shared by the Chinese and English guides.
 
-* **AstronClaw**: A **cloud-based AI assistant** built on OpenClaw's core capabilities, providing 7x24 online services through channels like WeCom, DingTalk, and Feishu.
-* **Loomy**: A **desktop AI companion** focused on real-world office scenarios, deeply integrating with local files and system tools to build efficient automated workflows for individuals and small teams.
-* **AStudio**: An **AI productivity workspace** for planning tasks, using tools and delivering results, with local projects, previews, plugins and automation.
+- [Core features](docs/en/guide/astudio/features.md): find the right mode and inspect the result.
+- [Examples](docs/en/guide/astudio/cases.md) and [tips](docs/en/guide/astudio/tips.md): practice research, website creation and iteration.
+- [Plans and points](docs/en/guide/astudio/pricing.md), [FAQ](docs/en/guide/astudio/faq.md) and [privacy](docs/en/guide/astudio/agreements/privacy-client.md): understand the rules before starting.
 
-Whether you want to quickly get started with AstronClaw to boost productivity or build custom workflows with Loomy, this tutorial provides a clear learning path.
+## 02 · Loomy: a companion for everyday work
 
-## Core Modules
+Connect local files, knowledge and office tools. Explore [AI companions](docs/en/guide/loomy/companions.md), [the toolbox](docs/en/guide/loomy/toolbox.md), [work scenarios](docs/en/guide/loomy/scenarios.md) and [your personal companion](docs/en/guide/loomy/personal-companion.md).
 
-The project consists of three main modules:
+## 03 · AstronClaw: keep work moving in the cloud
 
-### ☁️ Part 1: Cloud Assistant AstronClaw
-* **Quick Start**: One-click deployment, eliminating tedious local environment configurations to experience a 7x24 online cloud assistant.
-* **Skills System**: Over 130 built-in official skills, supporting one-click installation from the skill market, repository search, auto-installation via chat, and custom skills.
-* **Channels**: Seamless integration with enterprise collaboration platforms like Feishu, DingTalk, and WeCom.
+Start with a hosted assistant, then connect [skills](docs/en/guide/astronclaw/skills.md) and [messaging channels](docs/en/guide/astronclaw/channels.md). Review [scenarios](docs/en/guide/astronclaw/scenarios.md) and [billing](docs/en/guide/astronclaw/billing.md) for the work you plan to do.
 
-### 💻 Part 2: Desktop Companion Loomy
-* **Features**: Low barrier to entry, high security, strong adaptability, and proactive collaboration, focusing on local office environments and cross-tool workflows.
-* **Typical Scenarios**: Social media operations, daily office collaboration, investment tracking, calendar & todo management, remote mobile office, and e-commerce operations.
-* **Security & Privacy**: Directory-level authorization to protect local files; supports custom LLM API providers.
+## Documentation and image updates
 
-### Part 3: AStudio Productivity Workspace
+The daily watcher checks AStudio, Loomy and AstronClaw. AStudio coverage includes all 15 official guide and agreement pages, plus the image contents. New images and replacements at the same URL are reported for review. See [the watcher guide](scripts/doc-watch/README.md) and [asset sources](docs/public/astudio/README.md).
 
-Start with the [AStudio guide](docs/en/guide/astudio/intro.md): quick start, task modes, projects, previews, examples, tips, plans and FAQ. Eight agreement guides link to the authoritative web and desktop terms, privacy policies, information lists, subscription and renewal rules. The daily documentation watcher covers all 15 official pages.
-
-## Who is this for?
-
-* **Beginners**: No programming experience required. Perfect for anyone wanting an always-on cloud or desktop AI assistant.
-* **Productivity Enthusiasts**: Those who wish to remote-control AI anytime, anywhere via IM apps like Feishu or DingTalk.
-* **Content & Operations Teams**: Social media managers, e-commerce professionals, and anyone who frequently handles information organization and multi-tool collaboration.
+Screenshots preserve the official Chinese interface; the English version supplies English captions. Images can be enlarged on the tutorial site.
 
 ## Local Development
 
@@ -94,14 +78,14 @@ Issues and Pull Requests are welcome! Let's polish it together and help more peo
 
 Before submitting a PR, please read our [Contributing Guide](CONTRIBUTING.md). When you make your first contribution, the CLA Assistant bot will automatically leave a comment on your PR to guide you through signing the Contributor License Agreement (CLA).
 
-## Join the Community
+## Learn with the community
 
-Welcome to join our official communities to communicate with developers and other users:
-
-| ☁️ AstronClaw Official Community | 💻 Loomy Community | 💬 Astron Open Source Community |
+| AStudio | Loomy | AstronClaw |
 | :---: | :---: | :---: |
-| <img src="docs/public/astronclaw-qr.jpg" alt="AstronClaw Official Community" width="250"> | <img src="docs/public/loomy-qr.png" alt="Loomy Community" width="250"> | <img src="https://github.com/iflytek/astron-agent/raw/main/docs/imgs/WeCom_Group.png" alt="Astron Open Source Community" width="250"> |
+| <img src="docs/public/astudio/images/guide-img-58-dMj2Xf.png" alt="AStudio WeChat community" width="160"> | <img src="docs/public/loomy-qr.png" alt="Loomy community" width="160"> | <img src="docs/public/astronclaw-qr.jpg" alt="AstronClaw community" width="160"> |
+
+[AStudio Feishu group](docs/public/astudio/images/feishu-group-qr-20260902.png) · [Astron open-source community](https://github.com/iflytek/astron-agent/raw/main/docs/imgs/WeCom_Group.png)
 
 ## License
 
-This project is licensed under the [Apache License 2.0](LICENSE).
+Tutorial source is released under [Apache License 2.0](LICENSE). Official product images and marks remain subject to their respective rights; see the [asset notes](docs/public/astudio/README.md).

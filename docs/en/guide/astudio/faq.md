@@ -1,6 +1,6 @@
 # AStudio FAQ
 
-> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/faq) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page.
+> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/faq) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page.
 
 ## Why did a task enter a project?
 
@@ -25,3 +25,14 @@ The current FAQ supports creation, disabling and deletion, but not direct modifi
 ## How do I report problems?
 
 Check the installer source and supported system, then consult [official troubleshooting](https://agent.xfyun.cn/studio-guide/faq). Send reproduction steps, versions and relevant screenshots through Settings > Feedback.
+
+> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it.
+
+<div class="guide-shots">
+
+<figure>
+<img src="/astudio/images/guide-img-57-UMikYg.png" alt="Submit feedback" loading="lazy" />
+<figcaption>Submit feedback</figcaption>
+</figure>
+
+</div>

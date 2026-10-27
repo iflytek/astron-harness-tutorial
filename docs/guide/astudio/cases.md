@@ -1,12 +1,24 @@
 # AStudio 实践案例
 
-> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/cases) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。
+> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/cases) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。
 
 ## 文献调研练习
 
 官方案例以 Transformer 相关研究为例。练习时可补充你的研究问题、时间范围和筛选标准，要求每条结果提供可核验来源，并检查论文是否真正相关。
 
 示例任务：“围绕我的研究问题整理相关论文，将标题、年份、来源链接和入选理由列成表格；无法核实的信息单独标记。”
+
+
+> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。
+
+<div class="guide-shots">
+
+<figure>
+<img src="/astudio/images/guide-img-49-QaA9zf.png" alt="文献检索与筛选" loading="lazy" />
+<figcaption>文献检索与筛选</figcaption>
+</figure>
+
+</div>
 
 ## 网站原型练习
 
@@ -15,3 +27,12 @@
 示例任务：“先为我的个人知识导航站提出页面方案，明确导航和搜索的行为，确认后再实现。”
 
 以上为教程练习提示，不代表已替你检索论文或发布网站。继续阅读[使用技巧](./tips)提高迭代效率。
+
+<div class="guide-shots">
+
+<figure>
+<img src="/astudio/images/guide-img-48-DmfECf.png" alt="网站搭建与预览" loading="lazy" />
+<figcaption>网站搭建与预览</figcaption>
+</figure>
+
+</div>

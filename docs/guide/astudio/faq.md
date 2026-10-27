@@ -1,6 +1,6 @@
 # AStudio 常见问题
 
-> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/faq) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。
+> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/faq) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。
 
 ## 独立任务为什么进入了项目？
 
@@ -25,3 +25,14 @@
 ## 安装异常或其他问题如何处理？
 
 核对安装来源和支持的系统，再查看[官方故障排查](https://agent.xfyun.cn/studio-guide/faq)。其他问题可在“设置 > 建议反馈”中提供复现步骤、版本及必要截图。
+
+> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。
+
+<div class="guide-shots">
+
+<figure>
+<img src="/astudio/images/guide-img-57-UMikYg.png" alt="提交建议反馈" loading="lazy" />
+<figcaption>提交建议反馈</figcaption>
+</figure>
+
+</div>

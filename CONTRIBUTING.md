@@ -1,6 +1,6 @@
-# Contributing to AstronClaw & Loomy Tutorial
+# Contributing to Astron Harness Tutorial
 
-Thank you for your interest in contributing to the AstronClaw & Loomy Tutorial project! We welcome contributions from everyone.
+Thank you for your interest in Astron Harness Tutorial. Our guides cover AStudio, Loomy and AstronClaw, in that order. Please update both language versions, preserve official asset sources, and run the relevant checks when contributing.
 
 ## How to Contribute
 

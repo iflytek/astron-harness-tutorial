@@ -412,22 +412,22 @@
   {
     "lang": "zh",
     "heading": "AStudio 实践案例",
-    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/cases) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/cases) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。"
   },
   {
     "lang": "zh",
     "heading": "文献调研练习",
-    "content": "官方案例以 Transformer 相关研究为例。练习时可补充你的研究问题、时间范围和筛选标准，要求每条结果提供可核验来源，并检查论文是否真正相关。\n\n示例任务：“围绕我的研究问题整理相关论文，将标题、年份、来源链接和入选理由列成表格；无法核实的信息单独标记。”"
+    "content": "官方案例以 Transformer 相关研究为例。练习时可补充你的研究问题、时间范围和筛选标准，要求每条结果提供可核验来源，并检查论文是否真正相关。\n\n示例任务：“围绕我的研究问题整理相关论文，将标题、年份、来源链接和入选理由列成表格；无法核实的信息单独标记。”\n\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-49-QaA9zf.png\" alt=\"文献检索与筛选\" loading=\"lazy\" />\n<figcaption>文献检索与筛选</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
     "heading": "网站原型练习",
-    "content": "官方还展示了使用规划模式构建 Skill 发现网站的场景。先确认受众、页面结构、数据来源及更新要求，再执行并在预览区逐项验证。\n\n示例任务：“先为我的个人知识导航站提出页面方案，明确导航和搜索的行为，确认后再实现。”\n\n以上为教程练习提示，不代表已替你检索论文或发布网站。继续阅读[使用技巧](./tips)提高迭代效率。"
+    "content": "官方还展示了使用规划模式构建 Skill 发现网站的场景。先确认受众、页面结构、数据来源及更新要求，再执行并在预览区逐项验证。\n\n示例任务：“先为我的个人知识导航站提出页面方案，明确导航和搜索的行为，确认后再实现。”\n\n以上为教程练习提示，不代表已替你检索论文或发布网站。继续阅读[使用技巧](./tips)提高迭代效率。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-48-DmfECf.png\" alt=\"网站搭建与预览\" loading=\"lazy\" />\n<figcaption>网站搭建与预览</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
     "heading": "AStudio 常见问题",
-    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/faq) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/faq) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。"
   },
   {
     "lang": "zh",
@@ -457,37 +457,57 @@
   {
     "lang": "zh",
     "heading": "安装异常或其他问题如何处理？",
-    "content": "核对安装来源和支持的系统，再查看[官方故障排查](https://agent.xfyun.cn/studio-guide/faq)。其他问题可在“设置 > 建议反馈”中提供复现步骤、版本及必要截图。"
+    "content": "核对安装来源和支持的系统，再查看[官方故障排查](https://agent.xfyun.cn/studio-guide/faq)。其他问题可在“设置 > 建议反馈”中提供复现步骤、版本及必要截图。\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-57-UMikYg.png\" alt=\"提交建议反馈\" loading=\"lazy\" />\n<figcaption>提交建议反馈</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
     "heading": "AStudio 核心功能",
-    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/features) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/features) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。"
   },
   {
     "lang": "zh",
     "heading": "日常与项目",
-    "content": "“日常”适合独立任务，系统为其建立工作目录；“项目”关联你选择的本地文件夹，适合持续维护资料或代码。新建任务前先检查当前项目，避免把独立任务放进错误目录。"
+    "content": "独立工作从“日常”开始；需要持续读写同一文件夹时，先添加项目，再在项目中创建任务。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-03-yhme0Y.png\" alt=\"新建日常任务\" loading=\"lazy\" />\n<figcaption>新建日常任务</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-04-Js8Aub.png\" alt=\"添加附件与描述需求\" loading=\"lazy\" />\n<figcaption>添加附件与描述需求</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-05-TyLOgg.png\" alt=\"文件拖拽输入\" loading=\"lazy\" />\n<figcaption>文件拖拽输入</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-06-ZIGwcb.png\" alt=\"任务列表展示\" loading=\"lazy\" />\n<figcaption>任务列表展示</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-07-AQvvZe.png\" alt=\"添加项目\" loading=\"lazy\" />\n<figcaption>添加项目</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-08-LqfQzh.png\" alt=\"选择项目路径\" loading=\"lazy\" />\n<figcaption>选择项目路径</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-09-p7gLWg.png\" alt=\"在项目中新建任务\" loading=\"lazy\" />\n<figcaption>在项目中新建任务</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "新建与查找任务",
+    "content": "新建入口会影响任务归属。发送前检查当前工作区；使用搜索快速定位项目、历史任务和操作。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-10-jo87Qb.png\" alt=\"日常新建\" loading=\"lazy\" />\n<figcaption>日常新建</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-11-nDvulf.png\" alt=\"独立任务新建\" loading=\"lazy\" />\n<figcaption>独立任务新建</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-12-unqMyc.png\" alt=\"搜索弹窗新建空白\" loading=\"lazy\" />\n<figcaption>搜索弹窗新建空白</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-13-HGZ7Gd.png\" alt=\"项目内新建任务\" loading=\"lazy\" />\n<figcaption>项目内新建任务</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-14-KSgTJh.png\" alt=\"项目视图新建\" loading=\"lazy\" />\n<figcaption>项目视图新建</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-15-tOJjof.png\" alt=\"项目上下文新建\" loading=\"lazy\" />\n<figcaption>项目上下文新建</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-16-A7GZBf.png\" alt=\"全局搜索界面\" loading=\"lazy\" />\n<figcaption>全局搜索界面</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-17-X1sLcc.png\" alt=\"搜索功能指引\" loading=\"lazy\" />\n<figcaption>搜索功能指引</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "整理与归档",
+    "content": "通过排序、置顶和归档整理工作。归档后可到“设置 > 已归档”查看、恢复或删除。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-18-Z72Cod.png\" alt=\"任务列表排序\" loading=\"lazy\" />\n<figcaption>任务列表排序</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-19-2T4umh.png\" alt=\"排序操作详情\" loading=\"lazy\" />\n<figcaption>排序操作详情</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-20-eo0Bvd.png\" alt=\"项目排序管理\" loading=\"lazy\" />\n<figcaption>项目排序管理</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-21-284rPu.png\" alt=\"任务置顶\" loading=\"lazy\" />\n<figcaption>任务置顶</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-22-wuXZse.png\" alt=\"任务归档\" loading=\"lazy\" />\n<figcaption>任务归档</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-23-LZxfkd.png\" alt=\"归档任务列表\" loading=\"lazy\" />\n<figcaption>归档任务列表</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-24-ps9Xzd.png\" alt=\"恢复与删除操作\" loading=\"lazy\" />\n<figcaption>恢复与删除操作</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
     "heading": "任务模式",
-    "content": "| 模式 | 用法 |\n| --- | --- |\n| 默认 | 直接发送需求 |\n| 规划模式 | 输入框“+”中开启，审阅方案并确认“开始实现” |\n| 目标模式 | 输入框“+”中开启，围绕目标持续推进；可补充要求、暂停或清除目标 |"
+    "content": "直接发送即可执行普通任务。希望先审阅方案时，在输入框“+”中开启规划模式；需要围绕目标持续推进时，使用目标模式。目标运行中可补充要求或暂停。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-25-lEzgff.png\" alt=\"开启规划模式\" loading=\"lazy\" />\n<figcaption>开启规划模式</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-26-MwVPze.png\" alt=\"分析与提问确认\" loading=\"lazy\" />\n<figcaption>分析与提问确认</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-27-JKuBsc.png\" alt=\"计划审阅\" loading=\"lazy\" />\n<figcaption>计划审阅</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-28-usx7sf.png\" alt=\"开始实现计划\" loading=\"lazy\" />\n<figcaption>开始实现计划</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-29-XIocye.png\" alt=\"开启目标模式\" loading=\"lazy\" />\n<figcaption>开启目标模式</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-30-yTTtHb.png\" alt=\"目标执行与进度\" loading=\"lazy\" />\n<figcaption>目标执行与进度</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
-    "heading": "查看与调整成果",
-    "content": "文本支持编辑保存、行内评论、引用片段和版本对比。表格、图片和 PDF 通过对话提出修改，完成后刷新预览。网页可切换交互体验与元素点选，完成后请求发布分享地址。"
+    "heading": "预览与编辑成果",
+    "content": "文本可直接编辑、评论或引用片段，并查看版本变化。表格、图片和 PDF 的修改通过对话提出；完成后刷新预览。网页可点选元素反馈，也可切换交互模式体验效果。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-31-Wskfpf.png\" alt=\"直接编辑文本\" loading=\"lazy\" />\n<figcaption>直接编辑文本</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-32-EMdCtf.png\" alt=\"添加行内评论\" loading=\"lazy\" />\n<figcaption>添加行内评论</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-33-nA1NLe.png\" alt=\"引用划选文本\" loading=\"lazy\" />\n<figcaption>引用划选文本</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-34-SiYv4c.png\" alt=\"版本历史对比\" loading=\"lazy\" />\n<figcaption>版本历史对比</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-35-xYf5if.png\" alt=\"Markdown源码与预览\" loading=\"lazy\" />\n<figcaption>Markdown源码与预览</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-36-KFnXbe.png\" alt=\"点选元素修改\" loading=\"lazy\" />\n<figcaption>点选元素修改</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
-    "heading": "项目、权限与扩展",
-    "content": "文件树和 Diff 用于检查变更；终端用于运行测试；版本管理用于查看 Git 状态。权限选项包含默认“帮我批准”、“请求批准”和“完全访问”，按任务范围选择。\n\n自动化可通过页面或对话创建；插件中心用于发现、安装和配置外部能力。任务可搜索、置顶、归档，并从“设置 > 已归档”恢复。"
+    "heading": "项目工具与权限",
+    "content": "通过文件树、Diff、终端与 Git 检查项目变化。根据任务选择“帮我批准”“请求批准”或“完全访问”，并核对授权范围。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-37-C1BuFe.png\" alt=\"项目工具概览\" loading=\"lazy\" />\n<figcaption>项目工具概览</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-38-ys3aDg.png\" alt=\"权限选择\" loading=\"lazy\" />\n<figcaption>权限选择</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-39-XyNfec.png\" alt=\"权限配置详情\" loading=\"lazy\" />\n<figcaption>权限配置详情</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "自动化",
+    "content": "从自动化页面或对话中创建定时工作，确认周期、项目和权限。先手动运行一次，检查输入、结果与保存位置。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-40-voTarf.png\" alt=\"自动化列表\" loading=\"lazy\" />\n<figcaption>自动化列表</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-41-5Pp1Mf.png\" alt=\"新建自动化配置\" loading=\"lazy\" />\n<figcaption>新建自动化配置</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-42-n0wXPe.png\" alt=\"自动化规则确认\" loading=\"lazy\" />\n<figcaption>自动化规则确认</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "插件中心",
+    "content": "浏览或搜索插件，安装后配置所需账号；在已安装列表中管理状态，按任务需要调用。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-43-fZ75ph.png\" alt=\"插件市场\" loading=\"lazy\" />\n<figcaption>插件市场</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-44-5spzxe.png\" alt=\"插件管理\" loading=\"lazy\" />\n<figcaption>插件管理</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
     "heading": "AStudio 介绍与定位",
-    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/intro) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/intro) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。"
   },
   {
     "lang": "zh",
@@ -498,6 +518,11 @@
     "lang": "zh",
     "heading": "从哪里开始",
     "content": "| 你的需求 | 建议入口 |\n| --- | --- |\n| 第一次体验 | [安装并完成第一个任务](./quickstart) |\n| 处理一次独立工作 | 使用“日常”，附上参考文件 |\n| 持续维护本地资料或代码 | 使用“项目”，关联对应文件夹 |\n| 执行前确认方案 | [规划模式](./features#任务模式) |\n| 了解消费与信息处理 | [套餐与积分](./pricing)、[客户端隐私政策](./agreements/privacy-client) |\n\n本栏目覆盖 AStudio；云端助手 AstronClaw 和桌面搭子 Loomy 各有独立教程。三款产品的功能和计费规则请分别查看，避免混用。"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 官方社群",
+    "content": "> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-58-dMj2Xf.png\" alt=\"扫码加入AStudio微信交流群\" loading=\"lazy\" />\n<figcaption>扫码加入AStudio微信交流群</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/feishu-group-qr-20260902.png\" alt=\"扫码加入AStudio飞书交流群\" loading=\"lazy\" />\n<figcaption>扫码加入AStudio飞书交流群</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
@@ -522,12 +547,12 @@
   {
     "lang": "zh",
     "heading": "AStudio 快速上手",
-    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/quickstart) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/quickstart) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。"
   },
   {
     "lang": "zh",
     "heading": "安装与登录",
-    "content": "从[官方快速上手页](https://agent.xfyun.cn/studio-guide/quickstart)进入客户端下载入口。官方列出的环境为 Apple 芯片 Mac，以及 Windows 10 / 11 64 位系统。安装后登录账号。"
+    "content": "从[官方快速上手页](https://agent.xfyun.cn/studio-guide/quickstart)进入客户端下载入口。官方列出的环境为 Apple 芯片 Mac，以及 Windows 10 / 11 64 位系统。安装后登录账号。\n\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-01-RhqrKG.png\" alt=\"新用户福利\" loading=\"lazy\" />\n<figcaption>新用户福利</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
@@ -537,32 +562,47 @@
   {
     "lang": "zh",
     "heading": "认识界面",
-    "content": "左侧负责项目、任务与设置；中间用于沟通和查看执行过程；右侧用于文件、网页、代码变更和终端预览。需要持续处理同一文件夹时，下一步学习[项目与任务模式](./features)。新用户和登录积分的有效期见[套餐说明](./pricing)。"
+    "content": "左侧负责项目、任务与设置；中间用于沟通和查看执行过程；右侧用于文件、网页、代码变更和终端预览。需要持续处理同一文件夹时，下一步学习[项目与任务模式](./features)。新用户和登录积分的有效期见[套餐说明](./pricing)。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-02-mXA0XE.png\" alt=\"工作界面布局\" loading=\"lazy\" />\n<figcaption>工作界面布局</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
     "heading": "AStudio 使用技巧",
-    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/tips) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/tips) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。"
   },
   {
     "lang": "zh",
-    "heading": "把要求变得具体",
-    "content": "方向不明确时，先讨论目标再执行；有参考材料时，说明要借鉴的是结构、语气还是视觉布局。涉及多个文件的修改，先用规划模式核对范围。"
+    "heading": "先把方向聊清楚",
+    "content": "只有大概想法时，先确认目的、受众和交付形式，再让 AStudio 执行。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-50-CFRtag.png\" alt=\"理清需求对话示意\" loading=\"lazy\" />\n<figcaption>理清需求对话示意</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
-    "heading": "依据实际成果反馈",
-    "content": "整体方向通过对话调整，局部界面用点选反馈，少量文本直接编辑。描述“哪里、现在怎样、希望怎样”，比泛泛要求更容易验证。"
+    "heading": "把参考资料交给它",
+    "content": "附上文档、图片或网页，并指出希望参考的结构、语气或布局。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-51-DFdRFb.png\" alt=\"提供参考资料\" loading=\"lazy\" />\n<figcaption>提供参考资料</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
-    "heading": "保存可复用的上下文",
-    "content": "长对话结束前，整理背景、已确认结论、约束、进度和下一步，作为新任务的交接材料。重复任务中形成的步骤和检查标准，可提炼成个人技能。"
+    "heading": "大改之前先看计划",
+    "content": "涉及多个文件或重要内容时，先核对修改范围和顺序，再开始实现。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-52-lMxxh7.png\" alt=\"规划模式计划确认\" loading=\"lazy\" />\n<figcaption>规划模式计划确认</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
-    "heading": "验证自动化",
-    "content": "自动化创建后先手动运行一次，核对输入资料、产出内容和保存位置。实际结果符合预期后再依赖定时执行。"
+    "heading": "对着成果给反馈",
+    "content": "说明具体位置、当前问题和预期效果。可通过对话、网页点选或文本编辑进行调整。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-53-MXabZc.png\" alt=\"点选修改与效果反馈\" loading=\"lazy\" />\n<figcaption>点选修改与效果反馈</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "给下一轮留下交接",
+    "content": "把背景、决定、约束、进度和下一步整理成文档，交给新任务继续使用。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-54-G2mqNf.png\" alt=\"整理交接文档\" loading=\"lazy\" />\n<figcaption>整理交接文档</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "自动化先验证一次",
+    "content": "手动运行新建自动化，检查资料来源、生成内容和保存位置，再依赖定时执行。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-55-B7o4nc.png\" alt=\"自动化任务运行检查\" loading=\"lazy\" />\n<figcaption>自动化任务运行检查</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "把经验变成技能",
+    "content": "重复工作的步骤、口径和检查标准，可以整理为个人技能，在后续任务中复用。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-56-52tiYb.png\" alt=\"沉淀个人技能\" loading=\"lazy\" />\n<figcaption>沉淀个人技能</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
@@ -1722,22 +1762,22 @@
   {
     "lang": "en",
     "heading": "AStudio Examples",
-    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/cases) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/cases) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page."
   },
   {
     "lang": "en",
     "heading": "Literature research",
-    "content": "The official example explores Transformer research. For your own exercise, specify the research question, date range and selection criteria. Ask for verifiable sources and check relevance.\n\nPractice prompt: “Create a table of relevant papers with titles, years, source links and reasons for inclusion. Flag information you cannot verify.”"
+    "content": "The official example explores Transformer research. For your own exercise, specify the research question, date range and selection criteria. Ask for verifiable sources and check relevance.\n\nPractice prompt: “Create a table of relevant papers with titles, years, source links and reasons for inclusion. Flag information you cannot verify.”\n\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-49-QaA9zf.png\" alt=\"Find and evaluate research papers\" loading=\"lazy\" />\n<figcaption>Find and evaluate research papers</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
     "heading": "Website prototype",
-    "content": "The official website example uses Plan mode for Skill discovery. Establish the audience, page structure, sources and update requirements before implementation, then validate the preview.\n\nPractice prompt: “Propose a personal knowledge directory. Explain navigation and search behavior before implementing it.”\n\nThese are exercises, not completed searches or published sites. Continue with [tips](./tips)."
+    "content": "The official website example uses Plan mode for Skill discovery. Establish the audience, page structure, sources and update requirements before implementation, then validate the preview.\n\nPractice prompt: “Propose a personal knowledge directory. Explain navigation and search behavior before implementing it.”\n\nThese are exercises, not completed searches or published sites. Continue with [tips](./tips).\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-48-DmfECf.png\" alt=\"Build and preview a website\" loading=\"lazy\" />\n<figcaption>Build and preview a website</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
     "heading": "AStudio FAQ",
-    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/faq) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/faq) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page."
   },
   {
     "lang": "en",
@@ -1767,37 +1807,57 @@
   {
     "lang": "en",
     "heading": "How do I report problems?",
-    "content": "Check the installer source and supported system, then consult [official troubleshooting](https://agent.xfyun.cn/studio-guide/faq). Send reproduction steps, versions and relevant screenshots through Settings > Feedback."
+    "content": "Check the installer source and supported system, then consult [official troubleshooting](https://agent.xfyun.cn/studio-guide/faq). Send reproduction steps, versions and relevant screenshots through Settings > Feedback.\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-57-UMikYg.png\" alt=\"Submit feedback\" loading=\"lazy\" />\n<figcaption>Submit feedback</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
     "heading": "AStudio Core Features",
-    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/features) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/features) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page.\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it."
   },
   {
     "lang": "en",
     "heading": "Daily and Projects",
-    "content": "Daily creates a workspace for standalone work. Projects uses a local folder you select for ongoing files or code. Check the active project before starting a task."
+    "content": "Start standalone work in Daily. Add a project before creating tasks that maintain the same local folder.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-03-yhme0Y.png\" alt=\"Create a daily task\" loading=\"lazy\" />\n<figcaption>Create a daily task</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-04-Js8Aub.png\" alt=\"Attach files and describe the task\" loading=\"lazy\" />\n<figcaption>Attach files and describe the task</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-05-TyLOgg.png\" alt=\"Drag files into a conversation\" loading=\"lazy\" />\n<figcaption>Drag files into a conversation</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-06-ZIGwcb.png\" alt=\"Find a task in the list\" loading=\"lazy\" />\n<figcaption>Find a task in the list</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-07-AQvvZe.png\" alt=\"Add a project\" loading=\"lazy\" />\n<figcaption>Add a project</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-08-LqfQzh.png\" alt=\"Select the project folder\" loading=\"lazy\" />\n<figcaption>Select the project folder</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-09-p7gLWg.png\" alt=\"Start a task in a project\" loading=\"lazy\" />\n<figcaption>Start a task in a project</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
-    "heading": "Task modes",
-    "content": "| Mode | Use |\n| --- | --- |\n| Default | Send a request directly |\n| Plan | Enable under “+”, review the plan, then start implementation |\n| Goal | Enable under “+” for continued progress; add requirements, pause or clear the goal |"
+    "heading": "Create and Find Tasks",
+    "content": "The entry point determines the workspace. Check the active project before sending, and use Search to find projects, tasks and actions.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-10-jo87Qb.png\" alt=\"Create a task from Daily\" loading=\"lazy\" />\n<figcaption>Create a task from Daily</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-11-nDvulf.png\" alt=\"Create an independent task\" loading=\"lazy\" />\n<figcaption>Create an independent task</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-12-unqMyc.png\" alt=\"Create a blank task from Search\" loading=\"lazy\" />\n<figcaption>Create a blank task from Search</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-13-HGZ7Gd.png\" alt=\"Create a project task\" loading=\"lazy\" />\n<figcaption>Create a project task</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-14-KSgTJh.png\" alt=\"Start from the project view\" loading=\"lazy\" />\n<figcaption>Start from the project view</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-15-tOJjof.png\" alt=\"Check the current project context\" loading=\"lazy\" />\n<figcaption>Check the current project context</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-16-A7GZBf.png\" alt=\"Global search\" loading=\"lazy\" />\n<figcaption>Global search</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-17-X1sLcc.png\" alt=\"Search shortcuts and actions\" loading=\"lazy\" />\n<figcaption>Search shortcuts and actions</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
-    "heading": "Review deliverables",
-    "content": "Text supports editing, comments, excerpts and version comparison. Request spreadsheet, image and PDF changes through conversation, then refresh. Websites support interaction and element selection; request a public link when ready."
+    "heading": "Organize and Archive",
+    "content": "Sort, pin and archive tasks to organize your work. Open Settings > Archived to restore or delete an archived task.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-18-Z72Cod.png\" alt=\"Sort the task list\" loading=\"lazy\" />\n<figcaption>Sort the task list</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-19-2T4umh.png\" alt=\"Choose a task ordering\" loading=\"lazy\" />\n<figcaption>Choose a task ordering</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-20-eo0Bvd.png\" alt=\"Sort projects\" loading=\"lazy\" />\n<figcaption>Sort projects</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-21-284rPu.png\" alt=\"Pin a task\" loading=\"lazy\" />\n<figcaption>Pin a task</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-22-wuXZse.png\" alt=\"Archive a task\" loading=\"lazy\" />\n<figcaption>Archive a task</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-23-LZxfkd.png\" alt=\"Open archived tasks\" loading=\"lazy\" />\n<figcaption>Open archived tasks</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-24-ps9Xzd.png\" alt=\"Restore or delete an archived task\" loading=\"lazy\" />\n<figcaption>Restore or delete an archived task</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
-    "heading": "Tools and organization",
-    "content": "Inspect files and diffs, run tests in the terminal, and review Git state. Choose an approval policy appropriate to the work. Create automation through its page or conversation, and configure extensions in the plugin center. Search, pin or archive tasks; restore them under Settings > Archived."
+    "heading": "Task Modes",
+    "content": "Send ordinary requests directly. Enable Plan mode under “+” to review before execution, or Goal mode for continued progress. Add requirements or pause while a goal is running.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-25-lEzgff.png\" alt=\"Enable Plan mode\" loading=\"lazy\" />\n<figcaption>Enable Plan mode</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-26-MwVPze.png\" alt=\"Clarify requirements before execution\" loading=\"lazy\" />\n<figcaption>Clarify requirements before execution</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-27-JKuBsc.png\" alt=\"Review the proposed plan\" loading=\"lazy\" />\n<figcaption>Review the proposed plan</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-28-usx7sf.png\" alt=\"Start implementing the plan\" loading=\"lazy\" />\n<figcaption>Start implementing the plan</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-29-XIocye.png\" alt=\"Enable Goal mode\" loading=\"lazy\" />\n<figcaption>Enable Goal mode</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-30-yTTtHb.png\" alt=\"Track goal execution\" loading=\"lazy\" />\n<figcaption>Track goal execution</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Preview and Edit Results",
+    "content": "Edit text, add comments, quote excerpts and compare versions. Request spreadsheet, image and PDF changes in conversation, then refresh. For websites, select an element for feedback or switch to interaction mode.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-31-Wskfpf.png\" alt=\"Edit text directly\" loading=\"lazy\" />\n<figcaption>Edit text directly</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-32-EMdCtf.png\" alt=\"Add an inline comment\" loading=\"lazy\" />\n<figcaption>Add an inline comment</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-33-nA1NLe.png\" alt=\"Quote selected text\" loading=\"lazy\" />\n<figcaption>Quote selected text</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-34-SiYv4c.png\" alt=\"Compare saved versions\" loading=\"lazy\" />\n<figcaption>Compare saved versions</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-35-xYf5if.png\" alt=\"Markdown source and preview\" loading=\"lazy\" />\n<figcaption>Markdown source and preview</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-36-KFnXbe.png\" alt=\"Select a website element for changes\" loading=\"lazy\" />\n<figcaption>Select a website element for changes</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Project Tools and Permissions",
+    "content": "Use files, diffs, the terminal and Git to inspect project changes. Choose the approval policy appropriate to the task and review the authorized scope.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-37-C1BuFe.png\" alt=\"Project tools\" loading=\"lazy\" />\n<figcaption>Project tools</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-38-ys3aDg.png\" alt=\"Choose an approval policy\" loading=\"lazy\" />\n<figcaption>Choose an approval policy</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-39-XyNfec.png\" alt=\"Configure permissions\" loading=\"lazy\" />\n<figcaption>Configure permissions</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Automation",
+    "content": "Create scheduled work from the automation page or a conversation. Confirm its schedule, project and permissions, then run it manually to check inputs, results and save location.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-40-voTarf.png\" alt=\"View automations\" loading=\"lazy\" />\n<figcaption>View automations</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-41-5Pp1Mf.png\" alt=\"Configure a new automation\" loading=\"lazy\" />\n<figcaption>Configure a new automation</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-42-n0wXPe.png\" alt=\"Confirm automation rules\" loading=\"lazy\" />\n<figcaption>Confirm automation rules</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Plugin Center",
+    "content": "Browse or search for plugins, configure required accounts after installation, and manage installed extensions for your tasks.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-43-fZ75ph.png\" alt=\"Discover plugins\" loading=\"lazy\" />\n<figcaption>Discover plugins</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-44-5spzxe.png\" alt=\"Manage installed plugins\" loading=\"lazy\" />\n<figcaption>Manage installed plugins</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
     "heading": "AStudio Introduction",
-    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/intro) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/intro) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page."
   },
   {
     "lang": "en",
@@ -1808,6 +1868,11 @@
     "lang": "en",
     "heading": "Choose a starting point",
     "content": "| Your task | Start here |\n| --- | --- |\n| First visit | [Install and complete a task](./quickstart) |\n| Standalone work | Use Daily and attach reference files |\n| Ongoing local work | Use Projects and select the relevant folder |\n| Review before execution | [Plan mode](./features#task-modes) |\n| Understand charges and data handling | [Plans](./pricing) and [desktop privacy](./agreements/privacy-client) |\n\nAstronClaw and Loomy have separate tutorials. Check each product's own features and billing rules."
+  },
+  {
+    "lang": "en",
+    "heading": "Official AStudio Communities",
+    "content": "> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-58-dMj2Xf.png\" alt=\"Join the AStudio WeChat community\" loading=\"lazy\" />\n<figcaption>Join the AStudio WeChat community</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/feishu-group-qr-20260902.png\" alt=\"Join the AStudio Feishu community\" loading=\"lazy\" />\n<figcaption>Join the AStudio Feishu community</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
@@ -1832,12 +1897,12 @@
   {
     "lang": "en",
     "heading": "AStudio Quick Start",
-    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/quickstart) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/quickstart) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page."
   },
   {
     "lang": "en",
     "heading": "Install and sign in",
-    "content": "Use the download entry on the [official quick-start page](https://agent.xfyun.cn/studio-guide/quickstart). Supported environments listed there are Apple silicon Macs and 64-bit Windows 10 / 11. Install the client and sign in."
+    "content": "Use the download entry on the [official quick-start page](https://agent.xfyun.cn/studio-guide/quickstart). Supported environments listed there are Apple silicon Macs and 64-bit Windows 10 / 11. Install the client and sign in.\n\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-01-RhqrKG.png\" alt=\"New-user benefits\" loading=\"lazy\" />\n<figcaption>New-user benefits</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
@@ -1847,32 +1912,47 @@
   {
     "lang": "en",
     "heading": "Find your way around",
-    "content": "The left panel manages tasks, projects and settings; the center contains conversation and execution; the right panel previews files, websites, changes and the terminal. Continue to [projects and task modes](./features) for ongoing folder-based work. See [plans](./pricing) for point validity."
+    "content": "The left panel manages tasks, projects and settings; the center contains conversation and execution; the right panel previews files, websites, changes and the terminal. Continue to [projects and task modes](./features) for ongoing folder-based work. See [plans](./pricing) for point validity.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-02-mXA0XE.png\" alt=\"Workspace layout\" loading=\"lazy\" />\n<figcaption>Workspace layout</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
     "heading": "AStudio Tips",
-    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/tips) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/tips) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page.\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it."
   },
   {
     "lang": "en",
-    "heading": "Make requests concrete",
-    "content": "Clarify uncertain goals before execution. With reference material, identify the structure, tone or layout to follow. Review a plan before changes spanning several files."
+    "heading": "Clarify the Goal",
+    "content": "When the idea is still broad, clarify the purpose, audience and deliverable before execution.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-50-CFRtag.png\" alt=\"Clarify a task through conversation\" loading=\"lazy\" />\n<figcaption>Clarify a task through conversation</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
-    "heading": "Respond to the actual result",
-    "content": "Use conversation for broad changes, element selection for local interface feedback, and direct editing for small text adjustments. Describe the location, current behavior and desired result."
+    "heading": "Provide References",
+    "content": "Attach documents, images or websites and explain which structure, tone or layout to follow.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-51-DFdRFb.png\" alt=\"Provide reference material\" loading=\"lazy\" />\n<figcaption>Provide reference material</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
-    "heading": "Preserve useful context",
-    "content": "Before moving to a new task, prepare a handover with background, decisions, constraints, progress and next steps. Turn repeatable procedures and checks into a personal skill."
+    "heading": "Review Before Large Changes",
+    "content": "For changes across files or important content, review the scope and sequence before implementation.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-52-lMxxh7.png\" alt=\"Review a plan before changes\" loading=\"lazy\" />\n<figcaption>Review a plan before changes</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
-    "heading": "Validate automation",
-    "content": "Run new automation manually once. Check its input, output and save location before relying on the schedule."
+    "heading": "Give Specific Feedback",
+    "content": "Describe the location, current problem and desired result through conversation, element selection or text editing.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-53-MXabZc.png\" alt=\"Give targeted feedback\" loading=\"lazy\" />\n<figcaption>Give targeted feedback</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Prepare a Handover",
+    "content": "Capture background, decisions, constraints, progress and next steps for a new task.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-54-G2mqNf.png\" alt=\"Create a handover document\" loading=\"lazy\" />\n<figcaption>Create a handover document</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Test Automation First",
+    "content": "Run new automation manually and check its inputs, output and save location before relying on the schedule.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-55-B7o4nc.png\" alt=\"Test an automation manually\" loading=\"lazy\" />\n<figcaption>Test an automation manually</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Turn Experience into a Skill",
+    "content": "Turn repeatable steps, definitions and checks into a personal skill for future tasks.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-56-52tiYb.png\" alt=\"Capture a reusable personal skill\" loading=\"lazy\" />\n<figcaption>Capture a reusable personal skill</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",

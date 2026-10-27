@@ -4,12 +4,22 @@ on:
   pull_request:
     paths:
       - 'scripts/doc-watch/**'
+      - 'scripts/sync-astudio-images.mjs'
+      - 'scripts/tests/astudio-assets.test.mjs'
+      - 'docs/public/astudio/**'
+      - 'docs/guide/astudio/**'
+      - 'docs/en/guide/astudio/**'
       - 'package.json'
       - '.github/workflows/doc-watch-test.yml'
   push:
     branches: [main]
     paths:
       - 'scripts/doc-watch/**'
+      - 'scripts/sync-astudio-images.mjs'
+      - 'scripts/tests/astudio-assets.test.mjs'
+      - 'docs/public/astudio/**'
+      - 'docs/guide/astudio/**'
+      - 'docs/en/guide/astudio/**'
       - 'package.json'
       - '.github/workflows/doc-watch-test.yml'
   workflow_dispatch: {}
@@ -30,3 +40,4 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: npm run test:doc-watch
+      - run: npm run test:assets

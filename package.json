@@ -1,7 +1,7 @@
 {
   "name": "astron-harness-tutorial",
   "version": "1.0.0",
-  "description": "",
+  "description": "Illustrated tutorials for AStudio, Loomy and AstronClaw",
   "main": "index.js",
   "scripts": {
     "test:doc-watch": "node --test scripts/doc-watch/check-updates.test.mjs",
@@ -11,7 +11,10 @@
     "docs:preview": "vitepress preview docs",
     "server": "node server.js",
     "test:chat": "node --test scripts/tests/chat.test.cjs",
-    "dev": "npm run server & npm run docs:dev"
+    "dev": "npm run server & npm run docs:dev",
+    "test:assets": "node --test scripts/tests/astudio-assets.test.mjs",
+    "docs:check-images": "node scripts/sync-astudio-images.mjs --check",
+    "docs:sync-images": "node scripts/sync-astudio-images.mjs --write"
   },
   "keywords": [],
   "author": "",

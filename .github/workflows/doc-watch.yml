@@ -46,6 +46,14 @@ jobs:
           set +e
           node scripts/doc-watch/check-updates.mjs --report doc-watch-report.md 2> doc-watch-stderr.log
           code=$?
+          node scripts/sync-astudio-images.mjs --check --report doc-watch-images.md 2>> doc-watch-stderr.log
+          image_code=$?
+          if [ -f doc-watch-images.md ]; then
+            printf '\n' >> doc-watch-report.md
+            cat doc-watch-images.md >> doc-watch-report.md
+          fi
+          if [ "$image_code" -eq 2 ]; then code=2; fi
+          if [ "$image_code" -eq 1 ] && [ "$code" -eq 0 ]; then code=1; fi
           cat doc-watch-stderr.log >&2
           echo "code=$code" >> "$GITHUB_OUTPUT"
           set -e
@@ -162,6 +170,7 @@ jobs:
           path: |
             doc-watch-report.md
             doc-watch-stderr.log
+            doc-watch-images.md
 
       - name: Fail on incomplete capture
         if: steps.watch.outputs.code == '2'
