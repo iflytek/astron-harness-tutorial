@@ -46,6 +46,45 @@ Loomy will generate a weekly report based on your work content and send it to th
 
 ![Write and Send Emails](/loomy/toolbox/toolbox-email-send.png)
 
+### Configuration Example: Local Knowledge Base (StashBase)
+
+The toolbox also supports external custom MCP services. The following takes [StashBase](https://github.com/liliu-z/stashbase), an open-source local knowledge base app, as an example to demonstrate how to let Loomy semantically search local files on your computer (Markdown, PDF, DOCX, images, etc.).
+
+**1. Prepare StashBase**
+
+*   Install and launch the app from [StashBase Releases](https://github.com/liliu-z/stashbase/releases) (macOS / Windows / Linux supported).
+*   Open the local folders you want AI to search in StashBase. Only folders you explicitly open are indexed; semantic search requires an embedding API key configured in StashBase, while keyword search works without one.
+
+**2. Copy the MCP Configuration**
+
+Open "Settings" -> "MCP" in StashBase and copy the standard MCP configuration from the "For any other MCP-compatible agent" section. It looks like this (use the absolute `command` path you actually copied):
+
+```json
+{
+  "mcpServers": {
+    "stashbase": {
+      "command": "~/.stashbase/bin/stashbase-mcp"
+    }
+  }
+}
+```
+
+**3. Add It to the Loomy Toolbox**
+
+In Loomy "Settings" -> "Toolbox", add an external custom MCP configuration, paste the content copied in the previous step, and save.
+
+**4. Usage Scenario Example**
+
+Create a new task and send a message:
+
+> Find the payment terms in last quarter's contract in my local files
+
+Loomy will call StashBase's `search_library` tool to search matching files by meaning, then use `read_file` to read the sources (PDFs return extracted Markdown text), and answer with references.
+
+> **Note:**
+> * The StashBase desktop app must stay running while searching.
+> * StashBase also exposes file-writing tools (create, edit, delete files); set invocation permissions for them in the toolbox as needed.
+
 ### Frequently Asked Questions
 
 **How to get the QQ Mail authorization code?**
