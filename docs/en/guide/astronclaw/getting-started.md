@@ -30,5 +30,6 @@ Enter the **Channel Configuration** page to connect to enterprise collaboration 
 *   Feishu Channel
 *   DingTalk Channel
 *   WeCom Channel
+*   Weibo Channel
 
 With just a simple configuration of the relevant App ID and credentials, your digital lobster can be on standby at any time in these chat softwares!

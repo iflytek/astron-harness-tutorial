@@ -197,7 +197,7 @@
   {
     "lang": "zh",
     "heading": "第四步：配置消息渠道",
-    "content": "进入 **渠道配置** 页面，连接企业协作平台。AstronClaw 现已支持：\n*   飞书渠道\n*   钉钉渠道\n*   企业微信渠道\n\n只需简单配置相关 App ID 和凭据，你的数字龙虾即可在这些聊天软件中随时待命！"
+    "content": "进入 **渠道配置** 页面，连接企业协作平台。AstronClaw 现已支持：\n*   飞书渠道\n*   钉钉渠道\n*   企业微信渠道\n*   微博渠道\n\n只需简单配置相关 App ID 和凭据，你的数字龙虾即可在这些聊天软件中随时待命！"
   },
   {
     "lang": "zh",
@@ -212,7 +212,7 @@
   {
     "lang": "zh",
     "heading": "对比本地 OpenClaw",
-    "content": "| 对比项 | AstronClaw（云端） | 本地 OpenClaw |\n| :--- | :--- | :--- |\n| **部署方式** | 一键部署，约 1 分钟完成 | 需要 CLI / Docker 安装，操作复杂 |\n| **环境配置** | 无需环境依赖 | 需要 Node、Docker 等 |\n| **技能安装** | 技能市场一键安装 | 手动搜索、下载、安装技能 |\n| **运行状态** | 云端 7×24 小时运行 | 电脑关闭即停止 |\n| **消息渠道** | 支持飞书、钉钉、企微 | 需自行配置 |\n| **运维成本** | 平台托管，零运维 | 需自建服务器或保持设备开机 |"
+    "content": "| 对比项 | AstronClaw（云端） | 本地 OpenClaw |\n| :--- | :--- | :--- |\n| **部署方式** | 一键部署，约 1 分钟完成 | 需要 CLI / Docker 安装，操作复杂 |\n| **环境配置** | 无需环境依赖 | 需要 Node、Docker 等 |\n| **技能安装** | 技能市场一键安装 | 手动搜索、下载、安装技能 |\n| **运行状态** | 云端 7×24 小时运行 | 电脑关闭即停止 |\n| **消息渠道** | 支持飞书、钉钉、企微、微博 | 需自行配置 |\n| **运维成本** | 平台托管，零运维 | 需自建服务器或保持设备开机 |"
   },
   {
     "lang": "zh",
@@ -1122,7 +1122,12 @@
   {
     "lang": "zh",
     "heading": "获取邀请码",
-    "content": "申请通过后，你会获得专属邀请码。邀请码是当前登录和体验 Loomy 的必要凭证，请妥善保存。\n\n![获取邀请码](/loomy/quick-start/qmail.png)\n\n进入 Loomy 官网，选择相应平台，点击下载按钮，即可下载 Loomy 客户端。\n\n![下载 Loomy](/loomy/quick-start/download.png)"
+    "content": "申请通过后，你会获得专属邀请码。邀请码是当前登录和体验 Loomy 的必要凭证，请妥善保存。\n\n![获取邀请码](/loomy/quick-start/qmail.png)"
+  },
+  {
+    "lang": "zh",
+    "heading": "下载并安装 Loomy",
+    "content": "进入 Loomy 官网，选择相应平台，点击下载按钮，即可下载 Loomy 客户端。\n\n![下载 Loomy](/loomy/quick-start/download.png)"
   },
   {
     "lang": "zh",
@@ -1547,12 +1552,12 @@
   {
     "lang": "en",
     "heading": "Step 4: Configure Message Channels",
-    "content": "Enter the **Channel Configuration** page to connect to enterprise collaboration platforms. AstronClaw now supports:\n*   Feishu Channel\n*   DingTalk Channel\n*   WeCom Channel\n\nWith just a simple configuration of the relevant App ID and credentials, your digital lobster can be on standby at any time in these chat softwares!"
+    "content": "Enter the **Channel Configuration** page to connect to enterprise collaboration platforms. AstronClaw now supports:\n*   Feishu Channel\n*   DingTalk Channel\n*   WeCom Channel\n*   Weibo Channel\n\nWith just a simple configuration of the relevant App ID and credentials, your digital lobster can be on standby at any time in these chat softwares!"
   },
   {
     "lang": "en",
     "heading": "AstronClaw: Cloud AI Assistant",
-    "content": "Based on **OpenClaw core capabilities**, we build a deeply customizable personal AI assistant for you. It integrates efficient skills and achieves multi-channel information interaction.\n\nWhile running OpenClaw locally is flexible, it requires configuring the environment, setting up keys, and keeping the device on—once the computer sleeps, the assistant goes offline.\n\n**AstronClaw makes everything simple**: One-click cloud deployment, 24/7 online running, direct browser access to the skills library. Skip the terminal commands, server costs, and installation hassles.\n\n👉 **[Deploy your AstronClaw now](https://openclaw.ai)**\n\nReading time: about 5 minutes\n\n---"
+    "content": "Based on **OpenClaw core capabilities**, we build a deeply customizable personal AI assistant for you. It integrates efficient skills and achieves multi-channel information interaction.\n\nWhile running OpenClaw locally is flexible, it requires configuring the environment, setting up keys, and keeping the device on—once the computer sleeps, the assistant goes offline.\n\n**AstronClaw makes everything simple**: One-click cloud deployment, 24/7 online running, direct browser access to the skills library. Skip the terminal commands, server costs, and installation hassles.\n\n👉 **[Deploy your AstronClaw now](https://agent.xfyun.cn/astron-claw)**\n\nReading time: about 5 minutes\n\n---"
   },
   {
     "lang": "en",
@@ -2472,7 +2477,12 @@
   {
     "lang": "en",
     "heading": "Get Invitation Code",
-    "content": "After your application is approved, you will receive an exclusive invitation code. The invitation code is a necessary credential to log in and experience Loomy currently, please keep it safe.\n\n![Get Invitation Code](/loomy/quick-start/qmail.png)\n\nGo to the Loomy official website, select the corresponding platform, click the download button to download the Loomy client.\n\n![Download Loomy](/loomy/quick-start/download.png)"
+    "content": "After your application is approved, you will receive an exclusive invitation code. The invitation code is a necessary credential to log in and experience Loomy currently, please keep it safe.\n\n![Get Invitation Code](/loomy/quick-start/qmail.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "Download and Install Loomy",
+    "content": "Go to the Loomy official website, select the corresponding platform, click the download button to download the Loomy client.\n\n![Download Loomy](/loomy/quick-start/download.png)"
   },
   {
     "lang": "en",

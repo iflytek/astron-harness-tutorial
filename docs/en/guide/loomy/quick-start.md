@@ -10,6 +10,8 @@ After your application is approved, you will receive an exclusive invitation cod
 
 ![Get Invitation Code](/loomy/quick-start/qmail.png)
 
+## Download and Install Loomy
+
 Go to the Loomy official website, select the corresponding platform, click the download button to download the Loomy client.
 
 ![Download Loomy](/loomy/quick-start/download.png)
