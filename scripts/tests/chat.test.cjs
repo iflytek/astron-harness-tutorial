@@ -73,6 +73,23 @@ test('Vercel handler replaces cached model IDs in non-streaming requests', async
   assert.equal(res.body.choices[0].message.content, 'Hello')
 })
 
+for (const effort of ['none', 'low', 'high']) {
+  test(`Vercel forwards the selected ${effort} level instead of the server default`, async t => {
+    serverEnv(t, { ...env, ASTRON_MAAS_REASONING_EFFORT: 'high' })
+    let payload
+    t.mock.method(globalThis, 'fetch', async (_url, options) => {
+      payload = JSON.parse(options.body)
+      return new Response(JSON.stringify({ choices: [{ message: { content: 'OK' } }] }))
+    })
+    const res = mockResponse()
+    await handler({ method: 'POST', headers: {}, body: { messages, reasoning_effort: effort } }, res)
+    assert.equal(res.statusCode, 200)
+    assert.equal(payload.thinking.type, effort === 'none' ? 'disabled' : 'enabled')
+    assert.equal(payload.reasoning_effort, effort === 'none' ? undefined : effort)
+    assert.equal(payload.model, 'spark-x2.6-4b')
+  })
+}
+
 test('Vercel handler preserves SSE chunks and Pages CORS', async t => {
   serverEnv(t)
   const chunks = [
