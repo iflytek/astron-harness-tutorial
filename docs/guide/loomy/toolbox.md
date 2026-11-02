@@ -46,6 +46,45 @@ Loomy 会根据你的工作内容生成周报，并通过 QQ 邮箱发送给指�
 
 ![撰写并发送邮件](/loomy/toolbox/toolbox-email-send.png)
 
+### 配置示例：接入本地知识库（StashBase）
+
+工具箱同样支持外部自定义 MCP 服务。下面以开源的本地知识库应用 [StashBase](https://github.com/liliu-z/stashbase) 为例，演示如何让 Loomy 语义检索你电脑上的本地资料（Markdown、PDF、DOCX、图片等）。
+
+**1. 准备 StashBase**
+
+*   从 [StashBase Releases](https://github.com/liliu-z/stashbase/releases) 安装并启动应用（支持 macOS / Windows / Linux）。
+*   在 StashBase 中打开你想让 AI 检索的本地文件夹。只有你主动打开的文件夹会被索引；语义搜索需要在 StashBase 中配置 embedding API Key，未配置时仍可使用关键词搜索。
+
+**2. 复制 MCP 配置**
+
+打开 StashBase 的「Settings」->「MCP」，在「For any other MCP-compatible agent」区域复制标准 MCP 配置。配置形如（`command` 以实际复制到的绝对路径为准）：
+
+```json
+{
+  "mcpServers": {
+    "stashbase": {
+      "command": "~/.stashbase/bin/stashbase-mcp"
+    }
+  }
+}
+```
+
+**3. 添加到 Loomy 工具箱**
+
+在 Loomy「设置」->「工具箱」中添加外部自定义 MCP 配置，粘贴上一步复制的内容并保存。
+
+**4. 使用场景示例**
+
+创建一个新任务，发送消息：
+
+> 在我的本地资料里找一下上季度合同中关于付款条款的内容
+
+Loomy 会调用 StashBase 的 `search_library` 工具按语义检索命中的文件，再用 `read_file` 读取原文（PDF 会返回抽取后的 Markdown 文本），并给出带出处的回答。
+
+> **注意：**
+> * 检索期间 StashBase 桌面应用需保持运行。
+> * StashBase 的文件写入类工具（创建、修改、删除文件）也会一并暴露，建议在工具箱中按需设置调用权限。
+
 ### 常见问题
 
 **QQ 邮箱授权码怎么获取？**
