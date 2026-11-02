@@ -3,6 +3,7 @@ import "npm:array-unique-proposal";
 import { components } from "npm:@octokit/openapi-types";
 import { $, argv, YAML } from "npm:zx";
 
+import { createDetachedCommit } from "./git.ts";
 import { Reward } from "./type.ts";
 
 $.verbose = true;
@@ -103,7 +104,10 @@ const tagName = `reward-${issueNumber}`;
 await $`git config user.name "github-actions[bot]"`;
 await $`git config user.email "github-actions[bot]@users.noreply.github.com"`;
 
-await $`git tag -a ${tagName} ${mergeCommitSha} -m ${listText}`;
+const tagTarget = await createDetachedCommit(
+  `${tagName}: merged in ${mergeCommitSha}`,
+);
+await $`git tag -a ${tagName} ${tagTarget} -m ${listText}`;
 await $`git push origin ${tagName} --no-verify`;
 
 await $`git config unset user.name`;
