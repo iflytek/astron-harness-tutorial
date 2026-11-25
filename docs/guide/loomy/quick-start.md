@@ -10,6 +10,8 @@
 
 ![获取邀请码](/loomy/quick-start/qmail.png)
 
+## 下载并安装 Loomy
+
 进入 Loomy 官网，选择相应平台，点击下载按钮，即可下载 Loomy 客户端。
 
 ![下载 Loomy](/loomy/quick-start/download.png)
