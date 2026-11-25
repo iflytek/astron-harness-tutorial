@@ -6,7 +6,7 @@ While running OpenClaw locally is flexible, it requires configuring the environm
 
 **AstronClaw makes everything simple**: One-click cloud deployment, 24/7 online running, direct browser access to the skills library. Skip the terminal commands, server costs, and installation hassles.
 
-👉 **[Deploy your AstronClaw now](https://openclaw.ai)**
+👉 **[Deploy your AstronClaw now](https://agent.xfyun.cn/astron-claw)**
 
 Reading time: about 5 minutes
 

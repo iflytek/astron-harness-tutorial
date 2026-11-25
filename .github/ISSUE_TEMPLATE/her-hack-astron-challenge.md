@@ -1,6 +1,6 @@
 ---
 name: 🌸 HER Hack-Astron 出题
-about: 面向 AstronClaw 云端助手与 Loomy 桌面助手实战教程发布赛题
+about: 面向 AStudio、Loomy 与 AstronClaw 实战教程发布赛题
 title: 'HER Hack-Astron #出题｜赛题名称'
 labels: ['HER Hack-Astron']
 ---
@@ -14,7 +14,7 @@ labels: ['HER Hack-Astron']
 - 出题组织：{{组织名称}}
 - 学习者画像：{{零基础 / 开发者 / 运营 / 公益组织成员}}
 - 真实任务：{{希望用 AI 助手完成的连续工作}}
-- 选用平台：{{AstronClaw 云端 / Loomy 桌面 / 两者协同}}
+- 选用平台：{{AStudio 工作台 / Loomy 桌面 / AstronClaw 云端 / 多产品协同}}
 
 ## 教程赛题方向
 
@@ -53,7 +53,7 @@ labels: ['HER Hack-Astron']
 
 - 场景价值与学习路径清晰度
 - 从零复现成功率和错误处理完整度
-- 对 AstronClaw / Loomy 能力使用的真实性
+- 对 AStudio / Loomy / AstronClaw 能力使用的真实性
 - 隐私、安全、无障碍和内容可维护性
 
 出题 / 合作 / 发奖咨询：ifly_opensource@iflytek.com

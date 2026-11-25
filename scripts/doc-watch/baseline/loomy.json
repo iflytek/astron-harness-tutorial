@@ -183,6 +183,7 @@
         "h3:1. 内容生成与服务规范",
         "h3:2. 服务使用特别提示",
         "h3:3. 您对最终用户的责任",
+        "h3:4. 接入与调用规范",
         "h2:五、科讯创想的权利与义务",
         "h2:六、知识产权",
         "h2:七、权利保护声明",
@@ -198,8 +199,8 @@
         "h2:十七、其他"
       ],
       "images": [],
-      "textHash": "69bfeefaa79638ad",
-      "textLen": 9384
+      "textHash": "357618e67029b1ed",
+      "textLen": 11119
     },
     "https://loomy.xunfei.cn/docs/case": {
       "url": "https://loomy.xunfei.cn/docs/case",

@@ -1,0 +1,12 @@
+:root{--vp-c-brand-1:#3454d1;--vp-c-brand-2:#2543bb;--vp-c-brand-3:#3454d1;--vp-c-brand-soft:#3454d112;--vp-c-bg:#fff;--vp-c-bg-soft:#f5f7fb;--vp-c-text-1:#202a3d;--vp-c-text-2:#5e687c;--vp-button-brand-bg:#3454d1;--vp-button-brand-hover-bg:#2543bb;--medium-zoom-bg:rgba(255,255,255,.94)}
+.dark{--vp-c-brand-1:#99adff;--vp-c-brand-2:#b8c6ff;--vp-c-brand-3:#566fe3;--vp-c-brand-soft:#99adff1a;--vp-c-bg:#171c28;--vp-c-bg-soft:#202738;--vp-c-text-1:#e8edf7;--vp-c-text-2:#b0bdd1;--medium-zoom-bg:rgba(23,28,40,.96)}
+.medium-zoom-overlay{z-index:100}.medium-zoom-image--opened{z-index:101}
+.VPNavBarTitle .logo{height:27px;width:96px;object-fit:contain;background:white;border-radius:4px;padding:3px}.VPNavBarTitle .title{font-size:14px;gap:8px}
+.VPNavBarTranslations,.VPNavBarAppearance,.VPNavScreenTranslations,.VPNavScreenAppearance{display:none!important}.VPNavBarExtra{display:none!important}
+.vp-doc h1{letter-spacing:-.7px}.vp-doc h2{margin-top:44px}.vp-doc a{text-underline-offset:3px}
+.guide-shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:24px 0 36px}.guide-shots figure{margin:0;padding:12px;border:1px solid var(--vp-c-divider);border-radius:10px;background:var(--vp-c-bg-soft);min-width:0}.guide-shots figure:only-child{grid-column:1 / -1}.guide-shots img{display:block;width:100%;height:auto;border-radius:5px;background:white}.guide-shots figcaption{font-size:12px;line-height:1.6;color:var(--vp-c-text-2);margin-top:10px}.guide-shots figure:has(img[src*="guide-img-58"]),.guide-shots figure:has(img[src*="feishu-group"]){max-width:240px}
+.VPNavBarSearch{flex-grow:1}
+@media(min-width:960px) and (max-width:1279px){.VPNavBarTitle .logo{width:72px}.VPNavBarTitle .title{font-size:12px;gap:4px}.VPNavBarMenuLink{padding-inline:8px!important;font-size:12px!important}.VPNavBar .custom-toggles{margin-left:8px!important}}
+@media(max-width:959px){.VPNavBar .VPNavBarMenu,.VPNavBar .custom-toggles{display:none!important}.VPNavBarHamburger{display:flex!important}.VPNavScreen{display:block!important}.VPNavBarTitle .title{font-size:12px}.VPNavBarTitle .logo{width:74px;height:24px}}
+@media(max-width:599px){.VPNavBarTitle .title{gap:4px;font-size:11px}.VPNavBarTitle .logo{width:64px}.guide-shots{grid-template-columns:minmax(0,1fr)}}
+.dark .primary-link{color:#171c28}

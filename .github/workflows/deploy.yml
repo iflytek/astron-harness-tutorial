@@ -40,6 +40,8 @@ jobs:
         run: npm ci
 
       - name: Build and validate with VitePress
+        env:
+          DOCS_BASE: /${{ github.event.repository.name }}/
         run: npm test
 
       - name: Upload artifact
