@@ -4,6 +4,7 @@
   "description": "Illustrated tutorials for AStudio, Loomy and AstronClaw",
   "main": "index.js",
   "scripts": {
+    "test": "npm run docs:build && node scripts/check-docs-index.js",
     "test:doc-watch": "node --test scripts/doc-watch/check-updates.test.mjs",
     "start": "node server.js",
     "docs:dev": "node scripts/generate-index.js && vitepress dev docs",
