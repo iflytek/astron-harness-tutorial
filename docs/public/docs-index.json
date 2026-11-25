@@ -412,17 +412,37 @@
   {
     "lang": "zh",
     "heading": "AStudio 实践案例",
-    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/cases) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。"
+    "content": "> [AStudio 官方案例](https://agent.xfyun.cn/studio-guide/cases) · 2026-11-25。下列配图为官方案例原图。"
   },
   {
     "lang": "zh",
-    "heading": "文献调研练习",
-    "content": "官方案例以 Transformer 相关研究为例。练习时可补充你的研究问题、时间范围和筛选标准，要求每条结果提供可核验来源，并检查论文是否真正相关。\n\n示例任务：“围绕我的研究问题整理相关论文，将标题、年份、来源链接和入选理由列成表格；无法核实的信息单独标记。”\n\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-49-QaA9zf.png\" alt=\"文献检索与筛选\" loading=\"lazy\" />\n<figcaption>文献检索与筛选</figcaption>\n</figure>\n\n</div>"
+    "heading": "苹果公司深度研报",
+    "content": "在金融深度研究报告插件中选择公司研究，输入 AAPL、资料截止日和研究用途。打开生成的 Word 报告，从财务图表选一个营收数字，按报告期和币种对照年报。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/case1_apple_cover_toc.png\" alt=\"苹果公司深度研究报告 - 封面与目录\" loading=\"lazy\" />\n<figcaption>苹果公司深度研究报告 - 封面与目录</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case1_apple_summary_eco.png\" alt=\"苹果公司深度研究报告 - 摘要与商业生态\" loading=\"lazy\" />\n<figcaption>苹果公司深度研究报告 - 摘要与商业生态</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case1_apple_financials.png\" alt=\"苹果公司深度研究报告 - 财务与核心图表\" loading=\"lazy\" />\n<figcaption>苹果公司深度研究报告 - 财务与核心图表</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case1_apple_valuation_refs.png\" alt=\"苹果公司深度研究报告 - 估值与参考文献\" loading=\"lazy\" />\n<figcaption>苹果公司深度研究报告 - 估值与参考文献</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
-    "heading": "网站原型练习",
-    "content": "官方还展示了使用规划模式构建 Skill 发现网站的场景。先确认受众、页面结构、数据来源及更新要求，再执行并在预览区逐项验证。\n\n示例任务：“先为我的个人知识导航站提出页面方案，明确导航和搜索的行为，确认后再实现。”\n\n以上为教程练习提示，不代表已替你检索论文或发布网站。继续阅读[使用技巧](./tips)提高迭代效率。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-48-DmfECf.png\" alt=\"网站搭建与预览\" loading=\"lazy\" />\n<figcaption>网站搭建与预览</figcaption>\n</figure>\n\n</div>"
+    "heading": "具身智能产业链研报",
+    "content": "用行业研究模式限定地区、应用场景和截止日。查看 Word 报告中的产业链图，抽查一个市场规模数字，确认来源覆盖相同地区和产品范围。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/case2_emb_cover_toc.png\" alt=\"具身智能产业链研究报告 - 封面与目录\" loading=\"lazy\" />\n<figcaption>具身智能产业链研究报告 - 封面与目录</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case2_emb_market_chain.png\" alt=\"具身智能产业链研究报告 - 产业链与市场规模\" loading=\"lazy\" />\n<figcaption>具身智能产业链研究报告 - 产业链与市场规模</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case2_emb_parts_players.png\" alt=\"具身智能产业链研究报告 - 核心部件与竞争格局\" loading=\"lazy\" />\n<figcaption>具身智能产业链研究报告 - 核心部件与竞争格局</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case2_emb_funding_refs.png\" alt=\"具身智能产业链研究报告 - 投融资与参考文献\" loading=\"lazy\" />\n<figcaption>具身智能产业链研究报告 - 投融资与参考文献</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "宁德时代 DCF 估值",
+    "content": "指定证券代码 300750.SZ、估值日和币种，生成 Excel 模型。另存副本，修改一项收入增长假设，检查现金流、估值及敏感性表是否随公式重算。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/case3_catl_overview.png\" alt=\"宁德时代DCF估值模型 - 封面与说明\" loading=\"lazy\" />\n<figcaption>宁德时代DCF估值模型 - 封面与说明</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_assumptions.png\" alt=\"宁德时代DCF估值模型 - 核心假设\" loading=\"lazy\" />\n<figcaption>宁德时代DCF估值模型 - 核心假设</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_wacc_financials.png\" alt=\"宁德时代DCF估值模型 - WACC 与财务预测\" loading=\"lazy\" />\n<figcaption>宁德时代DCF估值模型 - WACC 与财务预测</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_dcf.png\" alt=\"宁德时代DCF估值模型 - FCF 与 DCF 估值\" loading=\"lazy\" />\n<figcaption>宁德时代DCF估值模型 - FCF 与 DCF 估值</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_sensitivity.png\" alt=\"宁德时代DCF估值模型 - 敏感性分析\" loading=\"lazy\" />\n<figcaption>宁德时代DCF估值模型 - 敏感性分析</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "快充与电池容量衰减的文献检索",
+    "content": "在学术与科研插件中选择论文检索与筛选，设定年份、电池类型及纳入条件。打开候选论文的 DOI，核对实验是否同时记录了充电条件与容量变化。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/paper-search-preview.png\" alt=\"锂离子电池快速充电容量衰减科研文献检索原图\" loading=\"lazy\" />\n<figcaption>锂离子电池快速充电容量衰减科研文献检索原图</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "视觉理解文献综述",
+    "content": "以“AI 如何看懂图片”为题，提供研究范围和可读的论文全文。检查综述中比较不同方法的段落，逐项回到原文核对数据集、评价指标和实验条件。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/literature-review-preview.png\" alt=\"《AI 如何看懂图片》学术综述与对比原图\" loading=\"lazy\" />\n<figcaption>《AI 如何看懂图片》学术综述与对比原图</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "双栏 PDF 精讲与跟读",
+    "content": "在论文导读中上传可选中文字的完整 PDF，说明读者背景，要求生成双栏 HTML。点击讲解中的来源标签，检查右侧原文高亮，并对照原式核对上下标。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/paper-reading-preview.png\" alt=\"双栏 PDF 论文精讲与交互式跟读原图\" loading=\"lazy\" />\n<figcaption>双栏 PDF 论文精讲与交互式跟读原图</figcaption>\n</figure>\n\n</div>\n\n[继续阅读使用技巧](./tips)"
   },
   {
     "lang": "zh",
@@ -462,7 +482,7 @@
   {
     "lang": "zh",
     "heading": "AStudio 核心功能",
-    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/features) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。"
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/features) · 核对日期：2026-11-25。功能与可用性可能调整，请以官方当前页面为准。\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。"
   },
   {
     "lang": "zh",
@@ -567,7 +587,7 @@
   {
     "lang": "zh",
     "heading": "AStudio 使用技巧",
-    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/tips) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。"
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/tips) · 核对日期：2026-11-25。功能与可用性可能调整，请以官方当前页面为准。\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。"
   },
   {
     "lang": "zh",
@@ -773,6 +793,11 @@
     "lang": "zh",
     "heading": "适合什么样的用户？",
     "content": "Loomy 适合需要频繁处理信息整理、内容创作、文档协作、任务跟进和跨工具执行的人群。比如：\n*   自媒体运营\n*   办公室白领\n*   内容团队\n*   小型业务团队\n*   电商从业者\n*   希望把重复流程交给 AI 协助完成的个人用户\n\n如果你的工作中经常需要在聊天、邮件、文档、网页和待办之间反复切换，Loomy 会更容易发挥价值。"
+  },
+  {
+    "lang": "zh",
+    "heading": "哪些工具可以接入 Loomy？",
+    "content": "通过官方客户端、官网或明确授权的入口，在授权范围内使用自动化功能、技能和连接器。使用第三方工具前应确认接口已开放且获准调用。协议限制未经授权调用未开放接口、向未授权程序转交登录凭证、绕过频率或额度限制，以及通过中转或转售向第三方供给服务。详见[Loomy 用户协议第四部分第 4 节](https://loomy.xunfei.cn/docs/Safe/Loomy-user)。"
   },
   {
     "lang": "zh",
@@ -1761,18 +1786,38 @@
   },
   {
     "lang": "en",
-    "heading": "AStudio Examples",
-    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/cases) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page."
+    "heading": "AStudio research examples",
+    "content": "> [Official AStudio examples](https://agent.xfyun.cn/studio-guide/cases) · November 25, 2026. Screenshots show the Chinese interface."
   },
   {
     "lang": "en",
-    "heading": "Literature research",
-    "content": "The official example explores Transformer research. For your own exercise, specify the research question, date range and selection criteria. Ask for verifiable sources and check relevance.\n\nPractice prompt: “Create a table of relevant papers with titles, years, source links and reasons for inclusion. Flag information you cannot verify.”\n\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-49-QaA9zf.png\" alt=\"Find and evaluate research papers\" loading=\"lazy\" />\n<figcaption>Find and evaluate research papers</figcaption>\n</figure>\n\n</div>"
+    "heading": "Apple company research",
+    "content": "Select company research in the financial research plugin. Enter AAPL, a cutoff date and the purpose of the report. In the Word document, trace one revenue figure to the annual filing and check its period and currency.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/case1_apple_cover_toc.png\" alt=\"Cover and contents\" loading=\"lazy\" />\n<figcaption>Cover and contents</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case1_apple_summary_eco.png\" alt=\"Summary and business ecosystem\" loading=\"lazy\" />\n<figcaption>Summary and business ecosystem</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case1_apple_financials.png\" alt=\"Financial charts\" loading=\"lazy\" />\n<figcaption>Financial charts</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case1_apple_valuation_refs.png\" alt=\"Valuation and references\" loading=\"lazy\" />\n<figcaption>Valuation and references</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
-    "heading": "Website prototype",
-    "content": "The official website example uses Plan mode for Skill discovery. Establish the audience, page structure, sources and update requirements before implementation, then validate the preview.\n\nPractice prompt: “Propose a personal knowledge directory. Explain navigation and search behavior before implementing it.”\n\nThese are exercises, not completed searches or published sites. Continue with [tips](./tips).\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-48-DmfECf.png\" alt=\"Build and preview a website\" loading=\"lazy\" />\n<figcaption>Build and preview a website</figcaption>\n</figure>\n\n</div>"
+    "heading": "Embodied intelligence industry research",
+    "content": "Set the region, applications and cutoff date in industry research mode. Use the value-chain diagram in the Word report to identify suppliers, then check that a market-size estimate covers the same geography and products.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/case2_emb_cover_toc.png\" alt=\"Cover and contents\" loading=\"lazy\" />\n<figcaption>Cover and contents</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case2_emb_market_chain.png\" alt=\"Market size and value chain\" loading=\"lazy\" />\n<figcaption>Market size and value chain</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case2_emb_parts_players.png\" alt=\"Components and competitors\" loading=\"lazy\" />\n<figcaption>Components and competitors</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case2_emb_funding_refs.png\" alt=\"Funding and references\" loading=\"lazy\" />\n<figcaption>Funding and references</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "CATL discounted cash flow model",
+    "content": "Specify 300750.SZ, a valuation date and currency. Save a copy of the Excel workbook, change one revenue-growth assumption and follow its effect through projected cash flows, valuation and sensitivity analysis.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/case3_catl_overview.png\" alt=\"Workbook overview\" loading=\"lazy\" />\n<figcaption>Workbook overview</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_assumptions.png\" alt=\"Operating assumptions\" loading=\"lazy\" />\n<figcaption>Operating assumptions</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_wacc_financials.png\" alt=\"WACC and financial forecasts\" loading=\"lazy\" />\n<figcaption>WACC and financial forecasts</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_dcf.png\" alt=\"Free cash flow and valuation\" loading=\"lazy\" />\n<figcaption>Free cash flow and valuation</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_sensitivity.png\" alt=\"Sensitivity analysis\" loading=\"lazy\" />\n<figcaption>Sensitivity analysis</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Find studies on fast charging and battery capacity loss",
+    "content": "In the academic research plugin, select paper search and specify years, cell type and inclusion criteria. Follow a DOI from the results and check whether the experiment measured capacity change under the specified charging conditions.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/paper-search-preview.png\" alt=\"Paper search and screening results\" loading=\"lazy\" />\n<figcaption>Paper search and screening results</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Review research on visual understanding",
+    "content": "Define a question about how AI interprets images and supply the scope and accessible full texts. Pick a comparison in the review and check the datasets, metrics and experimental conditions against the cited papers.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/literature-review-preview.png\" alt=\"Literature review and comparison\" loading=\"lazy\" />\n<figcaption>Literature review and comparison</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Read a paper alongside its PDF",
+    "content": "Upload a complete PDF with selectable text to the paper-reading tool. Specify your background and request a two-column HTML reading page. Follow a source tag to the highlighted passage and compare a formula’s subscripts with the original.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/paper-reading-preview.png\" alt=\"Explanation alongside the source PDF\" loading=\"lazy\" />\n<figcaption>Explanation alongside the source PDF</figcaption>\n</figure>\n\n</div>\n\n[AStudio tips](./tips)"
   },
   {
     "lang": "en",
@@ -1812,7 +1857,7 @@
   {
     "lang": "en",
     "heading": "AStudio Core Features",
-    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/features) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page.\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it."
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/features) · Checked: 2026-11-25. Product behavior and availability may change; consult the current official page.\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it."
   },
   {
     "lang": "en",
@@ -1917,7 +1962,7 @@
   {
     "lang": "en",
     "heading": "AStudio Tips",
-    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/tips) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page.\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it."
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/tips) · Checked: 2026-11-25. Product behavior and availability may change; consult the current official page.\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it."
   },
   {
     "lang": "en",
@@ -2123,6 +2168,11 @@
     "lang": "en",
     "heading": "What kind of users is it suitable for?",
     "content": "Loomy is suitable for people who need to frequently handle information organization, content creation, document collaboration, task follow-up, and cross-tool execution. For example:\n*   Self-media operations\n*   Office white-collar workers\n*   Content teams\n*   Small business teams\n*   E-commerce practitioners\n*   Individual users who hope to hand over repetitive processes to AI for assistance\n\nIf your work frequently requires switching back and forth between chats, emails, documents, web pages, and to-dos, Loomy can help you work more efficiently."
+  },
+  {
+    "lang": "en",
+    "heading": "Which integrations can call Loomy?",
+    "content": "Use the official client, website or an explicitly authorized integration within its granted scope. Authorized Skills, connectors and automation are supported. The agreement restricts access to private endpoints, sharing login tokens with unauthorized tools, evading rate or quota limits, and proxying or reselling access without authorization. See section IV.4 of the [Loomy user agreement](https://loomy.xunfei.cn/docs/Safe/Loomy-user)."
   },
   {
     "lang": "en",

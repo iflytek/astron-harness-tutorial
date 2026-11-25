@@ -6,7 +6,7 @@ import {articleImages} from '../sync-astudio-images.mjs';
 
 const manifest = JSON.parse(fs.readFileSync(new URL('../../docs/public/astudio/assets.json', import.meta.url), 'utf8'));
 test('all official illustrations are local, intact and included in both languages', () => {
-  assert.equal(manifest.images.length, 56);
+  assert.equal(manifest.images.length, 70);
   for (const image of manifest.images) {
     const data = fs.readFileSync(new URL('../../docs/public'+image.local, import.meta.url));
     assert.equal(crypto.createHash('sha256').update(data).digest('hex'), image.sha256, image.local);

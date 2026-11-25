@@ -1,6 +1,6 @@
 # AStudio 使用技巧
 
-> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/tips) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。
+> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/tips) · 核对日期：2026-11-25。功能与可用性可能调整，请以官方当前页面为准。
 
 > 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。
 

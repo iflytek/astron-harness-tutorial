@@ -1,38 +1,133 @@
 # AStudio 实践案例
 
-> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/cases) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。
+> [AStudio 官方案例](https://agent.xfyun.cn/studio-guide/cases) · 2026-11-25。下列配图为官方案例原图。
 
-## 文献调研练习
+## 苹果公司深度研报
 
-官方案例以 Transformer 相关研究为例。练习时可补充你的研究问题、时间范围和筛选标准，要求每条结果提供可核验来源，并检查论文是否真正相关。
-
-示例任务：“围绕我的研究问题整理相关论文，将标题、年份、来源链接和入选理由列成表格；无法核实的信息单独标记。”
-
-
-> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。
+在金融深度研究报告插件中选择公司研究，输入 AAPL、资料截止日和研究用途。打开生成的 Word 报告，从财务图表选一个营收数字，按报告期和币种对照年报。
 
 <div class="guide-shots">
 
 <figure>
-<img src="/astudio/images/guide-img-49-QaA9zf.png" alt="文献检索与筛选" loading="lazy" />
-<figcaption>文献检索与筛选</figcaption>
+<img src="/astudio/images/case1_apple_cover_toc.png" alt="苹果公司深度研究报告 - 封面与目录" loading="lazy" />
+<figcaption>苹果公司深度研究报告 - 封面与目录</figcaption>
+</figure>
+
+<figure>
+<img src="/astudio/images/case1_apple_summary_eco.png" alt="苹果公司深度研究报告 - 摘要与商业生态" loading="lazy" />
+<figcaption>苹果公司深度研究报告 - 摘要与商业生态</figcaption>
+</figure>
+
+<figure>
+<img src="/astudio/images/case1_apple_financials.png" alt="苹果公司深度研究报告 - 财务与核心图表" loading="lazy" />
+<figcaption>苹果公司深度研究报告 - 财务与核心图表</figcaption>
+</figure>
+
+<figure>
+<img src="/astudio/images/case1_apple_valuation_refs.png" alt="苹果公司深度研究报告 - 估值与参考文献" loading="lazy" />
+<figcaption>苹果公司深度研究报告 - 估值与参考文献</figcaption>
 </figure>
 
 </div>
 
-## 网站原型练习
+## 具身智能产业链研报
 
-官方还展示了使用规划模式构建 Skill 发现网站的场景。先确认受众、页面结构、数据来源及更新要求，再执行并在预览区逐项验证。
-
-示例任务：“先为我的个人知识导航站提出页面方案，明确导航和搜索的行为，确认后再实现。”
-
-以上为教程练习提示，不代表已替你检索论文或发布网站。继续阅读[使用技巧](./tips)提高迭代效率。
+用行业研究模式限定地区、应用场景和截止日。查看 Word 报告中的产业链图，抽查一个市场规模数字，确认来源覆盖相同地区和产品范围。
 
 <div class="guide-shots">
 
 <figure>
-<img src="/astudio/images/guide-img-48-DmfECf.png" alt="网站搭建与预览" loading="lazy" />
-<figcaption>网站搭建与预览</figcaption>
+<img src="/astudio/images/case2_emb_cover_toc.png" alt="具身智能产业链研究报告 - 封面与目录" loading="lazy" />
+<figcaption>具身智能产业链研究报告 - 封面与目录</figcaption>
+</figure>
+
+<figure>
+<img src="/astudio/images/case2_emb_market_chain.png" alt="具身智能产业链研究报告 - 产业链与市场规模" loading="lazy" />
+<figcaption>具身智能产业链研究报告 - 产业链与市场规模</figcaption>
+</figure>
+
+<figure>
+<img src="/astudio/images/case2_emb_parts_players.png" alt="具身智能产业链研究报告 - 核心部件与竞争格局" loading="lazy" />
+<figcaption>具身智能产业链研究报告 - 核心部件与竞争格局</figcaption>
+</figure>
+
+<figure>
+<img src="/astudio/images/case2_emb_funding_refs.png" alt="具身智能产业链研究报告 - 投融资与参考文献" loading="lazy" />
+<figcaption>具身智能产业链研究报告 - 投融资与参考文献</figcaption>
 </figure>
 
 </div>
+
+## 宁德时代 DCF 估值
+
+指定证券代码 300750.SZ、估值日和币种，生成 Excel 模型。另存副本，修改一项收入增长假设，检查现金流、估值及敏感性表是否随公式重算。
+
+<div class="guide-shots">
+
+<figure>
+<img src="/astudio/images/case3_catl_overview.png" alt="宁德时代DCF估值模型 - 封面与说明" loading="lazy" />
+<figcaption>宁德时代DCF估值模型 - 封面与说明</figcaption>
+</figure>
+
+<figure>
+<img src="/astudio/images/case3_catl_assumptions.png" alt="宁德时代DCF估值模型 - 核心假设" loading="lazy" />
+<figcaption>宁德时代DCF估值模型 - 核心假设</figcaption>
+</figure>
+
+<figure>
+<img src="/astudio/images/case3_catl_wacc_financials.png" alt="宁德时代DCF估值模型 - WACC 与财务预测" loading="lazy" />
+<figcaption>宁德时代DCF估值模型 - WACC 与财务预测</figcaption>
+</figure>
+
+<figure>
+<img src="/astudio/images/case3_catl_dcf.png" alt="宁德时代DCF估值模型 - FCF 与 DCF 估值" loading="lazy" />
+<figcaption>宁德时代DCF估值模型 - FCF 与 DCF 估值</figcaption>
+</figure>
+
+<figure>
+<img src="/astudio/images/case3_catl_sensitivity.png" alt="宁德时代DCF估值模型 - 敏感性分析" loading="lazy" />
+<figcaption>宁德时代DCF估值模型 - 敏感性分析</figcaption>
+</figure>
+
+</div>
+
+## 快充与电池容量衰减的文献检索
+
+在学术与科研插件中选择论文检索与筛选，设定年份、电池类型及纳入条件。打开候选论文的 DOI，核对实验是否同时记录了充电条件与容量变化。
+
+<div class="guide-shots">
+
+<figure>
+<img src="/astudio/images/paper-search-preview.png" alt="锂离子电池快速充电容量衰减科研文献检索原图" loading="lazy" />
+<figcaption>锂离子电池快速充电容量衰减科研文献检索原图</figcaption>
+</figure>
+
+</div>
+
+## 视觉理解文献综述
+
+以“AI 如何看懂图片”为题，提供研究范围和可读的论文全文。检查综述中比较不同方法的段落，逐项回到原文核对数据集、评价指标和实验条件。
+
+<div class="guide-shots">
+
+<figure>
+<img src="/astudio/images/literature-review-preview.png" alt="《AI 如何看懂图片》学术综述与对比原图" loading="lazy" />
+<figcaption>《AI 如何看懂图片》学术综述与对比原图</figcaption>
+</figure>
+
+</div>
+
+## 双栏 PDF 精讲与跟读
+
+在论文导读中上传可选中文字的完整 PDF，说明读者背景，要求生成双栏 HTML。点击讲解中的来源标签，检查右侧原文高亮，并对照原式核对上下标。
+
+<div class="guide-shots">
+
+<figure>
+<img src="/astudio/images/paper-reading-preview.png" alt="双栏 PDF 论文精讲与交互式跟读原图" loading="lazy" />
+<figcaption>双栏 PDF 论文精讲与交互式跟读原图</figcaption>
+</figure>
+
+</div>
+
+[继续阅读使用技巧](./tips)

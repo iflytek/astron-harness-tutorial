@@ -15,7 +15,7 @@ AStudio 覆盖 `intro`、`quickstart`、`features`、`cases`、`tips`、`pricing
 
 ### AStudio 配图
 
-`scripts/sync-astudio-images.mjs` 抓取正文配图并比较 SHA-256，既检测新 URL，也检测同地址图片内容替换。当前清单有 56 张图片，来源、双语图注、路径和校验值记录在 `docs/public/astudio/assets.json`。
+`scripts/sync-astudio-images.mjs` 抓取正文配图并比较 SHA-256，既检测新 URL，也检测同地址图片内容替换。当前清单有 70 张图片，来源、双语图注、路径和校验值记录在 `docs/public/astudio/assets.json`。
 
 - `npm run docs:check-images`：只读核对，退出码 0 无变化、1 有变化、2 抓取失败。
 - `npm run docs:sync-images`：全部抓取成功后写入本地图片与清单。新图需要补英文图注并放到中英文对应步骤中，再运行 `npm run test:assets`。
