@@ -152,6 +152,10 @@ export default defineConfig({
                 "link": "/guide/loomy/office-cli"
               },
               {
+                "text": "无界面周报自动化",
+                "link": "/guide/loomy/headless-office-automation"
+              },
+              {
                 "text": "典型工作场景",
                 "link": "/guide/loomy/scenarios"
               },
@@ -351,6 +355,10 @@ export default defineConfig({
               {
                 "text": "Office CLI",
                 "link": "/en/guide/loomy/office-cli"
+              },
+              {
+                "text": "Headless Weekly Reports",
+                "link": "/en/guide/loomy/headless-office-automation"
               },
               {
                 "text": "Scenarios",
