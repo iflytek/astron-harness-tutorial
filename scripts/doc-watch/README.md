@@ -15,7 +15,7 @@ AStudio 覆盖 `intro`、`quickstart`、`features`、`cases`、`tips`、`pricing
 
 ### AStudio 配图
 
-`scripts/sync-astudio-images.mjs` 抓取正文配图并比较 SHA-256，既检测新 URL，也检测同地址图片内容替换。当前清单有 70 张图片，来源、双语图注、路径和校验值记录在 `docs/public/astudio/assets.json`。
+`scripts/sync-astudio-images.mjs` 抓取正文配图并比较 SHA-256，既检测新 URL，也检测同地址图片内容替换。来源、双语图注、路径和校验值记录在 `docs/public/astudio/assets.json`。
 
 - `npm run docs:check-images`：只读核对，退出码 0 无变化、1 有变化、2 抓取失败。
 - `npm run docs:sync-images`：全部抓取成功后写入本地图片与清单。新图需要补英文图注并放到中英文对应步骤中，再运行 `npm run test:assets`。
@@ -33,7 +33,7 @@ scripts/doc-watch/
     loomy.json
     astronclaw.json
     astudio.json
-.github/workflows/doc-watch.yml   # 每日 cron：Issue 告警 +（可选）OpenAI 起草并开 PR
+.github/workflows/doc-watch.yml   # 每日巡检、验证、提 PR、合并与部署
 ```
 
 ## 本地用法
@@ -79,37 +79,13 @@ node scripts/doc-watch/check-updates.mjs --source astudio --update
 下一次抓取成功时自动关闭。两类 Issue 按标题区分，互不覆盖。
 免费、纯确定性，但不含联网搜索与自动起草。
 
-### 第二层 A：OpenAI 起草（在 GitHub Actions 里跑你自己的 API，省 Claude 额度）✅ 推荐
+### 第二层：自动同步与合并
 
-`draft-with-openai.mjs` 用 **OpenAI Responses API**（自带 `web_search` 内置工具）完成
-「读懂上游新页面 → 起草中英双语页面 → 下载配图 → 联网检索官方更新」，按你自己的
-OpenAI key 计费，不消耗 Claude 额度。工作流在检测到变化且配置了 key 时自动调用它并开 PR。
+每天北京时间 09:00，巡检发现正文、页面集合或 AStudio 配图变化时，工作流从同一次完整采集取得差异与候选基线。它根据官方正文生成双语更新，校验来源哈希、图片清单与文件、运行回归测试并构建站点。无需等待人工运行基线更新命令。
 
-启用步骤：
+仓库 Secret `OPENAI_API_KEY` 用于生成内容，可用 `OPENAI_MODEL` 选择模型。专用分支 doc-watch/sync-upstream 在重试时复用同一条开放 PR，GitHub Actions 机器人提交并请求 `DOC_WATCH_REVIEWER` 审阅（默认 dongjiang1989）。随后在该分支运行 CI，确认 PR 检查、审阅请求和提交 SHA，再合并并触发 Pages 部署。受保护分支仍按仓库规则执行。
 
-1. 仓库 **Settings → Secrets and variables → Actions**：
-   - 新增 Secret `OPENAI_API_KEY` = 你的 OpenAI key。
-   - （可选）新增 Variable `OPENAI_MODEL`，默认 `gpt-4.1`；须用支持 `web_search` 的模型。
-2. 仓库 **Settings → Actions → General → Workflow permissions**：勾选
-   **「Allow GitHub Actions to create and approve pull requests」**（否则无法自动开 PR）。
-3. 之后每天若上游有新增页面，工作流会自动：起草双语页面 + 下载配图 → `npm run docs:build`
-   → 开一个 `docs: 同步上游文档新增内容 (日期)` 的待审 PR。自动起草不刷新基线，避免清除尚未处理的价格、协议或其他文档变更；审阅并补齐后再手动接受对应源的基线。
-
-本地试跑（需要 key；`--dry-run` 不调用 OpenAI、不写文件，仅打印计划）：
-
-```bash
-node scripts/doc-watch/draft-with-openai.mjs --dry-run
-OPENAI_API_KEY=sk-... node scripts/doc-watch/draft-with-openai.mjs
-```
-
-护栏：只自动镜像新的 Loomy 内容页（跳过法务/隐私/索引页）；侧边栏入口与「内容有改动的
-已有页面 / AstronClaw 指南 / AStudio 指南及协议」留在 PR 描述里由人工处理；PR 仅起草、不自动合并，需人工审阅。
-另需 `OPENAI_BASE_URL` 时可指向 OpenAI 兼容端点。
-
-在 Actions 手动运行时可选 `dry_run=true`：只抓取并上传报告，不创建或修改 Issue、评论或 PR，也不调用起草模型。抓取不完整会使工作流失败；成功、变化和失败的报告均保留为构件。
-
-> ⚠️ web_search 需要联网；纯文档同步（翻译/改写上游正文）即使模型不带搜索也能完成，
-> 只有「发现全网全新功能」那部分依赖 web_search。
+无变化时跳过 PR。采集、模型、构建、审阅设置或检查失败时，失败步骤留在 Actions 日志中，main 保留上次成功版本。手动选择 `dry_run=true` 只采集并上传报告，不发布内容。
 
 ### 第二层 B：Claude 定时云 agent（备选，消耗 Claude 额度）
 

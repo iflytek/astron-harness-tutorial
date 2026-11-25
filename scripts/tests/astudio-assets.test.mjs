@@ -6,13 +6,17 @@ import {articleImages} from '../sync-astudio-images.mjs';
 
 const manifest = JSON.parse(fs.readFileSync(new URL('../../docs/public/astudio/assets.json', import.meta.url), 'utf8'));
 test('all official illustrations are local, intact and included in both languages', () => {
-  assert.equal(manifest.images.length, 70);
+  const baseline = JSON.parse(fs.readFileSync(new URL('../doc-watch/baseline/astudio.json', import.meta.url), 'utf8'));
+  const urls = Object.values(baseline.pages).flatMap(page => page.images)
+    .filter(url => url.startsWith('https://agent.xfyun.cn/studio-guide/astudio-guide/'));
+  assert.ok(urls.length > 0);
+  assert.deepEqual(manifest.images.map(image => image.url).sort(), urls.sort());
   for (const image of manifest.images) {
     const data = fs.readFileSync(new URL('../../docs/public'+image.local, import.meta.url));
     assert.equal(crypto.createHash('sha256').update(data).digest('hex'), image.sha256, image.local);
     assert.ok(image.altEn && !/[\u4e00-\u9fff]/.test(image.altEn), image.local);
     for (const locale of ['', 'en/']) {
-      const markdown = fs.readFileSync(new URL(`../../docs/${locale}guide/astudio/${image.page}.md`, import.meta.url), 'utf8');
+      const markdown = fs.readFileSync(new URL(`../../docs/${locale}guide/astudio/${image.page.replace(/^agreements_/, "agreements/")}.md`, import.meta.url), 'utf8');
       assert.ok(markdown.includes(image.local), `${locale}${image.page}: ${image.local}`);
     }
   }
