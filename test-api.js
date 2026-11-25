@@ -1,20 +1,27 @@
+require('dotenv').config();
+const { prepareChatRequest } = require('./api/_lib/chat-config');
+
 async function test() {
   try {
-    const response = await fetch('https://maas-coding-api.cn-huabei-1.xf-yun.com/v2/chat/completions', {
+    const upstream = prepareChatRequest({
+      messages: [{ role: 'user', content: 'Reply with a short greeting.' }],
+      stream: false
+    });
+    const response = await fetch(upstream.url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 47bc740733f5f73523f329423ea23a46:MjYwZGM4MGMzODdlYjI4YWY1NTY3Y2Mz'
+        Authorization: `Bearer ${upstream.apiKey}`
       },
-      body: JSON.stringify({
-        model: 'astron-code-latest',
-        messages: [{ role: 'user', content: '你好' }]
-      })
+      body: JSON.stringify(upstream.payload),
+      signal: AbortSignal.timeout(55000)
     });
-    const text = await response.text();
-    console.log(response.status, text);
-  } catch (err) {
-    console.error(err);
+    const data = await response.json();
+    console.log({ status: response.status, model: data.model, content: data.choices?.[0]?.message?.content, error: data.error });
+    if (!response.ok || !data.choices?.[0]?.message?.content) process.exitCode = 1;
+  } catch (error) {
+    console.error(error.message);
+    process.exitCode = 1;
   }
 }
 

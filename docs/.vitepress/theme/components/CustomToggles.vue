@@ -2,7 +2,7 @@
 import { useData, useRoute, useRouter } from 'vitepress'
 import { computed } from 'vue'
 
-const { isDark } = useData()
+const { isDark, site, lang } = useData()
 const route = useRoute()
 const router = useRouter()
 
@@ -11,15 +11,16 @@ const toggleDark = () => {
 }
 
 const toggleLang = () => {
-  const path = route.path
+  const base = site.value.base
+  const path = '/' + route.path.slice(base.length)
   if (path.startsWith('/en/')) {
-    router.go(path.replace(/^\/en\//, '/'))
+    router.go(base + path.replace(/^\/en\//, ''))
   } else {
-    router.go(`/en${path}`)
+    router.go(`${base}en${path}`)
   }
 }
 
-const isEn = computed(() => route.path.startsWith('/en/'))
+const isEn = computed(() => lang.value.startsWith('en'))
 </script>
 
 <template>
@@ -28,7 +29,7 @@ const isEn = computed(() => route.path.startsWith('/en/'))
       {{ isEn ? '中' : 'En' }}
     </button>
     <div class="divider"></div>
-    <button class="toggle-btn dark-btn" @click="toggleDark" :title="isDark ? '切换到浅色模式' : 'Switch to Dark Mode'">
+    <button class="toggle-btn dark-btn" @click="toggleDark" :title="isEn ? (isDark ? 'Switch to light mode' : 'Switch to dark mode') : (isDark ? '切换到浅色模式' : '切换到深色模式')">
       <span v-if="isDark" class="icon-moon">🌙</span>
       <span v-else class="icon-sun">☀️</span>
     </button>

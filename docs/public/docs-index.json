@@ -197,7 +197,7 @@
   {
     "lang": "zh",
     "heading": "第四步：配置消息渠道",
-    "content": "进入 **渠道配置** 页面，连接企业协作平台。AstronClaw 现已支持：\n*   飞书渠道\n*   钉钉渠道\n*   企业微信渠道\n\n只需简单配置相关 App ID 和凭据，你的数字龙虾即可在这些聊天软件中随时待命！"
+    "content": "进入 **渠道配置** 页面，连接企业协作平台。AstronClaw 现已支持：\n*   飞书渠道\n*   钉钉渠道\n*   企业微信渠道\n*   微博渠道\n\n只需简单配置相关 App ID 和凭据，你的数字龙虾即可在这些聊天软件中随时待命！"
   },
   {
     "lang": "zh",
@@ -212,7 +212,7 @@
   {
     "lang": "zh",
     "heading": "对比本地 OpenClaw",
-    "content": "| 对比项 | AstronClaw（云端） | 本地 OpenClaw |\n| :--- | :--- | :--- |\n| **部署方式** | 一键部署，约 1 分钟完成 | 需要 CLI / Docker 安装，操作复杂 |\n| **环境配置** | 无需环境依赖 | 需要 Node、Docker 等 |\n| **技能安装** | 技能市场一键安装 | 手动搜索、下载、安装技能 |\n| **运行状态** | 云端 7×24 小时运行 | 电脑关闭即停止 |\n| **消息渠道** | 支持飞书、钉钉、企微 | 需自行配置 |\n| **运维成本** | 平台托管，零运维 | 需自建服务器或保持设备开机 |"
+    "content": "| 对比项 | AstronClaw（云端） | 本地 OpenClaw |\n| :--- | :--- | :--- |\n| **部署方式** | 一键部署，约 1 分钟完成 | 需要 CLI / Docker 安装，操作复杂 |\n| **环境配置** | 无需环境依赖 | 需要 Node、Docker 等 |\n| **技能安装** | 技能市场一键安装 | 手动搜索、下载、安装技能 |\n| **运行状态** | 云端 7×24 小时运行 | 电脑关闭即停止 |\n| **消息渠道** | 支持飞书、钉钉、企微、微博 | 需自行配置 |\n| **运维成本** | 平台托管，零运维 | 需自建服务器或保持设备开机 |"
   },
   {
     "lang": "zh",
@@ -288,6 +288,341 @@
     "lang": "zh",
     "heading": "自定义技能创建完成后的使用方式",
     "content": "技能创建完成后：\n👉 无需额外操作，直接可用\n\n**示例：**\n> 帮我分析这份财报，并给出投资建议\n\n系统将自动调用刚创建的「财报分析技能」"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 自动续费服务协议",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/auto-renewal-service) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "开通前重点阅读扣费周期、续费提醒、价格调整、关闭方式以及退款与争议处理。取消自动续费与申请退款是不同操作，请以官方协议和订阅界面的实际状态为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [网页端隐私政策](./privacy-web)\n- [客户端用户服务协议](./user-service-client)\n- [客户端隐私政策](./privacy-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 个人信息收集清单",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/personal-information-collection-list-zh-CN) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "清单按业务场景列出收集目的、方式、类型与字段。覆盖账号、文件与对话、任务执行、工作区审批、订阅支付、反馈、运行诊断和客户端权限。使用前可按自己启用的功能逐项对照。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [网页端隐私政策](./privacy-web)\n- [客户端用户服务协议](./user-service-client)\n- [客户端隐私政策](./privacy-client)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 客户端隐私政策",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/privacy-client) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "重点阅读文件与任务上下文、工作区与审批、技能与定时任务、客户端权限调用、存储以及信息管理权利。配合个人信息收集清单与第三方共享清单阅读，避免仅凭“本地执行”推断所有数据处理均不联网。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [网页端隐私政策](./privacy-web)\n- [客户端用户服务协议](./user-service-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 网页端隐私政策",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/privacy-web) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "适用于网页端信息处理。重点查看账号登录、对话和上传文件、云端任务、订阅支付、存储期限与个人信息管理权利。可结合客户端隐私政策对照运行环境差异。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [客户端用户服务协议](./user-service-client)\n- [客户端隐私政策](./privacy-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 产品订阅服务协议",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/product-subscription-service) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "购买前核对服务费用、账号要求、积分规则、使用限制、服务可用性和终止条款，并与实际订单确认页相互核对。积分有效期与促销权益应以当前官方规则为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [网页端隐私政策](./privacy-web)\n- [客户端用户服务协议](./user-service-client)\n- [客户端隐私政策](./privacy-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 第三方信息共享清单",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/third-party-sharing-list-zh-CN) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "桌面端清单列明第三方接收方、用途、信息范围及适用环境，同时区分浏览器操作、远程仓库、技能外部接口等情形。调用插件或技能时，还需核对相关服务自己的信息处理规则。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [网页端隐私政策](./privacy-web)\n- [客户端用户服务协议](./user-service-client)\n- [客户端隐私政策](./privacy-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 客户端用户服务协议",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/user-service-client) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "适用于桌面客户端。除账号和服务规则外，使用前应结合实际工作区、文件操作和第三方服务核对授权范围。客户端隐私政策另行说明信息处理方式。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端用户服务协议](./user-service-web)\n- [网页端隐私政策](./privacy-web)\n- [客户端隐私政策](./privacy-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 网页端用户服务协议",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/agreements/user-service-web) · 核对日期：2026-10-26。本页为阅读导航，不替代官方协议；实际适用条款以官方现行文本为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "阅读要点",
+    "content": "适用于网页端服务。阅读时重点核对账号管理、使用行为、生成成果相关权利、第三方服务、费用以及投诉反馈条款。不要把网页端条款与客户端条款混用。"
+  },
+  {
+    "lang": "zh",
+    "heading": "相关文档",
+    "content": "- [网页端隐私政策](./privacy-web)\n- [客户端用户服务协议](./user-service-client)\n- [客户端隐私政策](./privacy-client)\n- [个人信息收集清单](./personal-information-collection-list-zh-CN)\n- [第三方信息共享清单](./third-party-sharing-list-zh-CN)\n- [产品订阅服务协议](./product-subscription-service)\n- [自动续费服务协议](./auto-renewal-service)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 实践案例",
+    "content": "> [AStudio 官方案例](https://agent.xfyun.cn/studio-guide/cases) · 2026-11-25。下列配图为官方案例原图。"
+  },
+  {
+    "lang": "zh",
+    "heading": "苹果公司深度研报",
+    "content": "在金融深度研究报告插件中选择公司研究，输入 AAPL、资料截止日和研究用途。打开生成的 Word 报告，从财务图表选一个营收数字，按报告期和币种对照年报。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/case1_apple_cover_toc.png\" alt=\"苹果公司深度研究报告 - 封面与目录\" loading=\"lazy\" />\n<figcaption>苹果公司深度研究报告 - 封面与目录</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case1_apple_summary_eco.png\" alt=\"苹果公司深度研究报告 - 摘要与商业生态\" loading=\"lazy\" />\n<figcaption>苹果公司深度研究报告 - 摘要与商业生态</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case1_apple_financials.png\" alt=\"苹果公司深度研究报告 - 财务与核心图表\" loading=\"lazy\" />\n<figcaption>苹果公司深度研究报告 - 财务与核心图表</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case1_apple_valuation_refs.png\" alt=\"苹果公司深度研究报告 - 估值与参考文献\" loading=\"lazy\" />\n<figcaption>苹果公司深度研究报告 - 估值与参考文献</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "具身智能产业链研报",
+    "content": "用行业研究模式限定地区、应用场景和截止日。查看 Word 报告中的产业链图，抽查一个市场规模数字，确认来源覆盖相同地区和产品范围。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/case2_emb_cover_toc.png\" alt=\"具身智能产业链研究报告 - 封面与目录\" loading=\"lazy\" />\n<figcaption>具身智能产业链研究报告 - 封面与目录</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case2_emb_market_chain.png\" alt=\"具身智能产业链研究报告 - 产业链与市场规模\" loading=\"lazy\" />\n<figcaption>具身智能产业链研究报告 - 产业链与市场规模</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case2_emb_parts_players.png\" alt=\"具身智能产业链研究报告 - 核心部件与竞争格局\" loading=\"lazy\" />\n<figcaption>具身智能产业链研究报告 - 核心部件与竞争格局</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case2_emb_funding_refs.png\" alt=\"具身智能产业链研究报告 - 投融资与参考文献\" loading=\"lazy\" />\n<figcaption>具身智能产业链研究报告 - 投融资与参考文献</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "宁德时代 DCF 估值",
+    "content": "指定证券代码 300750.SZ、估值日和币种，生成 Excel 模型。另存副本，修改一项收入增长假设，检查现金流、估值及敏感性表是否随公式重算。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/case3_catl_overview.png\" alt=\"宁德时代DCF估值模型 - 封面与说明\" loading=\"lazy\" />\n<figcaption>宁德时代DCF估值模型 - 封面与说明</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_assumptions.png\" alt=\"宁德时代DCF估值模型 - 核心假设\" loading=\"lazy\" />\n<figcaption>宁德时代DCF估值模型 - 核心假设</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_wacc_financials.png\" alt=\"宁德时代DCF估值模型 - WACC 与财务预测\" loading=\"lazy\" />\n<figcaption>宁德时代DCF估值模型 - WACC 与财务预测</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_dcf.png\" alt=\"宁德时代DCF估值模型 - FCF 与 DCF 估值\" loading=\"lazy\" />\n<figcaption>宁德时代DCF估值模型 - FCF 与 DCF 估值</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_sensitivity.png\" alt=\"宁德时代DCF估值模型 - 敏感性分析\" loading=\"lazy\" />\n<figcaption>宁德时代DCF估值模型 - 敏感性分析</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "快充与电池容量衰减的文献检索",
+    "content": "在学术与科研插件中选择论文检索与筛选，设定年份、电池类型及纳入条件。打开候选论文的 DOI，核对实验是否同时记录了充电条件与容量变化。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/paper-search-preview.png\" alt=\"锂离子电池快速充电容量衰减科研文献检索原图\" loading=\"lazy\" />\n<figcaption>锂离子电池快速充电容量衰减科研文献检索原图</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "视觉理解文献综述",
+    "content": "以“AI 如何看懂图片”为题，提供研究范围和可读的论文全文。检查综述中比较不同方法的段落，逐项回到原文核对数据集、评价指标和实验条件。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/literature-review-preview.png\" alt=\"《AI 如何看懂图片》学术综述与对比原图\" loading=\"lazy\" />\n<figcaption>《AI 如何看懂图片》学术综述与对比原图</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "双栏 PDF 精讲与跟读",
+    "content": "在论文导读中上传可选中文字的完整 PDF，说明读者背景，要求生成双栏 HTML。点击讲解中的来源标签，检查右侧原文高亮，并对照原式核对上下标。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/paper-reading-preview.png\" alt=\"双栏 PDF 论文精讲与交互式跟读原图\" loading=\"lazy\" />\n<figcaption>双栏 PDF 论文精讲与交互式跟读原图</figcaption>\n</figure>\n\n</div>\n\n[继续阅读使用技巧](./tips)"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 常见问题",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/faq) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "独立任务为什么进入了项目？",
+    "content": "项目入口会关联当前工作空间。创建独立任务请切换“日常”，或使用项目中的“独立任务”区域。"
+  },
+  {
+    "lang": "zh",
+    "heading": "需要总是开启规划或目标模式吗？",
+    "content": "不需要。普通任务可直接发送；先审阅方案时用规划模式，持续多轮推进时用目标模式。"
+  },
+  {
+    "lang": "zh",
+    "heading": "归档后还能继续吗？",
+    "content": "在“设置 > 已归档”中恢复。归档用于整理列表，不等于删除。"
+  },
+  {
+    "lang": "zh",
+    "heading": "预览里不能直接修改怎么办？",
+    "content": "表格、图片和 PDF 的调整通过对话完成，然后刷新。网页点选无法定位 Canvas 等元素时，用文字描述位置与预期效果。"
+  },
+  {
+    "lang": "zh",
+    "heading": "自动化设置错了怎么办？",
+    "content": "官方当前支持创建、禁用与删除，暂不支持直接修改已有自动化。先手动运行验证；需要调整时可删除旧任务后重新创建。"
+  },
+  {
+    "lang": "zh",
+    "heading": "安装异常或其他问题如何处理？",
+    "content": "核对安装来源和支持的系统，再查看[官方故障排查](https://agent.xfyun.cn/studio-guide/faq)。其他问题可在“设置 > 建议反馈”中提供复现步骤、版本及必要截图。\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-57-UMikYg.png\" alt=\"提交建议反馈\" loading=\"lazy\" />\n<figcaption>提交建议反馈</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 核心功能",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/features) · 核对日期：2026-11-25。功能与可用性可能调整，请以官方当前页面为准。\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。"
+  },
+  {
+    "lang": "zh",
+    "heading": "日常与项目",
+    "content": "独立工作从“日常”开始；需要持续读写同一文件夹时，先添加项目，再在项目中创建任务。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-03-yhme0Y.png\" alt=\"新建日常任务\" loading=\"lazy\" />\n<figcaption>新建日常任务</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-04-Js8Aub.png\" alt=\"添加附件与描述需求\" loading=\"lazy\" />\n<figcaption>添加附件与描述需求</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-05-TyLOgg.png\" alt=\"文件拖拽输入\" loading=\"lazy\" />\n<figcaption>文件拖拽输入</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-06-ZIGwcb.png\" alt=\"任务列表展示\" loading=\"lazy\" />\n<figcaption>任务列表展示</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-07-AQvvZe.png\" alt=\"添加项目\" loading=\"lazy\" />\n<figcaption>添加项目</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-08-LqfQzh.png\" alt=\"选择项目路径\" loading=\"lazy\" />\n<figcaption>选择项目路径</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-09-p7gLWg.png\" alt=\"在项目中新建任务\" loading=\"lazy\" />\n<figcaption>在项目中新建任务</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "新建与查找任务",
+    "content": "新建入口会影响任务归属。发送前检查当前工作区；使用搜索快速定位项目、历史任务和操作。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-10-jo87Qb.png\" alt=\"日常新建\" loading=\"lazy\" />\n<figcaption>日常新建</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-11-nDvulf.png\" alt=\"独立任务新建\" loading=\"lazy\" />\n<figcaption>独立任务新建</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-12-unqMyc.png\" alt=\"搜索弹窗新建空白\" loading=\"lazy\" />\n<figcaption>搜索弹窗新建空白</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-13-HGZ7Gd.png\" alt=\"项目内新建任务\" loading=\"lazy\" />\n<figcaption>项目内新建任务</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-14-KSgTJh.png\" alt=\"项目视图新建\" loading=\"lazy\" />\n<figcaption>项目视图新建</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-15-tOJjof.png\" alt=\"项目上下文新建\" loading=\"lazy\" />\n<figcaption>项目上下文新建</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-16-A7GZBf.png\" alt=\"全局搜索界面\" loading=\"lazy\" />\n<figcaption>全局搜索界面</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-17-X1sLcc.png\" alt=\"搜索功能指引\" loading=\"lazy\" />\n<figcaption>搜索功能指引</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "整理与归档",
+    "content": "通过排序、置顶和归档整理工作。归档后可到“设置 > 已归档”查看、恢复或删除。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-18-Z72Cod.png\" alt=\"任务列表排序\" loading=\"lazy\" />\n<figcaption>任务列表排序</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-19-2T4umh.png\" alt=\"排序操作详情\" loading=\"lazy\" />\n<figcaption>排序操作详情</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-20-eo0Bvd.png\" alt=\"项目排序管理\" loading=\"lazy\" />\n<figcaption>项目排序管理</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-21-284rPu.png\" alt=\"任务置顶\" loading=\"lazy\" />\n<figcaption>任务置顶</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-22-wuXZse.png\" alt=\"任务归档\" loading=\"lazy\" />\n<figcaption>任务归档</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-23-LZxfkd.png\" alt=\"归档任务列表\" loading=\"lazy\" />\n<figcaption>归档任务列表</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-24-ps9Xzd.png\" alt=\"恢复与删除操作\" loading=\"lazy\" />\n<figcaption>恢复与删除操作</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "任务模式",
+    "content": "直接发送即可执行普通任务。希望先审阅方案时，在输入框“+”中开启规划模式；需要围绕目标持续推进时，使用目标模式。目标运行中可补充要求或暂停。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-25-lEzgff.png\" alt=\"开启规划模式\" loading=\"lazy\" />\n<figcaption>开启规划模式</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-26-MwVPze.png\" alt=\"分析与提问确认\" loading=\"lazy\" />\n<figcaption>分析与提问确认</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-27-JKuBsc.png\" alt=\"计划审阅\" loading=\"lazy\" />\n<figcaption>计划审阅</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-28-usx7sf.png\" alt=\"开始实现计划\" loading=\"lazy\" />\n<figcaption>开始实现计划</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-29-XIocye.png\" alt=\"开启目标模式\" loading=\"lazy\" />\n<figcaption>开启目标模式</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-30-yTTtHb.png\" alt=\"目标执行与进度\" loading=\"lazy\" />\n<figcaption>目标执行与进度</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "预览与编辑成果",
+    "content": "文本可直接编辑、评论或引用片段，并查看版本变化。表格、图片和 PDF 的修改通过对话提出；完成后刷新预览。网页可点选元素反馈，也可切换交互模式体验效果。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-31-Wskfpf.png\" alt=\"直接编辑文本\" loading=\"lazy\" />\n<figcaption>直接编辑文本</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-32-EMdCtf.png\" alt=\"添加行内评论\" loading=\"lazy\" />\n<figcaption>添加行内评论</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-33-nA1NLe.png\" alt=\"引用划选文本\" loading=\"lazy\" />\n<figcaption>引用划选文本</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-34-SiYv4c.png\" alt=\"版本历史对比\" loading=\"lazy\" />\n<figcaption>版本历史对比</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-35-xYf5if.png\" alt=\"Markdown源码与预览\" loading=\"lazy\" />\n<figcaption>Markdown源码与预览</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-36-KFnXbe.png\" alt=\"点选元素修改\" loading=\"lazy\" />\n<figcaption>点选元素修改</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "项目工具与权限",
+    "content": "通过文件树、Diff、终端与 Git 检查项目变化。根据任务选择“帮我批准”“请求批准”或“完全访问”，并核对授权范围。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-37-C1BuFe.png\" alt=\"项目工具概览\" loading=\"lazy\" />\n<figcaption>项目工具概览</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-38-ys3aDg.png\" alt=\"权限选择\" loading=\"lazy\" />\n<figcaption>权限选择</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-39-XyNfec.png\" alt=\"权限配置详情\" loading=\"lazy\" />\n<figcaption>权限配置详情</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "自动化",
+    "content": "从自动化页面或对话中创建定时工作，确认周期、项目和权限。先手动运行一次，检查输入、结果与保存位置。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-40-voTarf.png\" alt=\"自动化列表\" loading=\"lazy\" />\n<figcaption>自动化列表</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-41-5Pp1Mf.png\" alt=\"新建自动化配置\" loading=\"lazy\" />\n<figcaption>新建自动化配置</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-42-n0wXPe.png\" alt=\"自动化规则确认\" loading=\"lazy\" />\n<figcaption>自动化规则确认</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "插件中心",
+    "content": "浏览或搜索插件，安装后配置所需账号；在已安装列表中管理状态，按任务需要调用。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-43-fZ75ph.png\" alt=\"插件市场\" loading=\"lazy\" />\n<figcaption>插件市场</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-44-5spzxe.png\" alt=\"插件管理\" loading=\"lazy\" />\n<figcaption>插件管理</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 介绍与定位",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/intro) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 是什么",
+    "content": "AStudio 是面向多类工作任务的 AI 生产力工作台。你提出目标并补充资料，它可以规划步骤、使用工具并交付文档、表格、网页、图片或代码。成果出现在预览区后，还可以继续对话或针对具体位置修改。"
+  },
+  {
+    "lang": "zh",
+    "heading": "从哪里开始",
+    "content": "| 你的需求 | 建议入口 |\n| --- | --- |\n| 第一次体验 | [安装并完成第一个任务](./quickstart) |\n| 处理一次独立工作 | 使用“日常”，附上参考文件 |\n| 持续维护本地资料或代码 | 使用“项目”，关联对应文件夹 |\n| 执行前确认方案 | [规划模式](./features#任务模式) |\n| 了解消费与信息处理 | [套餐与积分](./pricing)、[客户端隐私政策](./agreements/privacy-client) |\n\n本栏目覆盖 AStudio；云端助手 AstronClaw 和桌面搭子 Loomy 各有独立教程。三款产品的功能和计费规则请分别查看，避免混用。"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 官方社群",
+    "content": "> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-58-dMj2Xf.png\" alt=\"扫码加入AStudio微信交流群\" loading=\"lazy\" />\n<figcaption>扫码加入AStudio微信交流群</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/feishu-group-qr-20260902.png\" alt=\"扫码加入AStudio飞书交流群\" loading=\"lazy\" />\n<figcaption>扫码加入AStudio飞书交流群</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 套餐与积分",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/pricing) · 核对日期：2026-10-26。功能与可用性可能调整，请以官方当前页面为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "套餐如何选择",
+    "content": "官方提供体验版、标准版与高级版。它们的月度积分、每日登录奖励、加购折扣和资源权益不同；单月购买、连续包月与连续包年的价格也不同。\n\n请在[官方价格页](https://agent.xfyun.cn/studio-guide/pricing)对照当前套餐表，并在付款页确认金额、周期及优惠条件。本教程不把限时促销价作为长期承诺。"
+  },
+  {
+    "lang": "zh",
+    "heading": "积分有效期",
+    "content": "| 类型 | 官方当前说明 |\n| --- | --- |\n| 新用户奖励 | 1,000 积分，3 个月有效 |\n| 每日登录奖励 | 领取后 31 天有效 |\n| 套餐积分 | 当前会员计费周期内使用；年付也按月刷新 |\n| 加购积分 | 当前会员计费月内使用 |\n\n具体到期时间以积分中心为准。积分用于模型或收费 API 调用，可在任务记录中查看消耗。官方按到期先后扣减；到期相同时，依次使用赠送、套餐和加购积分。"
+  },
+  {
+    "lang": "zh",
+    "heading": "订阅前核对",
+    "content": "确认本期结束时间、自动续费状态和下一次扣费金额。官方当前不支持周期中途切换档位；取消续费后，已付费周期权益保留到期。阅读[订阅协议](./agreements/product-subscription-service)与[续费协议](./agreements/auto-renewal-service)。"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 快速上手",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/quickstart) · 核对日期：2026-10-27。功能与可用性可能调整，请以官方当前页面为准。"
+  },
+  {
+    "lang": "zh",
+    "heading": "安装与登录",
+    "content": "从[官方快速上手页](https://agent.xfyun.cn/studio-guide/quickstart)进入客户端下载入口。官方列出的环境为 Apple 芯片 Mac，以及 Windows 10 / 11 64 位系统。安装后登录账号。\n\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-01-RhqrKG.png\" alt=\"新用户福利\" loading=\"lazy\" />\n<figcaption>新用户福利</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "完成第一个任务",
+    "content": "1. 在左侧选择“日常”，点击“新建任务”。\n2. 在中间输入目标；有资料时，通过附件入口或拖拽加入文件。\n3. 发送后观察执行过程，在右侧查看生成结果。\n4. 指出需要修改的内容，继续调整并检查最终成果。\n\n可以先尝试：“请将这份会议记录整理成行动清单，列出负责人、截止时间和未明确的问题。”这是练习示例，请提供实际记录再执行。"
+  },
+  {
+    "lang": "zh",
+    "heading": "认识界面",
+    "content": "左侧负责项目、任务与设置；中间用于沟通和查看执行过程；右侧用于文件、网页、代码变更和终端预览。需要持续处理同一文件夹时，下一步学习[项目与任务模式](./features)。新用户和登录积分的有效期见[套餐说明](./pricing)。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-02-mXA0XE.png\" alt=\"工作界面布局\" loading=\"lazy\" />\n<figcaption>工作界面布局</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "AStudio 使用技巧",
+    "content": "> 来源：[AStudio 官方文档](https://agent.xfyun.cn/studio-guide/tips) · 核对日期：2026-11-25。功能与可用性可能调整，请以官方当前页面为准。\n\n> 下方配图来自官方文档，已保存到本站。点击图片可放大查看操作细节。"
+  },
+  {
+    "lang": "zh",
+    "heading": "先把方向聊清楚",
+    "content": "只有大概想法时，先确认目的、受众和交付形式，再让 AStudio 执行。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-50-CFRtag.png\" alt=\"理清需求对话示意\" loading=\"lazy\" />\n<figcaption>理清需求对话示意</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "把参考资料交给它",
+    "content": "附上文档、图片或网页，并指出希望参考的结构、语气或布局。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-51-DFdRFb.png\" alt=\"提供参考资料\" loading=\"lazy\" />\n<figcaption>提供参考资料</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "大改之前先看计划",
+    "content": "涉及多个文件或重要内容时，先核对修改范围和顺序，再开始实现。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-52-lMxxh7.png\" alt=\"规划模式计划确认\" loading=\"lazy\" />\n<figcaption>规划模式计划确认</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "对着成果给反馈",
+    "content": "说明具体位置、当前问题和预期效果。可通过对话、网页点选或文本编辑进行调整。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-53-MXabZc.png\" alt=\"点选修改与效果反馈\" loading=\"lazy\" />\n<figcaption>点选修改与效果反馈</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "给下一轮留下交接",
+    "content": "把背景、决定、约束、进度和下一步整理成文档，交给新任务继续使用。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-54-G2mqNf.png\" alt=\"整理交接文档\" loading=\"lazy\" />\n<figcaption>整理交接文档</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "自动化先验证一次",
+    "content": "手动运行新建自动化，检查资料来源、生成内容和保存位置，再依赖定时执行。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-55-B7o4nc.png\" alt=\"自动化任务运行检查\" loading=\"lazy\" />\n<figcaption>自动化任务运行检查</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "zh",
+    "heading": "把经验变成技能",
+    "content": "重复工作的步骤、口径和检查标准，可以整理为个人技能，在后续任务中复用。\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-56-52tiYb.png\" alt=\"沉淀个人技能\" loading=\"lazy\" />\n<figcaption>沉淀个人技能</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "zh",
@@ -451,8 +786,18 @@
   },
   {
     "lang": "zh",
+    "heading": "Loomy 手机端会读取我的剪贴板吗？",
+    "content": "只有在你主动操作时才会。点击复制消息时，Loomy 把所选内容写入系统剪贴板；在输入框中选择粘贴时，只读取本次粘贴的文本并填入输入框。Loomy 不会在后台持续或定期读取剪贴板，粘贴操作本身也不会把剪贴板内容上传到服务器——只有你确认发送后，这段文字才会作为你提交的指令被处理。详见 [Loomy 隐私政策（移动端）](https://loomy.xunfei.cn/docs/Safe/Loomy-mobile-privacy) 第 2.4 节。"
+  },
+  {
+    "lang": "zh",
     "heading": "适合什么样的用户？",
     "content": "Loomy 适合需要频繁处理信息整理、内容创作、文档协作、任务跟进和跨工具执行的人群。比如：\n*   自媒体运营\n*   办公室白领\n*   内容团队\n*   小型业务团队\n*   电商从业者\n*   希望把重复流程交给 AI 协助完成的个人用户\n\n如果你的工作中经常需要在聊天、邮件、文档、网页和待办之间反复切换，Loomy 会更容易发挥价值。"
+  },
+  {
+    "lang": "zh",
+    "heading": "哪些工具可以接入 Loomy？",
+    "content": "通过官方客户端、官网或明确授权的入口，在授权范围内使用自动化功能、技能和连接器。使用第三方工具前应确认接口已开放且获准调用。协议限制未经授权调用未开放接口、向未授权程序转交登录凭证、绕过频率或额度限制，以及通过中转或转售向第三方供给服务。详见[Loomy 用户协议第四部分第 4 节](https://loomy.xunfei.cn/docs/Safe/Loomy-user)。"
   },
   {
     "lang": "zh",
@@ -847,7 +1192,12 @@
   {
     "lang": "zh",
     "heading": "获取邀请码",
-    "content": "申请通过后，你会获得专属邀请码。邀请码是当前登录和体验 Loomy 的必要凭证，请妥善保存。\n\n![获取邀请码](/loomy/quick-start/qmail.png)\n\n进入 Loomy 官网，选择相应平台，点击下载按钮，即可下载 Loomy 客户端。\n\n![下载 Loomy](/loomy/quick-start/download.png)"
+    "content": "申请通过后，你会获得专属邀请码。邀请码是当前登录和体验 Loomy 的必要凭证，请妥善保存。\n\n![获取邀请码](/loomy/quick-start/qmail.png)"
+  },
+  {
+    "lang": "zh",
+    "heading": "下载并安装 Loomy",
+    "content": "进入 Loomy 官网，选择相应平台，点击下载按钮，即可下载 Loomy 客户端。\n\n![下载 Loomy](/loomy/quick-start/download.png)"
   },
   {
     "lang": "zh",
@@ -1003,6 +1353,11 @@
     "lang": "zh",
     "heading": "配置示例：QQ 邮箱 MCP",
     "content": "下面以配置 QQ 邮箱 MCP 为例，演示如何配置和使用工具箱功能。\n\n**1. 配置邮箱信息**\n点击「QQ 邮箱 MCP」卡片右侧的「配置」按钮，填写以下信息：\n*   **邮箱账号**：你的 QQ 邮箱地址（如：example@qq.com）\n*   **授权码**：QQ 邮箱的授权码（不是 QQ 密码）\n\n![QQ邮箱配置](/loomy/toolbox/qmail.png)\n\n配置完成后，状态会显示为「已配置」。\n\n**2. 使用场景示例**\n配置完成后，你可以通过自然语言让 Loomy 帮你处理邮件相关任务。\n\n**场景一：查看未读邮件**\n创建一个新任务，发送消息：\n> 帮我看下我最近的未读邮件\n\nLoomy 会自动连接你的 QQ 邮箱，获取最近三天的未读邮件并展示给你。\n\n![查看未读邮件](/loomy/toolbox/toolbox-email-read.png)\n\n**场景二：撰写并发送邮件**\n你也可以让 Loomy 帮你撰写和发送邮件：\n> 帮我写今日周报并发送给我老板\n\nLoomy 会根据你的工作内容生成周报，并通过 QQ 邮箱发送给指定收件人。\n\n![撰写并发送邮件](/loomy/toolbox/toolbox-email-send.png)"
+  },
+  {
+    "lang": "zh",
+    "heading": "配置示例：接入本地知识库（StashBase）",
+    "content": "工具箱同样支持外部自定义 MCP 服务。下面以开源的本地知识库应用 [StashBase](https://github.com/liliu-z/stashbase) 为例，演示如何让 Loomy 语义检索你电脑上的本地资料（Markdown、PDF、DOCX、图片等）。\n\n**1. 准备 StashBase**\n\n*   从 [StashBase Releases](https://github.com/liliu-z/stashbase/releases) 安装并启动应用（支持 macOS / Windows / Linux）。\n*   在 StashBase 中打开你想让 AI 检索的本地文件夹。只有你主动打开的文件夹会被索引；语义搜索需要在 StashBase 中配置 embedding API Key，未配置时仍可使用关键词搜索。\n\n**2. 复制 MCP 配置**\n\n打开 StashBase 的「Settings」->「MCP」，在「For any other MCP-compatible agent」区域复制标准 MCP 配置。配置形如（`command` 以实际复制到的绝对路径为准）：\n\n```json\n{\n  \"mcpServers\": {\n    \"stashbase\": {\n      \"command\": \"~/.stashbase/bin/stashbase-mcp\"\n    }\n  }\n}\n```\n\n**3. 添加到 Loomy 工具箱**\n\n在 Loomy「设置」->「工具箱」中添加外部自定义 MCP 配置，粘贴上一步复制的内容并保存。\n\n**4. 使用场景示例**\n\n创建一个新任务，发送消息：\n\n> 在我的本地资料里找一下上季度合同中关于付款条款的内容\n\nLoomy 会调用 StashBase 的 `search_library` 工具按语义检索命中的文件，再用 `read_file` 读取原文（PDF 会返回抽取后的 Markdown 文本），并给出带出处的回答。\n\n> **注意：**\n> * 检索期间 StashBase 桌面应用需保持运行。\n> * StashBase 的文件写入类工具（创建、修改、删除文件）也会一并暴露，建议在工具箱中按需设置调用权限。"
   },
   {
     "lang": "zh",
@@ -1272,12 +1627,12 @@
   {
     "lang": "en",
     "heading": "Step 4: Configure Message Channels",
-    "content": "Enter the **Channel Configuration** page to connect to enterprise collaboration platforms. AstronClaw now supports:\n*   Feishu Channel\n*   DingTalk Channel\n*   WeCom Channel\n\nWith just a simple configuration of the relevant App ID and credentials, your digital lobster can be on standby at any time in these chat softwares!"
+    "content": "Enter the **Channel Configuration** page to connect to enterprise collaboration platforms. AstronClaw now supports:\n*   Feishu Channel\n*   DingTalk Channel\n*   WeCom Channel\n*   Weibo Channel\n\nWith just a simple configuration of the relevant App ID and credentials, your digital lobster can be on standby at any time in these chat softwares!"
   },
   {
     "lang": "en",
     "heading": "AstronClaw: Cloud AI Assistant",
-    "content": "Based on **OpenClaw core capabilities**, we build a deeply customizable personal AI assistant for you. It integrates efficient skills and achieves multi-channel information interaction.\n\nWhile running OpenClaw locally is flexible, it requires configuring the environment, setting up keys, and keeping the device on—once the computer sleeps, the assistant goes offline.\n\n**AstronClaw makes everything simple**: One-click cloud deployment, 24/7 online running, direct browser access to the skills library. Skip the terminal commands, server costs, and installation hassles.\n\n👉 **[Deploy your AstronClaw now](https://openclaw.ai)**\n\nReading time: about 5 minutes\n\n---"
+    "content": "Based on **OpenClaw core capabilities**, we build a deeply customizable personal AI assistant for you. It integrates efficient skills and achieves multi-channel information interaction.\n\nWhile running OpenClaw locally is flexible, it requires configuring the environment, setting up keys, and keeping the device on—once the computer sleeps, the assistant goes offline.\n\n**AstronClaw makes everything simple**: One-click cloud deployment, 24/7 online running, direct browser access to the skills library. Skip the terminal commands, server costs, and installation hassles.\n\n👉 **[Deploy your AstronClaw now](https://agent.xfyun.cn/astron-claw)**\n\nReading time: about 5 minutes\n\n---"
   },
   {
     "lang": "en",
@@ -1363,6 +1718,341 @@
     "lang": "en",
     "heading": "How to Use After Custom Skill Creation",
     "content": "After the skill is created:\n👉 No extra operation needed, it's ready to use directly\n\n**Example:**\n> Help me analyze this financial report and give investment advice\n\nThe system will automatically call the newly created \"Financial Report Analysis Skill\""
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Auto-renewal Agreement",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/auto-renewal-service) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "Before enabling renewal, check billing timing, reminders, price changes, cancellation and refund or dispute procedures. Cancelling renewal and requesting a refund are different actions; verify the agreement and your subscription state."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Web Privacy Policy](./privacy-web)\n- [Desktop User Agreement](./user-service-client)\n- [Desktop Privacy Policy](./privacy-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Personal Information Collection",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/personal-information-collection-list-zh-CN) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "The desktop collection list organizes purposes, methods, categories and fields by scenario: accounts, conversations and files, execution, approvals, payments, feedback, diagnostics and device permissions. Match the list to the features you enable."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Web Privacy Policy](./privacy-web)\n- [Desktop User Agreement](./user-service-client)\n- [Desktop Privacy Policy](./privacy-client)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Desktop Privacy Policy",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/privacy-client) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "Review task context, workspaces and approvals, skills and scheduled tasks, device permissions, retention and information rights. Read the collection and sharing lists alongside it; local execution alone does not describe every data flow."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Web Privacy Policy](./privacy-web)\n- [Desktop User Agreement](./user-service-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Web Privacy Policy",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/privacy-web) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "Covers web data handling, including sign-in, conversations and uploads, cloud tasks, payments, retention and personal information rights. Compare the desktop policy when choosing an environment."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Desktop User Agreement](./user-service-client)\n- [Desktop Privacy Policy](./privacy-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Subscription Agreement",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/product-subscription-service) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "Before purchase, review fees, account requirements, point rules, usage restrictions, availability and termination terms alongside checkout details. Verify point validity and promotional benefits against current official rules."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Web Privacy Policy](./privacy-web)\n- [Desktop User Agreement](./user-service-client)\n- [Desktop Privacy Policy](./privacy-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Third-party Sharing",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/third-party-sharing-list-zh-CN) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "The desktop list identifies recipients, purposes, data categories and environments. It separately explains browser actions, remote repositories and external skill interfaces. Check the relevant service rules when using plugins or skills."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Web Privacy Policy](./privacy-web)\n- [Desktop User Agreement](./user-service-client)\n- [Desktop Privacy Policy](./privacy-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Desktop User Agreement",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/user-service-client) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "Covers the desktop client. Alongside account and service rules, check the scope of workspace access, file operations and third-party services. Data handling is described separately in the desktop privacy policy."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web User Agreement](./user-service-web)\n- [Web Privacy Policy](./privacy-web)\n- [Desktop Privacy Policy](./privacy-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Web User Agreement",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/agreements/user-service-web) · Checked: 2026-10-26. This is a reading guide, not an official translation or replacement for the agreement. The current official terms govern."
+  },
+  {
+    "lang": "en",
+    "heading": "Reading guide",
+    "content": "Covers the web service. Review account rules, permitted use, rights relating to outputs, third-party services, fees and feedback procedures. Keep web and desktop terms distinct."
+  },
+  {
+    "lang": "en",
+    "heading": "Related documents",
+    "content": "- [Web Privacy Policy](./privacy-web)\n- [Desktop User Agreement](./user-service-client)\n- [Desktop Privacy Policy](./privacy-client)\n- [Personal Information Collection](./personal-information-collection-list-zh-CN)\n- [Third-party Sharing](./third-party-sharing-list-zh-CN)\n- [Subscription Agreement](./product-subscription-service)\n- [Auto-renewal Agreement](./auto-renewal-service)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio research examples",
+    "content": "> [Official AStudio examples](https://agent.xfyun.cn/studio-guide/cases) · November 25, 2026. Screenshots show the Chinese interface."
+  },
+  {
+    "lang": "en",
+    "heading": "Apple company research",
+    "content": "Select company research in the financial research plugin. Enter AAPL, a cutoff date and the purpose of the report. In the Word document, trace one revenue figure to the annual filing and check its period and currency.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/case1_apple_cover_toc.png\" alt=\"Cover and contents\" loading=\"lazy\" />\n<figcaption>Cover and contents</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case1_apple_summary_eco.png\" alt=\"Summary and business ecosystem\" loading=\"lazy\" />\n<figcaption>Summary and business ecosystem</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case1_apple_financials.png\" alt=\"Financial charts\" loading=\"lazy\" />\n<figcaption>Financial charts</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case1_apple_valuation_refs.png\" alt=\"Valuation and references\" loading=\"lazy\" />\n<figcaption>Valuation and references</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Embodied intelligence industry research",
+    "content": "Set the region, applications and cutoff date in industry research mode. Use the value-chain diagram in the Word report to identify suppliers, then check that a market-size estimate covers the same geography and products.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/case2_emb_cover_toc.png\" alt=\"Cover and contents\" loading=\"lazy\" />\n<figcaption>Cover and contents</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case2_emb_market_chain.png\" alt=\"Market size and value chain\" loading=\"lazy\" />\n<figcaption>Market size and value chain</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case2_emb_parts_players.png\" alt=\"Components and competitors\" loading=\"lazy\" />\n<figcaption>Components and competitors</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case2_emb_funding_refs.png\" alt=\"Funding and references\" loading=\"lazy\" />\n<figcaption>Funding and references</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "CATL discounted cash flow model",
+    "content": "Specify 300750.SZ, a valuation date and currency. Save a copy of the Excel workbook, change one revenue-growth assumption and follow its effect through projected cash flows, valuation and sensitivity analysis.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/case3_catl_overview.png\" alt=\"Workbook overview\" loading=\"lazy\" />\n<figcaption>Workbook overview</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_assumptions.png\" alt=\"Operating assumptions\" loading=\"lazy\" />\n<figcaption>Operating assumptions</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_wacc_financials.png\" alt=\"WACC and financial forecasts\" loading=\"lazy\" />\n<figcaption>WACC and financial forecasts</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_dcf.png\" alt=\"Free cash flow and valuation\" loading=\"lazy\" />\n<figcaption>Free cash flow and valuation</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/case3_catl_sensitivity.png\" alt=\"Sensitivity analysis\" loading=\"lazy\" />\n<figcaption>Sensitivity analysis</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Find studies on fast charging and battery capacity loss",
+    "content": "In the academic research plugin, select paper search and specify years, cell type and inclusion criteria. Follow a DOI from the results and check whether the experiment measured capacity change under the specified charging conditions.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/paper-search-preview.png\" alt=\"Paper search and screening results\" loading=\"lazy\" />\n<figcaption>Paper search and screening results</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Review research on visual understanding",
+    "content": "Define a question about how AI interprets images and supply the scope and accessible full texts. Pick a comparison in the review and check the datasets, metrics and experimental conditions against the cited papers.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/literature-review-preview.png\" alt=\"Literature review and comparison\" loading=\"lazy\" />\n<figcaption>Literature review and comparison</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Read a paper alongside its PDF",
+    "content": "Upload a complete PDF with selectable text to the paper-reading tool. Specify your background and request a two-column HTML reading page. Follow a source tag to the highlighted passage and compare a formula’s subscripts with the original.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/paper-reading-preview.png\" alt=\"Explanation alongside the source PDF\" loading=\"lazy\" />\n<figcaption>Explanation alongside the source PDF</figcaption>\n</figure>\n\n</div>\n\n[AStudio tips](./tips)"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio FAQ",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/faq) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page."
+  },
+  {
+    "lang": "en",
+    "heading": "Why did a task enter a project?",
+    "content": "The project entry uses the active workspace. For standalone work, use Daily or the independent-task section."
+  },
+  {
+    "lang": "en",
+    "heading": "Must I select Plan or Goal mode?",
+    "content": "No. Send ordinary requests directly; use Plan for prior review or Goal for continued execution."
+  },
+  {
+    "lang": "en",
+    "heading": "Can I restore archived tasks?",
+    "content": "Yes, under Settings > Archived. Archiving is not deletion."
+  },
+  {
+    "lang": "en",
+    "heading": "What if a preview cannot be edited?",
+    "content": "Request spreadsheet, image and PDF edits in conversation, then refresh. Describe the location and desired result when website element selection cannot target content such as Canvas."
+  },
+  {
+    "lang": "en",
+    "heading": "Can I change automation?",
+    "content": "The current FAQ supports creation, disabling and deletion, but not direct modification. Test manually; recreate when adjustments are needed."
+  },
+  {
+    "lang": "en",
+    "heading": "How do I report problems?",
+    "content": "Check the installer source and supported system, then consult [official troubleshooting](https://agent.xfyun.cn/studio-guide/faq). Send reproduction steps, versions and relevant screenshots through Settings > Feedback.\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-57-UMikYg.png\" alt=\"Submit feedback\" loading=\"lazy\" />\n<figcaption>Submit feedback</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Core Features",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/features) · Checked: 2026-11-25. Product behavior and availability may change; consult the current official page.\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it."
+  },
+  {
+    "lang": "en",
+    "heading": "Daily and Projects",
+    "content": "Start standalone work in Daily. Add a project before creating tasks that maintain the same local folder.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-03-yhme0Y.png\" alt=\"Create a daily task\" loading=\"lazy\" />\n<figcaption>Create a daily task</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-04-Js8Aub.png\" alt=\"Attach files and describe the task\" loading=\"lazy\" />\n<figcaption>Attach files and describe the task</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-05-TyLOgg.png\" alt=\"Drag files into a conversation\" loading=\"lazy\" />\n<figcaption>Drag files into a conversation</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-06-ZIGwcb.png\" alt=\"Find a task in the list\" loading=\"lazy\" />\n<figcaption>Find a task in the list</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-07-AQvvZe.png\" alt=\"Add a project\" loading=\"lazy\" />\n<figcaption>Add a project</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-08-LqfQzh.png\" alt=\"Select the project folder\" loading=\"lazy\" />\n<figcaption>Select the project folder</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-09-p7gLWg.png\" alt=\"Start a task in a project\" loading=\"lazy\" />\n<figcaption>Start a task in a project</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Create and Find Tasks",
+    "content": "The entry point determines the workspace. Check the active project before sending, and use Search to find projects, tasks and actions.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-10-jo87Qb.png\" alt=\"Create a task from Daily\" loading=\"lazy\" />\n<figcaption>Create a task from Daily</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-11-nDvulf.png\" alt=\"Create an independent task\" loading=\"lazy\" />\n<figcaption>Create an independent task</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-12-unqMyc.png\" alt=\"Create a blank task from Search\" loading=\"lazy\" />\n<figcaption>Create a blank task from Search</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-13-HGZ7Gd.png\" alt=\"Create a project task\" loading=\"lazy\" />\n<figcaption>Create a project task</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-14-KSgTJh.png\" alt=\"Start from the project view\" loading=\"lazy\" />\n<figcaption>Start from the project view</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-15-tOJjof.png\" alt=\"Check the current project context\" loading=\"lazy\" />\n<figcaption>Check the current project context</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-16-A7GZBf.png\" alt=\"Global search\" loading=\"lazy\" />\n<figcaption>Global search</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-17-X1sLcc.png\" alt=\"Search shortcuts and actions\" loading=\"lazy\" />\n<figcaption>Search shortcuts and actions</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Organize and Archive",
+    "content": "Sort, pin and archive tasks to organize your work. Open Settings > Archived to restore or delete an archived task.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-18-Z72Cod.png\" alt=\"Sort the task list\" loading=\"lazy\" />\n<figcaption>Sort the task list</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-19-2T4umh.png\" alt=\"Choose a task ordering\" loading=\"lazy\" />\n<figcaption>Choose a task ordering</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-20-eo0Bvd.png\" alt=\"Sort projects\" loading=\"lazy\" />\n<figcaption>Sort projects</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-21-284rPu.png\" alt=\"Pin a task\" loading=\"lazy\" />\n<figcaption>Pin a task</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-22-wuXZse.png\" alt=\"Archive a task\" loading=\"lazy\" />\n<figcaption>Archive a task</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-23-LZxfkd.png\" alt=\"Open archived tasks\" loading=\"lazy\" />\n<figcaption>Open archived tasks</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-24-ps9Xzd.png\" alt=\"Restore or delete an archived task\" loading=\"lazy\" />\n<figcaption>Restore or delete an archived task</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Task Modes",
+    "content": "Send ordinary requests directly. Enable Plan mode under “+” to review before execution, or Goal mode for continued progress. Add requirements or pause while a goal is running.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-25-lEzgff.png\" alt=\"Enable Plan mode\" loading=\"lazy\" />\n<figcaption>Enable Plan mode</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-26-MwVPze.png\" alt=\"Clarify requirements before execution\" loading=\"lazy\" />\n<figcaption>Clarify requirements before execution</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-27-JKuBsc.png\" alt=\"Review the proposed plan\" loading=\"lazy\" />\n<figcaption>Review the proposed plan</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-28-usx7sf.png\" alt=\"Start implementing the plan\" loading=\"lazy\" />\n<figcaption>Start implementing the plan</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-29-XIocye.png\" alt=\"Enable Goal mode\" loading=\"lazy\" />\n<figcaption>Enable Goal mode</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-30-yTTtHb.png\" alt=\"Track goal execution\" loading=\"lazy\" />\n<figcaption>Track goal execution</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Preview and Edit Results",
+    "content": "Edit text, add comments, quote excerpts and compare versions. Request spreadsheet, image and PDF changes in conversation, then refresh. For websites, select an element for feedback or switch to interaction mode.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-31-Wskfpf.png\" alt=\"Edit text directly\" loading=\"lazy\" />\n<figcaption>Edit text directly</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-32-EMdCtf.png\" alt=\"Add an inline comment\" loading=\"lazy\" />\n<figcaption>Add an inline comment</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-33-nA1NLe.png\" alt=\"Quote selected text\" loading=\"lazy\" />\n<figcaption>Quote selected text</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-34-SiYv4c.png\" alt=\"Compare saved versions\" loading=\"lazy\" />\n<figcaption>Compare saved versions</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-35-xYf5if.png\" alt=\"Markdown source and preview\" loading=\"lazy\" />\n<figcaption>Markdown source and preview</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-36-KFnXbe.png\" alt=\"Select a website element for changes\" loading=\"lazy\" />\n<figcaption>Select a website element for changes</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Project Tools and Permissions",
+    "content": "Use files, diffs, the terminal and Git to inspect project changes. Choose the approval policy appropriate to the task and review the authorized scope.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-37-C1BuFe.png\" alt=\"Project tools\" loading=\"lazy\" />\n<figcaption>Project tools</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-38-ys3aDg.png\" alt=\"Choose an approval policy\" loading=\"lazy\" />\n<figcaption>Choose an approval policy</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-39-XyNfec.png\" alt=\"Configure permissions\" loading=\"lazy\" />\n<figcaption>Configure permissions</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Automation",
+    "content": "Create scheduled work from the automation page or a conversation. Confirm its schedule, project and permissions, then run it manually to check inputs, results and save location.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-40-voTarf.png\" alt=\"View automations\" loading=\"lazy\" />\n<figcaption>View automations</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-41-5Pp1Mf.png\" alt=\"Configure a new automation\" loading=\"lazy\" />\n<figcaption>Configure a new automation</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-42-n0wXPe.png\" alt=\"Confirm automation rules\" loading=\"lazy\" />\n<figcaption>Confirm automation rules</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Plugin Center",
+    "content": "Browse or search for plugins, configure required accounts after installation, and manage installed extensions for your tasks.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-43-fZ75ph.png\" alt=\"Discover plugins\" loading=\"lazy\" />\n<figcaption>Discover plugins</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/guide-img-44-5spzxe.png\" alt=\"Manage installed plugins\" loading=\"lazy\" />\n<figcaption>Manage installed plugins</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Introduction",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/intro) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page."
+  },
+  {
+    "lang": "en",
+    "heading": "What is AStudio?",
+    "content": "AStudio is an AI productivity workspace. Give it a goal and supporting material to plan work, use tools and deliver documents, spreadsheets, websites, images or code. Review the result in the preview panel, then refine it through conversation or targeted edits."
+  },
+  {
+    "lang": "en",
+    "heading": "Choose a starting point",
+    "content": "| Your task | Start here |\n| --- | --- |\n| First visit | [Install and complete a task](./quickstart) |\n| Standalone work | Use Daily and attach reference files |\n| Ongoing local work | Use Projects and select the relevant folder |\n| Review before execution | [Plan mode](./features#task-modes) |\n| Understand charges and data handling | [Plans](./pricing) and [desktop privacy](./agreements/privacy-client) |\n\nAstronClaw and Loomy have separate tutorials. Check each product's own features and billing rules."
+  },
+  {
+    "lang": "en",
+    "heading": "Official AStudio Communities",
+    "content": "> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-58-dMj2Xf.png\" alt=\"Join the AStudio WeChat community\" loading=\"lazy\" />\n<figcaption>Join the AStudio WeChat community</figcaption>\n</figure>\n\n<figure>\n<img src=\"/astudio/images/feishu-group-qr-20260902.png\" alt=\"Join the AStudio Feishu community\" loading=\"lazy\" />\n<figcaption>Join the AStudio Feishu community</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Plans & Points",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/pricing) · Checked: 2026-10-26. Product behavior and availability may change; consult the current official page."
+  },
+  {
+    "lang": "en",
+    "heading": "Compare plans",
+    "content": "AStudio offers Trial, Standard and Advanced plans with different point allowances, daily rewards, top-up discounts and resource benefits. One-month, recurring monthly and recurring annual billing have different prices.\n\nCompare the [current official table](https://agent.xfyun.cn/studio-guide/pricing) and confirm the checkout amount, period and promotion conditions."
+  },
+  {
+    "lang": "en",
+    "heading": "Point validity",
+    "content": "| Category | Current rule |\n| --- | --- |\n| New-user reward | 1,000 points, valid for 3 months |\n| Daily reward | 31 days after collection |\n| Plan allowance | Current billing cycle; annual plans refresh monthly |\n| Purchased top-ups | Current membership billing month |\n\nCheck the point center for exact expiry. Model and paid API usage consume points. Earliest-expiring points are used first; equal expiry prioritizes rewards, plan allowance, then top-ups."
+  },
+  {
+    "lang": "en",
+    "heading": "Before subscribing",
+    "content": "Check renewal status and the next charge. The current guide does not support mid-cycle tier changes; cancellation retains paid benefits until expiry. Read the [subscription](./agreements/product-subscription-service) and [renewal](./agreements/auto-renewal-service) terms."
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Quick Start",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/quickstart) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page."
+  },
+  {
+    "lang": "en",
+    "heading": "Install and sign in",
+    "content": "Use the download entry on the [official quick-start page](https://agent.xfyun.cn/studio-guide/quickstart). Supported environments listed there are Apple silicon Macs and 64-bit Windows 10 / 11. Install the client and sign in.\n\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-01-RhqrKG.png\" alt=\"New-user benefits\" loading=\"lazy\" />\n<figcaption>New-user benefits</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Complete your first task",
+    "content": "1. Select Daily in the left navigation and create a task.\n2. Describe the desired result in the center. Attach or drag in reference files.\n3. Send the request and inspect the result in the right panel.\n4. Request specific changes and check the final output.\n\nPractice with your own meeting notes: “Create an action list with owners, deadlines and unresolved questions.”"
+  },
+  {
+    "lang": "en",
+    "heading": "Find your way around",
+    "content": "The left panel manages tasks, projects and settings; the center contains conversation and execution; the right panel previews files, websites, changes and the terminal. Continue to [projects and task modes](./features) for ongoing folder-based work. See [plans](./pricing) for point validity.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-02-mXA0XE.png\" alt=\"Workspace layout\" loading=\"lazy\" />\n<figcaption>Workspace layout</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "AStudio Tips",
+    "content": "> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/tips) · Checked: 2026-11-25. Product behavior and availability may change; consult the current official page.\n\n> The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it."
+  },
+  {
+    "lang": "en",
+    "heading": "Clarify the Goal",
+    "content": "When the idea is still broad, clarify the purpose, audience and deliverable before execution.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-50-CFRtag.png\" alt=\"Clarify a task through conversation\" loading=\"lazy\" />\n<figcaption>Clarify a task through conversation</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Provide References",
+    "content": "Attach documents, images or websites and explain which structure, tone or layout to follow.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-51-DFdRFb.png\" alt=\"Provide reference material\" loading=\"lazy\" />\n<figcaption>Provide reference material</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Review Before Large Changes",
+    "content": "For changes across files or important content, review the scope and sequence before implementation.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-52-lMxxh7.png\" alt=\"Review a plan before changes\" loading=\"lazy\" />\n<figcaption>Review a plan before changes</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Give Specific Feedback",
+    "content": "Describe the location, current problem and desired result through conversation, element selection or text editing.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-53-MXabZc.png\" alt=\"Give targeted feedback\" loading=\"lazy\" />\n<figcaption>Give targeted feedback</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Prepare a Handover",
+    "content": "Capture background, decisions, constraints, progress and next steps for a new task.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-54-G2mqNf.png\" alt=\"Create a handover document\" loading=\"lazy\" />\n<figcaption>Create a handover document</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Test Automation First",
+    "content": "Run new automation manually and check its inputs, output and save location before relying on the schedule.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-55-B7o4nc.png\" alt=\"Test an automation manually\" loading=\"lazy\" />\n<figcaption>Test an automation manually</figcaption>\n</figure>\n\n</div>"
+  },
+  {
+    "lang": "en",
+    "heading": "Turn Experience into a Skill",
+    "content": "Turn repeatable steps, definitions and checks into a personal skill for future tasks.\n\n<div class=\"guide-shots\">\n\n<figure>\n<img src=\"/astudio/images/guide-img-56-52tiYb.png\" alt=\"Capture a reusable personal skill\" loading=\"lazy\" />\n<figcaption>Capture a reusable personal skill</figcaption>\n</figure>\n\n</div>"
   },
   {
     "lang": "en",
@@ -1526,8 +2216,18 @@
   },
   {
     "lang": "en",
+    "heading": "Does the Loomy mobile app read my clipboard?",
+    "content": "Only when you act. When you tap copy on a message, Loomy writes the selected content to the system clipboard; when you choose paste in the input box, it reads only the text you are pasting and fills it in. Loomy does not read the clipboard continuously or periodically in the background, and pasting alone does not upload clipboard content to its servers — the text is processed as your instruction only after you confirm sending it. See section 2.4 of the [Loomy Privacy Policy (Mobile)](https://loomy.xunfei.cn/docs/Safe/Loomy-mobile-privacy) for details."
+  },
+  {
+    "lang": "en",
     "heading": "What kind of users is it suitable for?",
     "content": "Loomy is suitable for people who need to frequently handle information organization, content creation, document collaboration, task follow-up, and cross-tool execution. For example:\n*   Self-media operations\n*   Office white-collar workers\n*   Content teams\n*   Small business teams\n*   E-commerce practitioners\n*   Individual users who hope to hand over repetitive processes to AI for assistance\n\nIf your work frequently requires switching back and forth between chats, emails, documents, web pages, and to-dos, Loomy can help you work more efficiently."
+  },
+  {
+    "lang": "en",
+    "heading": "Which integrations can call Loomy?",
+    "content": "Use the official client, website or an explicitly authorized integration within its granted scope. Authorized Skills, connectors and automation are supported. The agreement restricts access to private endpoints, sharing login tokens with unauthorized tools, evading rate or quota limits, and proxying or reselling access without authorization. See section IV.4 of the [Loomy user agreement](https://loomy.xunfei.cn/docs/Safe/Loomy-user)."
   },
   {
     "lang": "en",
@@ -1922,7 +2622,12 @@
   {
     "lang": "en",
     "heading": "Get Invitation Code",
-    "content": "After your application is approved, you will receive an exclusive invitation code. The invitation code is a necessary credential to log in and experience Loomy currently, please keep it safe.\n\n![Get Invitation Code](/loomy/quick-start/qmail.png)\n\nGo to the Loomy official website, select the corresponding platform, click the download button to download the Loomy client.\n\n![Download Loomy](/loomy/quick-start/download.png)"
+    "content": "After your application is approved, you will receive an exclusive invitation code. The invitation code is a necessary credential to log in and experience Loomy currently, please keep it safe.\n\n![Get Invitation Code](/loomy/quick-start/qmail.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "Download and Install Loomy",
+    "content": "Go to the Loomy official website, select the corresponding platform, click the download button to download the Loomy client.\n\n![Download Loomy](/loomy/quick-start/download.png)"
   },
   {
     "lang": "en",
@@ -2078,6 +2783,11 @@
     "lang": "en",
     "heading": "Configuration Example: QQ Mail MCP",
     "content": "The following takes configuring QQ Mail MCP as an example to demonstrate how to configure and use the toolbox function.\n\n**1. Configure Mailbox Information**\nClick the \"Configure\" button on the right side of the \"QQ Mail MCP\" card and fill in the following information:\n*   **Mailbox Account**: Your QQ email address (e.g., example@qq.com)\n*   **Authorization Code**: The authorization code for QQ Mail (not your QQ password)\n\n![QQ Mail Configuration](/loomy/toolbox/qmail.png)\n\nAfter the configuration is complete, the status will show as \"Configured\".\n\n**2. Usage Scenario Example**\nAfter configuration, you can ask Loomy to help you handle email-related tasks through natural language.\n\n**Scenario 1: Check Unread Emails**\nCreate a new task and send a message:\n> Help me check my recent unread emails\n\nLoomy will automatically connect to your QQ mailbox, get unread emails from the past three days, and display them to you.\n\n![Check Unread Emails](/loomy/toolbox/toolbox-email-read.png)\n\n**Scenario 2: Write and Send Emails**\nYou can also ask Loomy to help you write and send emails:\n> Help me write today's weekly report and send it to my boss\n\nLoomy will generate a weekly report based on your work content and send it to the designated recipient via QQ Mail.\n\n![Write and Send Emails](/loomy/toolbox/toolbox-email-send.png)"
+  },
+  {
+    "lang": "en",
+    "heading": "Configuration Example: Local Knowledge Base (StashBase)",
+    "content": "The toolbox also supports external custom MCP services. The following takes [StashBase](https://github.com/liliu-z/stashbase), an open-source local knowledge base app, as an example to demonstrate how to let Loomy semantically search local files on your computer (Markdown, PDF, DOCX, images, etc.).\n\n**1. Prepare StashBase**\n\n*   Install and launch the app from [StashBase Releases](https://github.com/liliu-z/stashbase/releases) (macOS / Windows / Linux supported).\n*   Open the local folders you want AI to search in StashBase. Only folders you explicitly open are indexed; semantic search requires an embedding API key configured in StashBase, while keyword search works without one.\n\n**2. Copy the MCP Configuration**\n\nOpen \"Settings\" -> \"MCP\" in StashBase and copy the standard MCP configuration from the \"For any other MCP-compatible agent\" section. It looks like this (use the absolute `command` path you actually copied):\n\n```json\n{\n  \"mcpServers\": {\n    \"stashbase\": {\n      \"command\": \"~/.stashbase/bin/stashbase-mcp\"\n    }\n  }\n}\n```\n\n**3. Add It to the Loomy Toolbox**\n\nIn Loomy \"Settings\" -> \"Toolbox\", add an external custom MCP configuration, paste the content copied in the previous step, and save.\n\n**4. Usage Scenario Example**\n\nCreate a new task and send a message:\n\n> Find the payment terms in last quarter's contract in my local files\n\nLoomy will call StashBase's `search_library` tool to search matching files by meaning, then use `read_file` to read the sources (PDFs return extracted Markdown text), and answer with references.\n\n> **Note:**\n> * The StashBase desktop app must stay running while searching.\n> * StashBase also exposes file-writing tools (create, edit, delete files); set invocation permissions for them in the toolbox as needed."
   },
   {
     "lang": "en",

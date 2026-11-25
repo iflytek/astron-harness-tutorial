@@ -10,6 +10,21 @@ export const UA =
 
 export const SOURCES = [
   {
+    id: 'astudio',
+    name: 'AStudio 官方指南与协议',
+    type: 'single',
+    origin: 'https://agent.xfyun.cn',
+    minTextLength: 100,
+    pages: [
+      'intro', 'quickstart', 'features', 'cases', 'tips', 'pricing', 'faq',
+      'agreements/user-service-web', 'agreements/privacy-web',
+      'agreements/user-service-client', 'agreements/privacy-client',
+      'agreements/personal-information-collection-list-zh-CN',
+      'agreements/third-party-sharing-list-zh-CN',
+      'agreements/product-subscription-service', 'agreements/auto-renewal-service',
+    ].map((slug) => `https://agent.xfyun.cn/studio-guide/${slug}`),
+  },
+  {
     id: 'loomy',
     name: 'Loomy Docs',
     type: 'vitepress',
@@ -27,10 +42,40 @@ export const SOURCES = [
   },
 ];
 
+const FETCH_ATTEMPTS = 3;
+const FETCH_TIMEOUT_MS = 30_000;
+
+function fetchError(url, attempts, error) {
+  const cause = error.cause;
+  const details = [cause?.code, cause?.message].filter(Boolean).join(': ');
+  return new Error(
+    `Failed to fetch ${url} after ${attempts} attempt(s): ${error.message || error}${details ? ` (${details})` : ''}`,
+    { cause: error }
+  );
+}
+
+// 上游站点偶发 `fetch failed` / `terminated`，单次失败不应让整轮巡检报错：
+// 网络错误、超时、429 与 5xx 按指数退避重试，其余 HTTP 错误直接抛出。
 export async function fetchText(url) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA }, redirect: 'follow' });
-  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
-  return res.text();
+  let lastError;
+  for (let attempt = 1; attempt <= FETCH_ATTEMPTS; attempt++) {
+    try {
+      const res = await fetch(url, {
+        headers: { 'User-Agent': UA },
+        redirect: 'follow',
+        signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
+      });
+      if (res.ok) return await res.text();
+      const err = new Error(`HTTP ${res.status} for ${url}`);
+      if (res.status !== 429 && res.status < 500) throw Object.assign(err, { fatal: true });
+      lastError = err;
+    } catch (e) {
+      if (e.fatal) throw fetchError(url, attempt, e);
+      lastError = e;
+    }
+    if (attempt < FETCH_ATTEMPTS) await new Promise((r) => setTimeout(r, 2000 * 2 ** (attempt - 1)));
+  }
+  throw fetchError(url, FETCH_ATTEMPTS, lastError);
 }
 
 export function decodeEntities(s) {
@@ -124,11 +169,14 @@ export function extractSidebarLinks(html, origin, indexUrl) {
   return [...links].sort();
 }
 
-export async function capturePage(url, origin) {
+export async function capturePage(url, origin, minTextLength = 0) {
   const html = await fetchText(url);
   const titleM = html.match(/<title>([^<]*)<\/title>/i);
   const main = extractMain(html);
   const text = stripTags(main);
+  if (text.length < minTextLength || (minTextLength && !/<h1\b/i.test(main))) {
+    throw new Error(`Missing article content for ${url}; refusing an empty or incomplete snapshot`);
+  }
   return {
     url,
     title: titleM ? decodeEntities(titleM[1]).trim() : url,
@@ -151,7 +199,7 @@ export async function captureSource(src) {
   const pages = {};
   for (const url of pageUrls) {
     try {
-      pages[url] = await capturePage(url, src.origin);
+      pages[url] = await capturePage(url, src.origin, src.minTextLength);
     } catch (e) {
       pages[url] = { url, error: String(e.message || e) };
     }

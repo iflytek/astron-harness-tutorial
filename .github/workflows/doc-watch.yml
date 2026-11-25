@@ -1,6 +1,6 @@
 name: doc-watch
 
-# 每日抓取上游文档站（Loomy Docs / AstronClaw 使用指南），与仓库基线对比：
+# 每日抓取上游文档站（Loomy Docs / AstronClaw 使用指南 / AStudio 全部 15 个指南与协议页面），与仓库基线对比：
 #   1) 始终：发现新增内容时维护一条 [doc-watch] Issue 汇总待补全清单。
 #   2) 可选：若配置了 OPENAI_API_KEY secret，则用 OpenAI（自带 web_search，按你自己的
 #      API 计费、不消耗 Claude 额度）起草新页面+下载配图+联网检索官方更新，并开一个待审 PR。
@@ -15,7 +15,12 @@ name: doc-watch
 on:
   schedule:
     - cron: '0 1 * * *'
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Capture and upload reports without issues, comments or PRs'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -39,12 +44,22 @@ jobs:
         id: watch
         run: |
           set +e
-          node scripts/doc-watch/check-updates.mjs --report doc-watch-report.md
-          echo "code=$?" >> "$GITHUB_OUTPUT"
+          node scripts/doc-watch/check-updates.mjs --report doc-watch-report.md 2> doc-watch-stderr.log
+          code=$?
+          node scripts/sync-astudio-images.mjs --check --report doc-watch-images.md 2>> doc-watch-stderr.log
+          image_code=$?
+          if [ -f doc-watch-images.md ]; then
+            printf '\n' >> doc-watch-report.md
+            cat doc-watch-images.md >> doc-watch-report.md
+          fi
+          if [ "$image_code" -eq 2 ]; then code=2; fi
+          if [ "$image_code" -eq 1 ] && [ "$code" -eq 0 ]; then code=1; fi
+          cat doc-watch-stderr.log >&2
+          echo "code=$code" >> "$GITHUB_OUTPUT"
           set -e
 
       - name: Upsert summary issue on changes
-        if: steps.watch.outputs.code == '1'
+        if: inputs.dry_run != true && steps.watch.outputs.code == '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -58,7 +73,9 @@ jobs:
           } >> "$BODY_FILE"
 
           TITLE="[doc-watch] 上游文档有新增内容待补全"
-          EXISTING=$(gh issue list --label doc-watch --state open --json number --jq '.[0].number' 2>/dev/null)
+          # 按标题精确匹配：同标签下还可能有抓取失败的 Issue，不能取第一条了事。
+          EXISTING=$(gh issue list --label doc-watch --state open --limit 100 --json number,title \
+            | jq -r --arg t "$TITLE" 'map(select(.title == $t)) | .[0].number // empty')
           if [ -n "$EXISTING" ]; then
             gh issue edit "$EXISTING" --body-file "$BODY_FILE"
             gh issue comment "$EXISTING" --body "🔄 巡检报告已于本次 run 更新（run #${{ github.run_number }}）。"
@@ -71,15 +88,15 @@ jobs:
       # ---- 可选：OpenAI 起草 + 自动开 PR（仅在配置了 OPENAI_API_KEY 时启用）----
       - name: Draft new pages with OpenAI
         id: draft
-        if: steps.watch.outputs.code == '1' && env.OPENAI_API_KEY != ''
+        if: inputs.dry_run != true && steps.watch.outputs.code == '1' && env.OPENAI_API_KEY != ''
         run: |
           set +e
           node scripts/doc-watch/draft-with-openai.mjs
           echo "code=$?" >> "$GITHUB_OUTPUT"
           set -e
 
-      - name: Build, refresh baseline and open PR
-        if: steps.watch.outputs.code == '1' && env.OPENAI_API_KEY != ''
+      - name: Build and open PR for review
+        if: inputs.dry_run != true && steps.watch.outputs.code == '1' && env.OPENAI_API_KEY != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -89,7 +106,7 @@ jobs:
           fi
           npm ci
           npm run docs:build
-          node scripts/doc-watch/check-updates.mjs --update || true
+          # Baselines are accepted only after manual review; do not hide unresolved changes.
 
           DATE=$(date +%Y-%m-%d)
           BRANCH="docs/sync-upstream-$(date +%Y%m%d-%H%M)"
@@ -101,26 +118,60 @@ jobs:
           git add docs/guide docs/en docs/public/loomy docs/public/astronclaw \
                   docs/public/docs-index.json docs/.vitepress/config.mts \
                   scripts/doc-watch/baseline/
-          git commit -m "docs: 同步上游文档新增内容 ($DATE)"
+          git commit -s -m "docs: 同步上游文档新增内容 ($DATE)"
           git push -u origin "$BRANCH"
           gh pr create --base main --head "$BRANCH" \
             --title "docs: 同步上游文档新增内容 ($DATE)" \
             --body-file doc-watch-draft-pr.md
 
       - name: Report capture failure
-        if: steps.watch.outputs.code == '2'
+        if: inputs.dry_run != true && steps.watch.outputs.code == '2'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh label create doc-watch --color FBCA04 --description "上游文档巡检" 2>/dev/null || true
-          gh issue create \
-            --title "[doc-watch] ⚠️ 巡检抓取失败" \
-            --label doc-watch \
-            --body "doc-watch 工作流抓取上游文档时出错，请查看 run [#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) 日志。可能是上游站点改版或网络问题。"
+          TITLE="[doc-watch] ⚠️ 巡检抓取失败"
+          RUN_LINK="run [#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+          {
+            echo "doc-watch 工作流抓取上游文档时出错（$RUN_LINK）。可能是上游站点改版或网络问题。"
+            echo ""
+            echo '```'
+            tail -n 20 doc-watch-stderr.log
+            echo '```'
+          } > doc-watch-failure.md
+
+          # 连续失败只维护一条 Issue，不再每次新开。
+          EXISTING=$(gh issue list --label doc-watch --state open --limit 100 --json number,title \
+            | jq -r --arg t "$TITLE" 'map(select(.title == $t)) | .[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body-file doc-watch-failure.md
+            echo "Commented on issue #$EXISTING"
+          else
+            gh label create doc-watch --color FBCA04 --description "上游文档巡检" 2>/dev/null || true
+            gh issue create --title "$TITLE" --label doc-watch --body-file doc-watch-failure.md
+          fi
+
+      - name: Close capture-failure issue after recovery
+        if: ${{ !inputs.dry_run && (steps.watch.outputs.code == '0' || steps.watch.outputs.code == '1') }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="[doc-watch] ⚠️ 巡检抓取失败"
+          gh issue list --label doc-watch --state open --limit 100 --json number,title \
+            | jq -r --arg t "$TITLE" '.[] | select(.title == $t) | .number' \
+            | while read -r n; do
+                gh issue close "$n" --comment "✅ run #${{ github.run_number }} 抓取恢复正常，自动关闭。"
+              done
 
       - name: Upload report artifact
-        if: steps.watch.outputs.code == '1'
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: doc-watch-report
-          path: doc-watch-report.md
+          path: |
+            doc-watch-report.md
+            doc-watch-stderr.log
+            doc-watch-images.md
+
+      - name: Fail on incomplete capture
+        if: steps.watch.outputs.code == '2'
+        run: exit 1

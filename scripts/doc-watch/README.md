@@ -1,13 +1,26 @@
 # doc-watch · 上游文档每日巡检
 
-每天抓取上游文档站，与仓库基线对比，发现**新增内容 / 新增图片**，并辅助把新内容（含配图）补全到本教程站点。
+每天按 **AStudio → Loomy → AstronClaw** 抓取上游文档，与仓库基线对比，发现**新增内容 / 新增图片**，并辅助把新内容（含配图）补全到本教程站点。
 
 ## 监测的源
 
 | 源 | 地址 | 抓取方式 |
 |---|---|---|
+| AStudio 指南与协议 | https://agent.xfyun.cn/studio-guide/intro | 15 个 SSR 页面与全部正文图片内容校验 |
 | Loomy Docs | https://loomy.xunfei.cn/docs | VitePress SSG，自动从侧边栏发现全部页面 |
 | AstronClaw 使用指南 | https://www.xfyun.cn/doc/spark/Agent-AstronClaw使用指南.html | 单页 SSR |
+
+AStudio 覆盖 `intro`、`quickstart`、`features`、`cases`、`tips`、`pricing`、`faq`，以及 `agreements/` 下的 `user-service-web`、`privacy-web`、`user-service-client`、`privacy-client`、`personal-information-collection-list-zh-CN`、`third-party-sharing-list-zh-CN`、`product-subscription-service`、`auto-renewal-service`。
+这些页面一并记录标题、正文哈希、图片和小节；HTTP 错误或缺少正文时不更新基线。
+
+### AStudio 配图
+
+`scripts/sync-astudio-images.mjs` 抓取正文配图并比较 SHA-256，既检测新 URL，也检测同地址图片内容替换。当前清单有 70 张图片，来源、双语图注、路径和校验值记录在 `docs/public/astudio/assets.json`。
+
+- `npm run docs:check-images`：只读核对，退出码 0 无变化、1 有变化、2 抓取失败。
+- `npm run docs:sync-images`：全部抓取成功后写入本地图片与清单。新图需要补英文图注并放到中英文对应步骤中，再运行 `npm run test:assets`。
+- 每日 Actions 将图片报告合并到巡检报告，继续使用原有 Issue 汇总与只读试跑机制。
+- 图片均从本站加载；界面保留官方原貌。中文和英文教程提供各自语言的图注，支持点击放大。
 
 ## 组成
 
@@ -19,6 +32,7 @@ scripts/doc-watch/
   baseline/             # 基线快照（每源一个 JSON：页面 / 小节 / 图片 / 正文哈希）
     loomy.json
     astronclaw.json
+    astudio.json
 .github/workflows/doc-watch.yml   # 每日 cron：Issue 告警 +（可选）OpenAI 起草并开 PR
 ```
 
@@ -39,9 +53,14 @@ node scripts/doc-watch/check-updates.mjs --init
 
 # 接受当前线上状态为新基线（补全内容后执行，用于关闭巡检告警）
 node scripts/doc-watch/check-updates.mjs --update
+
+# 仅接受已人工核对的 AStudio 变更，不影响其他源的待处理报告
+node scripts/doc-watch/check-updates.mjs --source astudio --update
 ```
 
 退出码：`0` 无变化 · `1` 有新增/变化 · `2` 抓取失败。
+
+单个页面请求遇到网络错误、超时（30s）、429 或 5xx 时会指数退避重试，最多 3 次；仍失败才记为抓取异常。
 
 ## 工作机制
 
@@ -56,6 +75,8 @@ node scripts/doc-watch/check-updates.mjs --update
 
 `.github/workflows/doc-watch.yml` 每天 01:00 UTC（北京时间 09:00）运行脚本。发现变化时，
 自动维护**一条**带 `doc-watch` 标签的 Issue，列出新增页面 / 小节 / 图片 URL，供后续补全。
+抓取失败（退出码 `2`）另外维护一条「⚠️ 巡检抓取失败」Issue，连续失败只追加评论并附上日志末尾；
+下一次抓取成功时自动关闭。两类 Issue 按标题区分，互不覆盖。
 免费、纯确定性，但不含联网搜索与自动起草。
 
 ### 第二层 A：OpenAI 起草（在 GitHub Actions 里跑你自己的 API，省 Claude 额度）✅ 推荐
@@ -72,7 +93,7 @@ OpenAI key 计费，不消耗 Claude 额度。工作流在检测到变化且配�
 2. 仓库 **Settings → Actions → General → Workflow permissions**：勾选
    **「Allow GitHub Actions to create and approve pull requests」**（否则无法自动开 PR）。
 3. 之后每天若上游有新增页面，工作流会自动：起草双语页面 + 下载配图 → `npm run docs:build`
-   → 刷新基线 → 开一个 `docs: 同步上游文档新增内容 (日期)` 的待审 PR。
+   → 开一个 `docs: 同步上游文档新增内容 (日期)` 的待审 PR。自动起草不刷新基线，避免清除尚未处理的价格、协议或其他文档变更；审阅并补齐后再手动接受对应源的基线。
 
 本地试跑（需要 key；`--dry-run` 不调用 OpenAI、不写文件，仅打印计划）：
 
@@ -82,8 +103,10 @@ OPENAI_API_KEY=sk-... node scripts/doc-watch/draft-with-openai.mjs
 ```
 
 护栏：只自动镜像新的 Loomy 内容页（跳过法务/隐私/索引页）；侧边栏入口与「内容有改动的
-已有页面 / AstronClaw 指南」留在 PR 描述里由人工处理；PR 仅起草、不自动合并，需人工审阅。
+已有页面 / AstronClaw 指南 / AStudio 指南及协议」留在 PR 描述里由人工处理；PR 仅起草、不自动合并，需人工审阅。
 另需 `OPENAI_BASE_URL` 时可指向 OpenAI 兼容端点。
+
+在 Actions 手动运行时可选 `dry_run=true`：只抓取并上传报告，不创建或修改 Issue、评论或 PR，也不调用起草模型。抓取不完整会使工作流失败；成功、变化和失败的报告均保留为构件。
 
 > ⚠️ web_search 需要联网；纯文档同步（翻译/改写上游正文）即使模型不带搜索也能完成，
 > 只有「发现全网全新功能」那部分依赖 web_search。
@@ -102,7 +125,7 @@ OPENAI_API_KEY=sk-... node scripts/doc-watch/draft-with-openai.mjs
      docs/public/astronclaw/，本地引用而非外链）。
    - 按现有页面风格写成中文页面，并补一份等价的英文页面（docs/ 与 docs/en/）。
    - 需要时更新 docs/.vitepress/config.mts 的中英侧边栏。
-3. 此外，联网搜索 Loomy / 讯飞 AstronClaw 的近期官方更新（发布说明、新功能、新渠道、
+3. 此外，联网搜索 AStudio / Loomy / 讯飞 AstronClaw 的近期官方更新（发布说明、新功能、新渠道、
    新技能），判断是否有本站尚未覆盖、且适合补充的内容；有则一并补上并注明来源。
 4. 运行 `npm run docs:build` 确认死链检查通过、搜索索引重新生成。
 5. 运行 `node scripts/doc-watch/check-updates.mjs --update` 刷新基线。

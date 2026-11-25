@@ -1,6 +1,5 @@
-const API_URL = 'https://maas-coding-api.cn-huabei-1.xf-yun.com/v2/chat/completions'
+const { prepareChatRequest } = require('./_lib/chat-config')
 const REQUEST_TIMEOUT = 55000
-const API_KEY = process.env.ASTRON_MAAS_API_KEY || process.env.VITE_API_KEY
 
 async function pipeStream(response, res) {
   res.status(200)
@@ -55,17 +54,14 @@ module.exports = async function handler(req, res) {
   const requestBody = req.body && typeof req.body === 'object' ? req.body : {}
 
   try {
-    if (!API_KEY) {
-      return res.status(500).json({ error: 'Missing API key', details: 'Set ASTRON_MAAS_API_KEY or VITE_API_KEY' })
-    }
-
-    const response = await fetch(API_URL, {
+    const upstream = prepareChatRequest(requestBody)
+    const response = await fetch(upstream.url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${API_KEY}`
+        'Authorization': `Bearer ${upstream.apiKey}`
       },
-      body: JSON.stringify(requestBody),
+      body: JSON.stringify(upstream.payload),
       signal: controller.signal
     })
 
@@ -82,6 +78,7 @@ module.exports = async function handler(req, res) {
     const data = await response.json()
     return res.status(200).json(data)
   } catch (error) {
+    if (error.status) return res.status(error.status).json({ error: error.message })
     console.error('Proxy Error:', error)
 
     if (res.headersSent) {

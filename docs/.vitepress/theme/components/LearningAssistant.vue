@@ -6,11 +6,11 @@
           <span>{{ i18n.title }}</span>
           <a
             class="chat-header-credit"
-            href="https://maas.xfyun.cn/modelSquare"
+            href="https://huggingface.co/collections/XHToken/spark-x26"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered by 讯飞星辰MaaS
+            Powered by Spark-X2.6-4B
           </a>
         </div>
         <button @click="toggleChat" class="close-btn">×</button>
@@ -19,6 +19,22 @@
         <div v-for="(msg, index) in messages" :key="index" :class="['message', msg.role]">
           <div :class="['message-content', { loading: msg.isPending }]">{{ msg.content }}</div>
         </div>
+      </div>
+      <div class="chat-thinking">
+        <fieldset :disabled="isLoading" aria-describedby="learning-thinking-description">
+          <legend>{{ i18n.thinkingLevel }}</legend>
+          <div class="thinking-options">
+            <button
+              v-for="level in THINKING_LEVELS"
+              :key="level"
+              type="button"
+              :aria-pressed="thinkingLevel === level"
+              :class="{ selected: thinkingLevel === level }"
+              @click="thinkingLevel = level"
+            >{{ i18n.levels[level] }}</button>
+          </div>
+        </fieldset>
+        <p id="learning-thinking-description">{{ i18n.levelDescriptions[thinkingLevel] }}</p>
       </div>
       <div class="chat-input">
         <input
@@ -50,14 +66,21 @@
 </template>
 
 <script setup>
-import { ref, nextTick, onMounted, computed, watch } from 'vue'
-import { useData } from 'vitepress'
+import { ref, reactive, nextTick, onMounted, computed, watch } from 'vue'
+import { useData, withBase } from 'vitepress'
 
 const { lang } = useData()
 
 const isEn = computed(() => lang.value === 'en')
 const CHAT_ENDPOINT_FALLBACK = 'https://astronclaw-tutorial.vercel.app/api/chat'
 const REQUEST_TIMEOUT = 45000
+const THINKING_LEVELS = ['none', 'low', 'high']
+const THINKING_STORAGE_KEY = 'astron-harness-thinking-level'
+const thinkingLevel = ref('low')
+
+watch(thinkingLevel, (level) => {
+  try { localStorage.setItem(THINKING_STORAGE_KEY, level) } catch { /* Storage may be unavailable. */ }
+})
 
 const i18n = computed(() => {
   return isEn.value ? {
@@ -65,11 +88,19 @@ const i18n = computed(() => {
     placeholder: 'What tool would you like to know about?...',
     send: 'Send',
     stop: 'Stop',
-    welcome: 'Hello! I am your learning assistant. What do you need? Which tool would you like to use (AstronClaw or Loomy)? I will recommend and guide you to the next step.',
-    systemPrompt: `You are a project learning assistant. Your task is to ask the user what they need or which tool they want to use (AstronClaw or Loomy) and make recommendations, always guiding the user to the next step. Please keep your answers short and friendly. Be sure to answer the user's questions based on the content in the [Knowledge Base Reference] (if it exists).\n`,
+    welcome: 'Hello! I am your learning assistant. What do you need? Which tool would you like to use (AStudio, Loomy or AstronClaw)? I will recommend and guide you to the next step.',
+    systemPrompt: `You are the learning assistant for Astron Harness Tutorial, covering AStudio, Loomy and AstronClaw. Product facts: AstronClaw is iFLYTEK's hosted cloud AI assistant built on OpenClaw; Loomy is a desktop AI companion for office work; AStudio is an AI productivity workspace for planning and executing tasks, previewing deliverables, local projects, plugins and automation. Use current official sources for pricing and legal terms. Your role is to explain these products and guide users through the tutorial. Ask what the user needs or which product they want to use, make a suitable recommendation, and guide them to the next step. Keep answers short and friendly, and use the [Knowledge Base Reference] for specific instructions when available.\n`,
     errorFallback: 'Sorry, I encountered some issues. Please try again later.',
     errorPrefix: 'Request failed: ',
     thinking: 'Thinking...',
+    responding: 'Responding...',
+    thinkingLevel: 'Thinking level',
+    levels: { none: 'None', low: 'Low', high: 'High' },
+    levelDescriptions: {
+      none: 'Skip extra reasoning for faster, lighter replies.',
+      low: 'Light reasoning to balance speed and depth.',
+      high: 'More reasoning for complex questions; may take longer and use more tokens.'
+    },
     requestCanceled: 'Response stopped.',
     requestTimeout: 'The response timed out. Please try again.',
     replyInEnglish: 'Reply entirely in English. If earlier messages use Chinese, ignore that and continue in English. If you quote Chinese source text, add a brief English explanation.',
@@ -82,11 +113,19 @@ const i18n = computed(() => {
     placeholder: '你想了解什么工具？...',
     send: '发送',
     stop: '停止',
-    welcome: '你好！我是你的学习助手。请问你有什么需求？希望使用哪款工具（AstronClaw 或 Loomy）？我会为你推荐并引导你进行下一步操作。',
-    systemPrompt: `你是一个项目学习助手，你的任务是提问用户有什么需求/希望使用哪款工具（AstronClaw 或 Loomy）并进行推荐，永远引导用户进行下一步操作。请保持回答简短友好。请务必基于【知识库参考信息】中的内容来回答用户的问题（如果存在）。\n`,
+    welcome: '你好！我是你的学习助手。请问你有什么需求？希望使用哪款工具（AStudio、Loomy 或 AstronClaw）？我会为你推荐并引导你进行下一步操作。',
+    systemPrompt: `你是 Astron Harness Tutorial（AStudio、Loomy 与 AstronClaw）的学习助手。产品事实：AstronClaw 是基于 OpenClaw 核心能力打造的讯飞云端 AI 助手；Loomy 是面向办公场景的桌面端 AI 工作搭子；AStudio 是支持任务规划执行、成果预览、本地项目、插件与自动化的全场景 AI 生产力工作台。价格和协议以最新官方页面为准。你的职责是讲解这些产品并引导用户学习教程。询问用户需求或想使用哪款产品，给出合适的推荐并引导下一步操作。保持回答简短友好，有【知识库参考信息】时依据其中内容给出具体操作说明。\n`,
     errorFallback: '抱歉，我遇到了一些问题，请稍后再试。',
     errorPrefix: '请求失败: ',
     thinking: '正在思考...',
+    responding: '正在回复...',
+    thinkingLevel: '思考强度',
+    levels: { none: '关闭', low: '轻度', high: '深度' },
+    levelDescriptions: {
+      none: '跳过额外推理，适合需要快速、轻量回复的问题。',
+      low: '进行轻度推理，兼顾响应速度与思考深度。',
+      high: '为复杂问题投入更多推理，可能耗时更长、消耗更多 Token。'
+    },
     requestCanceled: '回答已停止。',
     requestTimeout: '回答超时，请重试。',
     replyInEnglish: 'Please reply entirely in English. Ignore earlier Chinese replies and continue in English. If you quote Chinese source text, add a brief English explanation.',
@@ -125,9 +164,13 @@ watch(lang, () => {
 let docsIndex = []
 
 onMounted(async () => {
+  try {
+    const saved = localStorage.getItem(THINKING_STORAGE_KEY)
+    if (THINKING_LEVELS.includes(saved)) thinkingLevel.value = saved
+  } catch { /* Keep the default when storage is unavailable. */ }
   scrollToBottom()
   try {
-    const res = await fetch('/docs-index.json')
+    const res = await fetch(withBase('/docs-index.json'))
     if (res.ok) {
       docsIndex = await res.json()
     }
@@ -194,7 +237,8 @@ function detectPreferredLanguage(text) {
     return 'en'
   }
 
-  if (englishCount >= 3 && englishCount >= chineseCount * 2) {
+  // An English product name must not override a Chinese question.
+  if (chineseCount === 0 && englishCount >= 3) {
     return 'en'
   }
 
@@ -206,7 +250,7 @@ function buildSystemPrompt(text, context) {
     ? i18n.value.replyInEnglish
     : i18n.value.replyInChinese
 
-  return `${i18n.value.systemPrompt}${languageInstruction}\n${context}`
+  return `${i18n.value.systemPrompt}\n${context}\n\n${languageInstruction}`
 }
 
 function getChatEndpoints() {
@@ -358,11 +402,12 @@ const sendMessage = async () => {
     .filter(m => !m.isPending)
     .filter(m => m.role !== 'assistant' || (m.content !== i18n.value.errorFallback && !m.content.startsWith(i18n.value.errorPrefix)))
     .map(m => ({ role: m.role, content: m.content }))
-  const assistantMessage = {
+  const pendingText = thinkingLevel.value === 'none' ? i18n.value.responding : i18n.value.thinking
+  const assistantMessage = reactive({
     role: 'assistant',
-    content: i18n.value.thinking,
+    content: pendingText,
     isPending: true
-  }
+  })
   const controller = new AbortController()
   let isTimedOut = false
   const timeoutId = window.setTimeout(() => {
@@ -376,8 +421,8 @@ const sendMessage = async () => {
 
   try {
     const response = await requestChat({
-      model: 'astron-code-latest',
       stream: true,
+      reasoning_effort: thinkingLevel.value,
       messages: [
         {
           role: 'system',
@@ -401,7 +446,7 @@ const sendMessage = async () => {
     if (controller.signal.aborted) {
       if (isTimedOut) {
         await updateAssistantMessage(assistantMessage, i18n.value.requestTimeout)
-      } else if (!assistantMessage.content || assistantMessage.content === i18n.value.thinking) {
+      } else if (!assistantMessage.content || assistantMessage.content === pendingText) {
         await updateAssistantMessage(assistantMessage, i18n.value.requestCanceled)
       } else {
         assistantMessage.isPending = false
@@ -512,6 +557,7 @@ const sendMessage = async () => {
 }
 
 .chat-header {
+  flex-shrink: 0;
   padding: 16px 20px;
   background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
   color: white;
@@ -553,6 +599,7 @@ const sendMessage = async () => {
 
 .chat-messages {
   flex: 1;
+  min-height: 0;
   padding: 16px;
   overflow-y: auto;
   display: flex;
@@ -601,16 +648,33 @@ const sendMessage = async () => {
   color: var(--vp-c-text-2);
 }
 
+.chat-thinking {
+  flex-shrink: 0;
+  padding: 10px 12px 0;
+  border-top: 1px solid var(--vp-c-divider);
+  background-color: var(--vp-c-bg);
+}
+
+.chat-thinking fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.chat-thinking legend { padding: 0; margin-bottom: 6px; font-size: 12px; font-weight: 500; color: var(--vp-c-text-1); }
+.thinking-options { display: inline-flex; gap: 4px; padding: 4px; border-radius: 8px; background: var(--vp-c-bg-soft); }
+.thinking-options button { min-width: 56px; padding: 5px 12px; border-radius: 6px; font-size: 12px; line-height: 1.5; color: var(--vp-c-text-2); cursor: pointer; }
+.thinking-options button.selected { background: var(--vp-c-brand-3); color: #fff; }
+.thinking-options button:focus-visible { outline: 2px solid var(--vp-c-brand-1); outline-offset: 2px; }
+.thinking-options button:disabled { cursor: wait; opacity: .7; }
+.chat-thinking p { min-height: 32px; margin: 6px 0 0; font-size: 11px; line-height: 1.45; color: var(--vp-c-text-2); }
+
 .chat-input {
+  flex-shrink: 0;
   display: flex;
   padding: 12px;
-  border-top: 1px solid var(--vp-c-divider);
   background-color: var(--vp-c-bg);
   gap: 8px;
 }
 
 .chat-input input {
   flex: 1;
+  min-width: 0;
   padding: 8px 12px;
   border: 1px solid var(--vp-c-divider);
   border-radius: 6px;
