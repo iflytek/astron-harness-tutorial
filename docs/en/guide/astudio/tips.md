@@ -1,6 +1,6 @@
 # AStudio Tips
 
-> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/tips) · Checked: 2026-10-27. Product behavior and availability may change; consult the current official page.
+> Source: [Official AStudio documentation](https://agent.xfyun.cn/studio-guide/tips) · Checked: 2026-11-25. Product behavior and availability may change; consult the current official page.
 
 > The screenshots below come from the official Chinese interface. English captions explain each step; click an image to enlarge it.
 

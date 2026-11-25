@@ -1,21 +1,133 @@
 {
-  "checkedAt": "2026-10-27",
+  "checkedAt": "2026-11-25",
   "images": [
     {
       "page": "cases",
-      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-49-QaA9zf.png",
-      "alt": "文献检索与筛选",
-      "local": "/astudio/images/guide-img-49-QaA9zf.png",
-      "altEn": "Find and evaluate research papers",
-      "sha256": "f18228d7c54b7eb56ef9b98988b5543c88457eb7275afd0f49743d04954ddc0d"
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case1_apple_cover_toc.png",
+      "alt": "苹果公司深度研究报告 - 封面与目录",
+      "local": "/astudio/images/case1_apple_cover_toc.png",
+      "altEn": "Cover and contents",
+      "sha256": "028cf436cb9b7690a1d255431c7fec375e3024ab098156677a045d3e8e4a5b4d"
     },
     {
       "page": "cases",
-      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-48-DmfECf.png",
-      "alt": "网站搭建与预览",
-      "local": "/astudio/images/guide-img-48-DmfECf.png",
-      "altEn": "Build and preview a website",
-      "sha256": "d76dfc63246699ad709be7288cf99c962ebe9b5ad51a9e7b2f3f2dee1abca3e4"
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case1_apple_summary_eco.png",
+      "alt": "苹果公司深度研究报告 - 摘要与商业生态",
+      "local": "/astudio/images/case1_apple_summary_eco.png",
+      "altEn": "Summary and business ecosystem",
+      "sha256": "a60a888c93e97a61f5c92954ec39f9601f91e765ea5f92ff1f0d29ec608cdfaa"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case1_apple_financials.png",
+      "alt": "苹果公司深度研究报告 - 财务与核心图表",
+      "local": "/astudio/images/case1_apple_financials.png",
+      "altEn": "Financial charts",
+      "sha256": "a779c63e4ed88849ce794981a5656915dd68ca9f5213bf944deaa54c2d187fb6"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case1_apple_valuation_refs.png",
+      "alt": "苹果公司深度研究报告 - 估值与参考文献",
+      "local": "/astudio/images/case1_apple_valuation_refs.png",
+      "altEn": "Valuation and references",
+      "sha256": "670f7a0d87b32bdf854641fdd6d3850a86af2315ccc2920679b78d46fd2ca9c1"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case2_emb_cover_toc.png",
+      "alt": "具身智能产业链研究报告 - 封面与目录",
+      "local": "/astudio/images/case2_emb_cover_toc.png",
+      "altEn": "Cover and contents",
+      "sha256": "0d6deeccec555dbcd6b7d25043d8c43383b022fb8a0682ef66920c8eac61d264"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case2_emb_market_chain.png",
+      "alt": "具身智能产业链研究报告 - 产业链与市场规模",
+      "local": "/astudio/images/case2_emb_market_chain.png",
+      "altEn": "Market size and value chain",
+      "sha256": "46fcd2a6b8acb5ebe4ba8a066153095a14a58fed27f4eb5f4a1fe27b39e95100"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case2_emb_parts_players.png",
+      "alt": "具身智能产业链研究报告 - 核心部件与竞争格局",
+      "local": "/astudio/images/case2_emb_parts_players.png",
+      "altEn": "Components and competitors",
+      "sha256": "4e1ad8e111bdf0327c8e45eb2b9374af4f913d7ae32cdf8a47015de494a25343"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case2_emb_funding_refs.png",
+      "alt": "具身智能产业链研究报告 - 投融资与参考文献",
+      "local": "/astudio/images/case2_emb_funding_refs.png",
+      "altEn": "Funding and references",
+      "sha256": "5043d79caa9e4c3ce97fc5adb62dfb5aa05a7a9bd93106fbb59002067fd97414"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case3_catl_overview.png",
+      "alt": "宁德时代DCF估值模型 - 封面与说明",
+      "local": "/astudio/images/case3_catl_overview.png",
+      "altEn": "Workbook overview",
+      "sha256": "a1afde69483c6b956744e62875fc26122ee8a0f2a5942c1edd5fdda695a353ef"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case3_catl_assumptions.png",
+      "alt": "宁德时代DCF估值模型 - 核心假设",
+      "local": "/astudio/images/case3_catl_assumptions.png",
+      "altEn": "Operating assumptions",
+      "sha256": "e723edca6b2fe4716b52ae3de0cf37d62b98645a6982c42025e0baa37a70e878"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case3_catl_wacc_financials.png",
+      "alt": "宁德时代DCF估值模型 - WACC 与财务预测",
+      "local": "/astudio/images/case3_catl_wacc_financials.png",
+      "altEn": "WACC and financial forecasts",
+      "sha256": "8c22ced856f938346a52567e894da789e307514a3daa383e73f2dcf14211da40"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case3_catl_dcf.png",
+      "alt": "宁德时代DCF估值模型 - FCF 与 DCF 估值",
+      "local": "/astudio/images/case3_catl_dcf.png",
+      "altEn": "Free cash flow and valuation",
+      "sha256": "8e769d068a874bb33ce2b3c8d339c88c1de6da172120b5ecb75703d4b734aec4"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case3_catl_sensitivity.png",
+      "alt": "宁德时代DCF估值模型 - 敏感性分析",
+      "local": "/astudio/images/case3_catl_sensitivity.png",
+      "altEn": "Sensitivity analysis",
+      "sha256": "1c099bbfd4000744091741388144546f403242ec1e1a517e7a76e8395e3d4b8a"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/paper-search-preview.png",
+      "alt": "锂离子电池快速充电容量衰减科研文献检索原图",
+      "local": "/astudio/images/paper-search-preview.png",
+      "altEn": "Paper search and screening results",
+      "sha256": "c8acaa6be86b54945d7ec776661a0ae3f5a6011bc19c3f1935590299bdd751f6"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/literature-review-preview.png",
+      "alt": "《AI 如何看懂图片》学术综述与对比原图",
+      "local": "/astudio/images/literature-review-preview.png",
+      "altEn": "Literature review and comparison",
+      "sha256": "a9473f9fadf3441fcc71c81296611a1b5ae239d95e1a5c0c52bb7eb446a3d598"
+    },
+    {
+      "page": "cases",
+      "url": "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/paper-reading-preview.png",
+      "alt": "双栏 PDF 论文精讲与交互式跟读原图",
+      "local": "/astudio/images/paper-reading-preview.png",
+      "altEn": "Explanation alongside the source PDF",
+      "sha256": "69be1870fe9bb8ba0f168ead56acabbf907c3b99844570f2010694eb5b1d15de"
     },
     {
       "page": "faq",

@@ -24,11 +24,11 @@ const selected = computed(() => products.value[active.value])
 const steps = computed(() => en.value ? [
   ['Start with a task', 'Install AStudio, learn the workspace and complete your first request.', 'astudio/quickstart'],
   ['Make the workflow yours', 'Choose a task mode, connect a project and review each result.', 'astudio/features'],
-  ['Practice and repeat', 'Try research and website projects, then reuse what works.', 'astudio/cases']
+  ['Practice and repeat', 'Explore financial reports, valuation models and academic research.', 'astudio/cases']
 ] : [
   ['先完成一个任务', '安装 AStudio，认识工作区，用真实需求完成第一次交付。', 'astudio/quickstart'],
   ['掌握自己的工作流', '选择任务模式，关联项目，检查成果并逐步调整。', 'astudio/features'],
-  ['从案例走向复用', '练习文献调研与网站搭建，把有效的方法带入日常。', 'astudio/cases']
+  ['从案例走向复用', '练习金融研报、估值建模、文献检索与论文精读。', 'astudio/cases']
 ])
 </script>
 

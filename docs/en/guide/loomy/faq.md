@@ -32,3 +32,7 @@ Loomy is suitable for people who need to frequently handle information organizat
 *   Individual users who hope to hand over repetitive processes to AI for assistance
 
 If your work frequently requires switching back and forth between chats, emails, documents, web pages, and to-dos, Loomy can help you work more efficiently.
+
+### Which integrations can call Loomy?
+
+Use the official client, website or an explicitly authorized integration within its granted scope. Authorized Skills, connectors and automation are supported. The agreement restricts access to private endpoints, sharing login tokens with unauthorized tools, evading rate or quota limits, and proxying or reselling access without authorization. See section IV.4 of the [Loomy user agreement](https://loomy.xunfei.cn/docs/Safe/Loomy-user).

@@ -113,25 +113,45 @@
         "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
         "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
       ],
-      "textHash": "919c64e727a75b3a",
+      "textHash": "9322ec61b1bdbe87",
       "textLen": 2778
     },
     "https://agent.xfyun.cn/studio-guide/cases": {
       "url": "https://agent.xfyun.cn/studio-guide/cases",
       "title": "AStudio",
       "headings": [
-        "h1:实践案例",
-        "h2:案例一：文献检索与筛选",
-        "h2:案例二：网站搭建"
+        "h1:最佳实践",
+        "h2:金融深度研究",
+        "h3:案例一：公司深度研报（Apple Inc.）",
+        "h3:案例二：行业深度研报（具身智能产业链）",
+        "h3:案例三：DCF 估值模型（宁德时代 300750.SZ）",
+        "h2:学术与科研",
+        "h3:案例四：科研文献检索",
+        "h3:案例五：学术综述撰写",
+        "h3:案例六：双栏 PDF 论文精讲与跟读"
       ],
       "images": [
-        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-49-QaA9zf.png",
-        "https://agent.xfyun.cn/studio-guide/astudio-guide/guide-img-48-DmfECf.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case1_apple_cover_toc.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case1_apple_summary_eco.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case1_apple_financials.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case1_apple_valuation_refs.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case2_emb_cover_toc.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case2_emb_market_chain.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case2_emb_parts_players.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case2_emb_funding_refs.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case3_catl_overview.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case3_catl_assumptions.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case3_catl_wacc_financials.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case3_catl_dcf.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/clean/case3_catl_sensitivity.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/paper-search-preview.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/literature-review-preview.png",
+        "https://agent.xfyun.cn/studio-guide/astudio-guide/cases/paper-reading-preview.png",
         "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
         "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
       ],
-      "textHash": "350562029efff30c",
-      "textLen": 243
+      "textHash": "0953f603b0139441",
+      "textLen": 8099
     },
     "https://agent.xfyun.cn/studio-guide/tips": {
       "url": "https://agent.xfyun.cn/studio-guide/tips",
@@ -157,8 +177,8 @@
         "https://agent.xfyun.cn/studio-guide/paper/arrow-prev.svg",
         "https://agent.xfyun.cn/studio-guide/paper/arrow-next.svg"
       ],
-      "textHash": "571eb48b83b07f20",
-      "textLen": 1254
+      "textHash": "f5b2e2810d0da2d6",
+      "textLen": 1245
     },
     "https://agent.xfyun.cn/studio-guide/pricing": {
       "url": "https://agent.xfyun.cn/studio-guide/pricing",
